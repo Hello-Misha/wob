@@ -1,0 +1,77 @@
+@import "variables.scss";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+.container,
+.row,
+.col {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1400px;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+#root {
+  height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 15rem;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  line-height: normal;
+  overflow-x: hidden;
+}
+
+#__next {
+  min-height: 100vh;
+}
+
+main {
+  margin: 0 auto;
+  padding-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  max-width: 1440px;
+  overflow: hidden;
+}
+
+section {
+  overflow: hidden;
+}
