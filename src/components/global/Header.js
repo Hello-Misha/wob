@@ -1,7 +1,8 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import { Container, Navbar, Nav } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import Image from "next/image";
+import Link from "next/link";
 
 import { AiOutlineClose } from "react-icons/ai";
 import { BiMenu } from "react-icons/bi";
@@ -61,35 +62,32 @@ const Header = () => {
   ];
 
   return (
-    <Navbar expand="lg" fixed="top" className="bg-lipstick">
-      <Container>
-        <Navbar.Brand href="/">
+    <header className={classes.header}>
+      <Container
+        className={`d-flex justify-content-between my-3 ${
+          size.width < 992 ? "align-items-start" : "align-items-center"
+        }`}
+      >
+        <Link href="/">
           <Image
             src={logo}
             alt="logo"
-            className={`img-fluid`}
+            // className={`img-fluid`}
             width={75}
             height={75}
           />
-        </Navbar.Brand>
-        <div className={classes.menuControls}>
-          {menuOpen ? (
-            <BiMenu onClick={menuToggleHandler} />
-          ) : (
-            <AiOutlineClose onClick={menuToggleHandler} />
-          )}
-        </div>
+        </Link>
+
         <div
-          // id="navbar"
           className={`${classes.navbar} ${
             menuOpen && size.width < 992 ? "hidden" : ""
           }`}
         >
           <div className={classes.navbar__container}>
             {navLinks.map((link, index) => (
-              <Nav.Link key={index} href={link.href}>
+              <Link key={index} href={link.href}>
                 <p className={`text white mb-0 mx-2 `}>{link.text}</p>
-              </Nav.Link>
+              </Link>
             ))}
           </div>
           <div className={classes.navbar__container}>
@@ -110,8 +108,15 @@ const Header = () => {
             />
           </div>
         </div>
+        <div className={`${classes.menuControls}`}>
+          {menuOpen ? (
+            <BiMenu onClick={menuToggleHandler} />
+          ) : (
+            <AiOutlineClose onClick={menuToggleHandler} />
+          )}
+        </div>
       </Container>
-    </Navbar>
+    </header>
   );
 };
 
