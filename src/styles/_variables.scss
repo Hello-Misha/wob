@@ -8,20 +8,29 @@ $Lipstick: #981b46;
 $Blue: #2f4858;
 $Charcoal: #222528;
 
-.Lipstick {
+.lipstick {
   color: $Lipstick;
 }
-
-.Blue {
-  color: $Blue;
+.bg-lipstick {
+  background-color: $Lipstick;
 }
 
-.Charcoal {
+.blue {
+  color: $Blue;
+}
+.bg-blue {
+  background-color: $Blue;
+}
+
+.charcoal {
   color: $Charcoal;
 }
 
-.White {
+.white {
   color: white;
+}
+.bg-white {
+  background-color: white;
 }
 
 @mixin breakpoint($point) {
@@ -57,8 +66,61 @@ $Charcoal: #222528;
   }
 }
 
-.Main-title {
+.h1-title {
   font-family: $Montserrat;
-  font-weight: 600;
-  font-size: clamp(40px, 3vw, 96px);
+  font-size: clamp(2.5rem, 3vw, 6rem);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.h2-title {
+  font-family: $Montserrat;
+  font-size: clamp(2.5rem, 3vw, 4rem);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.h3-title {
+  font-family: $Montserrat;
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.text {
+  font-family: $Montserrat;
+  font-size: clamp(0.875rem, 1vw, 1.25rem);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
+.text-italic {
+  font-family: $Montserrat;
+  font-size: clamp(0.875rem, 1vw, 1.25rem);
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.btn-text {
+  font-family: $Montserrat;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.button {
+  padding: 1rem 2rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  width: auto;
+
+  border-radius: 0.3125rem;
 }
