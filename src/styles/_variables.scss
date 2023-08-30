@@ -108,19 +108,24 @@ $Charcoal: #222528;
 
 .btn-text {
   font-family: $Montserrat;
-  font-size: 1.5rem;
+  font-size: clamp(1rem, 1vw, 1.5rem);
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+
+  margin: 0 !important;
 }
 
 .button {
-  padding: 1rem 2rem;
+  padding: 0.5rem 1rem;
   display: inline-flex;
   justify-content: center;
   align-items: center;
   gap: 0.625rem;
   width: auto;
-
   border-radius: 0.3125rem;
+
+  @include breakpoint(lg) {
+    padding: 1rem 2rem;
+  }
 }
