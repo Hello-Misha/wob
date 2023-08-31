@@ -9,9 +9,9 @@ import { BiMenu } from "react-icons/bi";
 
 import classes from "./Header.module.scss";
 
-import BtnComponent from "@/components/ui/BtnComponent";
+import BtnComponent from "../ui/BtnComponent";
 
-import logo from "@/img/Logo-WoB.png";
+import logo from "../../img/Logo-WoB.png";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
