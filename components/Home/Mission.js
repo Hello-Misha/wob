@@ -1,5 +1,4 @@
 import { Container, Row, Col } from "react-bootstrap";
-import { useTranslation } from "next-i18next";
 import Image from "next/image";
 import about from "../../public/img/about.png";
 
@@ -7,7 +6,6 @@ import Title from "../ui/Title";
 import Text from "../ui/Text";
 
 const Mission = () => {
-  const { t } = useTranslation("home");
   return (
     <section className="my-5">
       <Container>
