@@ -1,9 +1,9 @@
-// import Header from "./Header";
+import Header from "./Header";
 // import Footer from "./Footer/Footer";
 
 const Layout = ({ children }) => (
   <>
-    {/* <Header /> */}
+    <Header />
     {children}
     {/* <Footer /> */}
   </>

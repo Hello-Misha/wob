@@ -1,5 +1,6 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import { useTranslation } from "next-i18next";
+import { useState, useEffect } from "react";
 import { Container } from "react-bootstrap";
 import Image from "next/image";
 import Link from "next/link";
@@ -14,10 +15,11 @@ import BtnComponent from "../ui/BtnComponent";
 import logo from "../../public/img/Logo-WoB.png";
 
 const Header = () => {
+  const { t } = useTranslation("common");
   const [menuOpen, setMenuOpen] = useState(false);
   const [size, setSize] = useState({
-    width: undefined,
-    height: undefined,
+    width: typeof window !== "undefined" ? window.innerWidth : 0,
+    height: typeof window !== "undefined" ? window.innerHeight : 0,
   });
 
   useEffect(() => {
@@ -27,9 +29,18 @@ const Header = () => {
         height: window.innerHeight,
       });
     };
-    window.addEventListener("resize", handleResize);
 
-    return () => window.removeEventListener("resize", handleResize);
+    // Check if window is defined before adding the event listener
+    if (typeof window !== "undefined") {
+      window.addEventListener("resize", handleResize);
+    }
+
+    return () => {
+      // Check if window is defined before removing the event listener
+      if (typeof window !== "undefined") {
+        window.removeEventListener("resize", handleResize);
+      }
+    };
   }, []);
 
   useEffect(() => {
@@ -45,75 +56,84 @@ const Header = () => {
   const navLinks = [
     {
       href: "/",
-      text: "About",
+      text: "header.links.about",
     },
     {
       href: "/",
-      text: "Membership",
+      text: "header.links.membership",
     },
     {
       href: "/",
-      text: "Honor Circle",
+      text: "header.links.hc",
     },
     {
       href: "/",
-      text: "Contacts",
+      text: "header.links.contacts",
     },
   ];
 
   return (
-    <header className={classes.header}>
-      <Container
-        className={`d-flex justify-content-between my-3 ${
-          size.width < 992 ? "align-items-start" : "align-items-center"
-        }`}
-      >
-        <Link href="/">
-          <Image
-            src={logo}
-            alt="logo"
-            // className={`img-fluid`}
-            width={75}
-            height={75}
-          />
-        </Link>
-
+    <header className={`relative ${classes.header}`}>
+      <Container className="mx-2">
         <div
-          className={`${classes.navbar} ${
-            menuOpen && size.width < 992 ? "hidden" : ""
+          className={`relative d-flex justify-content-between my-3 ${
+            size.width < 992 ? " align-items-start" : " align-items-center"
           }`}
         >
-          <div className={classes.navbar__container}>
-            {navLinks.map((link, index) => (
-              <Link key={index} href={link.href}>
-                <p className={`text white mb-0 mx-2 `}>{link.text}</p>
-              </Link>
-            ))}
-          </div>
-          <div className={classes.navbar__container}>
-            <BtnComponent
-              link={"#"}
-              text="Join Us"
-              bg="bg-blue"
-              color="white"
-              classes={classes.navbar__container__btn}
-              onClick={menuToggleHandler}
+          <Link href="/">
+            <Image
+              src={logo}
+              alt="logo"
+              className={` ${
+                size.width < 992 && menuOpen ? "static" : "absolute"
+              }`}
+              width={75}
+              height={75}
             />
-            <BtnComponent
-              link={"#"}
-              text="Members Login"
-              bg="bg-white"
-              color="lipstick"
-              onClick={menuToggleHandler}
-            />
+          </Link>
+
+          <div
+            className={`${classes.navbar} ${
+              size.width < 992 && menuOpen ? "" : classes.hidden
+            }`}
+          >
+            <nav className={classes.navbar__container}>
+              {navLinks.map((link, index) => (
+                <Link key={index} href={link.href}>
+                  <p
+                    className={`text white mb-0 mx-2 `}
+                    onClick={menuToggleHandler}
+                  >
+                    {t(link.text)}
+                  </p>
+                </Link>
+              ))}
+            </nav>
+            <div className={classes.navbar__container}>
+              <BtnComponent
+                link={"#"}
+                text="Join Us"
+                bg="bg-blue"
+                color="white"
+                classes={classes.navbar__container__btn}
+                onClick={menuToggleHandler}
+              />
+              <BtnComponent
+                link={"#"}
+                text="Members Login"
+                bg="bg-white"
+                color="lipstick"
+                onClick={menuToggleHandler}
+              />
+            </div>
           </div>
-        </div>
-        <div className={`${classes.menuControls}`}>
-          {menuOpen ? (
-            <BiMenu onClick={menuToggleHandler} />
-          ) : (
-            <AiOutlineClose onClick={menuToggleHandler} />
-          )}
+          <div className={`${classes.menuControls}`}>
+            {menuOpen ? (
+              <AiOutlineClose onClick={menuToggleHandler} />
+            ) : (
+              <BiMenu onClick={menuToggleHandler} />
+            )}
+          </div>
         </div>
       </Container>
     </header>
