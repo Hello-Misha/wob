@@ -10,5 +10,6 @@
       "joinUs": "Join Us",
       "login": "Membership Login"
     }
-  }
+  },
+  "test": "Hello World"
 }

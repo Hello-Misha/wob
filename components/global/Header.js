@@ -11,7 +11,7 @@ import classes from "./Header.module.scss";
 
 import BtnComponent from "../ui/BtnComponent";
 
-import logo from "../../img/Logo-WoB.png";
+import logo from "../../public/img/Logo-WoB.png";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
