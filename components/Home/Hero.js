@@ -1,7 +1,6 @@
 import { useTranslation } from "next-i18next";
 import { Container, Row, Col } from "react-bootstrap";
 
-// import Image from "next/image";
 import CarouselComponent from "../ui/Carousel";
 
 import women from "../../public/img/women.png";
@@ -9,8 +8,8 @@ import women from "../../public/img/women.png";
 import Text from "../ui/Text";
 
 const Hero = () => {
-  const imgArr = [women, women, women];
   const { t } = useTranslation("home");
+  const imgArr = [women, women, women];
   return (
     <section>
       <Container>

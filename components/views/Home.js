@@ -4,6 +4,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import Image from "next/image";
 
 import Hero from "../Home/Hero";
+import Icons from "../Home/Icons";
 
 // images
 import about from "../../public/img/about.png";
@@ -16,6 +17,7 @@ const Home = () => {
   return (
     <main>
       <Hero />
+      <Icons />
       <Container>
         <Row>
           <Title locale="common" text="test" hr={true} />
