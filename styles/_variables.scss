@@ -98,6 +98,14 @@ $Charcoal: #222528;
   line-height: normal;
   margin: 0;
 }
+.text-bold {
+  font-family: $Montserrat;
+  font-size: clamp(0.875rem, 1vw, 1.25rem);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0;
+}
 .text-italic {
   font-family: $Montserrat;
   font-size: clamp(0.875rem, 1vw, 1.25rem);

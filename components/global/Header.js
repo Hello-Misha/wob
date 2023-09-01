@@ -1,7 +1,10 @@
 "use client";
 import { useTranslation } from "next-i18next";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+
 import { useState, useEffect } from "react";
-import { Container } from "react-bootstrap";
+
+import { useRouter } from "next/router";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -9,6 +12,7 @@ import { AiOutlineClose } from "react-icons/ai";
 import { BiMenu } from "react-icons/bi";
 
 import classes from "./Header.module.scss";
+import { Container } from "react-bootstrap";
 
 import BtnComponent from "../ui/BtnComponent";
 
@@ -58,6 +62,16 @@ const Header = () => {
     console.log(`size.width < 992 is ${size.width < 992}`);
   };
 
+  /* LANG TOOGLER */
+  const router = useRouter();
+  const { pathname, asPath, query } = router;
+  const currentLocale = router.locale;
+  const changeLanguage = (locale) => {
+    router.push({ pathname, query }, asPath, {
+      locale: locale,
+    });
+  };
+
   const navLinks = [
     {
       href: "/",
@@ -102,6 +116,31 @@ const Header = () => {
             ))}
           </nav>
           <div className={classes.navbar__container}>
+            {/* LANG TOOGLER */}
+            <div className="d-flex">
+              <h3
+                className={`${
+                  currentLocale === "uk" ? "text-bold" : "text"
+                } white `}
+                onClick={() => {
+                  changeLanguage("uk");
+                }}
+              >
+                UA
+              </h3>
+              <span className="text-bold white mx-2">|</span>
+              <h3
+                className={`${
+                  currentLocale === "en" ? "text-bold" : "text"
+                } white `}
+                onClick={() => {
+                  changeLanguage("en");
+                }}
+              >
+                EN
+              </h3>
+            </div>
+
             <BtnComponent
               link={"#"}
               text="Join Us"
@@ -132,3 +171,11 @@ const Header = () => {
 };
 
 export default Header;
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["common"])),
+    },
+  };
+}
