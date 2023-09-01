@@ -34,13 +34,11 @@ const Header = () => {
       });
     };
 
-    // Check if window is defined before adding the event listener
     if (typeof window !== "undefined") {
       window.addEventListener("resize", handleResize);
     }
 
     return () => {
-      // Check if window is defined before removing the event listener
       if (typeof window !== "undefined") {
         window.removeEventListener("resize", handleResize);
       }
@@ -93,17 +91,13 @@ const Header = () => {
 
   return (
     <header className={`${classes.header}`}>
-      <Container
-        className={`d-flex justify-content-between my-3 mx-2 ${
-          size.width < 992 ? " align-items-start" : " align-items-center"
-        }`}
-      >
+      <Container className={classes.navbar__container}>
         <Link href="/">
           <Image src={logo} alt="logo" width={75} height={75} onClick={test} />
         </Link>
 
         <div className={`${classes.navbar} ${menuOpen ? "" : classes.hidden}`}>
-          <nav className={classes.navbar__container}>
+          <nav className={classes.navbar__container__elements}>
             {navLinks.map((link, index) => (
               <Link key={index} href={link.href}>
                 <p
@@ -115,7 +109,7 @@ const Header = () => {
               </Link>
             ))}
           </nav>
-          <div className={classes.navbar__container}>
+          <div className={classes.navbar__container__elements}>
             {/* LANG TOOGLER */}
             <div className="d-flex">
               <h3
@@ -146,7 +140,7 @@ const Header = () => {
               text="Join Us"
               bg="bg-blue"
               color="white"
-              classes={classes.navbar__container__btn}
+              classes={classes.navbar__container__elements__btn}
               onClick={menuToggleHandler}
             />
             <BtnComponent
