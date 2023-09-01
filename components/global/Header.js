@@ -136,8 +136,9 @@ const Header = () => {
             </div>
 
             <BtnComponent
+              locale={"common"}
               link={"#"}
-              text="Join Us"
+              text="header.btn.joinUs"
               bg="bg-blue"
               color="white"
               classes={classes.navbar__container__elements__btn}
@@ -145,7 +146,7 @@ const Header = () => {
             />
             <BtnComponent
               link={"#"}
-              text="Members Login"
+              text="header.btn.login"
               bg="bg-white"
               color="lipstick"
               onClick={menuToggleHandler}
