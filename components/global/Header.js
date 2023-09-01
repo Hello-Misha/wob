@@ -44,13 +44,18 @@ const Header = () => {
   }, []);
 
   useEffect(() => {
-    if (size.width > 992 && menuOpen) {
-      setMenuOpen(false);
+    if (size.width > 992) {
+      setMenuOpen(true);
     }
   }, [size.width, menuOpen]);
 
   const menuToggleHandler = () => {
     setMenuOpen((p) => !p);
+  };
+
+  const test = () => {
+    console.log(`menuOpen is: ${menuOpen}`);
+    console.log(`size.width < 992 is ${size.width < 992}`);
   };
 
   const navLinks = [
@@ -73,67 +78,53 @@ const Header = () => {
   ];
 
   return (
-    <header className={`relative ${classes.header}`}>
-      <Container className="mx-2">
-        <div
-          className={`relative d-flex justify-content-between my-3 ${
-            size.width < 992 ? " align-items-start" : " align-items-center"
-          }`}
-        >
-          <Link href="/">
-            <Image
-              src={logo}
-              alt="logo"
-              className={` ${
-                size.width < 992 && menuOpen ? "static" : "absolute"
-              }`}
-              width={75}
-              height={75}
-            />
-          </Link>
+    <header className={`${classes.header}`}>
+      <Container
+        className={`d-flex justify-content-between my-3 mx-2 ${
+          size.width < 992 ? " align-items-start" : " align-items-center"
+        }`}
+      >
+        <Link href="/">
+          <Image src={logo} alt="logo" width={75} height={75} onClick={test} />
+        </Link>
 
-          <div
-            className={`${classes.navbar} ${
-              size.width < 992 && menuOpen ? "" : classes.hidden
-            }`}
-          >
-            <nav className={classes.navbar__container}>
-              {navLinks.map((link, index) => (
-                <Link key={index} href={link.href}>
-                  <p
-                    className={`text white mb-0 mx-2 `}
-                    onClick={menuToggleHandler}
-                  >
-                    {t(link.text)}
-                  </p>
-                </Link>
-              ))}
-            </nav>
-            <div className={classes.navbar__container}>
-              <BtnComponent
-                link={"#"}
-                text="Join Us"
-                bg="bg-blue"
-                color="white"
-                classes={classes.navbar__container__btn}
-                onClick={menuToggleHandler}
-              />
-              <BtnComponent
-                link={"#"}
-                text="Members Login"
-                bg="bg-white"
-                color="lipstick"
-                onClick={menuToggleHandler}
-              />
-            </div>
+        <div className={`${classes.navbar} ${menuOpen ? "" : classes.hidden}`}>
+          <nav className={classes.navbar__container}>
+            {navLinks.map((link, index) => (
+              <Link key={index} href={link.href}>
+                <p
+                  className={`text white mb-0 mx-2 `}
+                  onClick={menuToggleHandler}
+                >
+                  {t(link.text)}
+                </p>
+              </Link>
+            ))}
+          </nav>
+          <div className={classes.navbar__container}>
+            <BtnComponent
+              link={"#"}
+              text="Join Us"
+              bg="bg-blue"
+              color="white"
+              classes={classes.navbar__container__btn}
+              onClick={menuToggleHandler}
+            />
+            <BtnComponent
+              link={"#"}
+              text="Members Login"
+              bg="bg-white"
+              color="lipstick"
+              onClick={menuToggleHandler}
+            />
           </div>
-          <div className={`${classes.menuControls}`}>
-            {menuOpen ? (
-              <AiOutlineClose onClick={menuToggleHandler} />
-            ) : (
-              <BiMenu onClick={menuToggleHandler} />
-            )}
-          </div>
+        </div>
+        <div className={`${classes.menuControls}`}>
+          {menuOpen ? (
+            <AiOutlineClose onClick={menuToggleHandler} />
+          ) : (
+            <BiMenu onClick={menuToggleHandler} />
+          )}
         </div>
       </Container>
     </header>
