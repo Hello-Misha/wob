@@ -72,6 +72,10 @@ $Charcoal: #222528;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  text-align: center;
+  @include breakpoint(md) {
+    text-align: left;
+  }
 }
 
 .h2-title {

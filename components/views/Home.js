@@ -3,35 +3,35 @@ import { Container, Row, Col } from "react-bootstrap";
 
 import Image from "next/image";
 
+import Hero from "../Home/Hero";
+
 // images
 import about from "../../public/img/about.png";
 
 import Title from "../ui/Title";
-import BtnComponent from "../ui/BtnComponent";
+import Text from "../ui/Text";
+
 const Home = () => {
-  const { t } = useTranslation("common");
+  // const { t } = useTranslation("common");
   return (
     <main>
+      <Hero />
       <Container>
         <Row>
           <Title locale="common" text="test" hr={true} />
         </Row>
-        <Col xs="12" md="3" className="d-flex flex-column align-items-center">
-          <Image src={about} alt="about" className="img-fluid" />
-        </Col>
-        <Row className="mt-4">
-          <Col xs="12" md="9" className="d-flex flex-column align-items-center">
-            {t("testText", {
-              returnObjects: true,
-            }).map((item, index) => (
-              <p key={index} className="text blue pb-3">
-                {item}
-              </p>
-            ))}
-
-            <BtnComponent
-              link={"#"}
-              text="testBtn"
+        <Row>
+          <Col xs="12" md="3" className="order-md-2 order-1">
+            <Image src={about} alt="about" className="img-fluid mb-3" />
+          </Col>
+          <Col xs="12" md="9" className="order-md-1 order-2">
+            <Text
+              locale="common"
+              grid="9"
+              text="testText"
+              link="#"
+              btnType={null}
+              btnText="testBtn"
               bg="bg-blue"
               color="white"
             />
