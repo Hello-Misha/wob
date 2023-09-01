@@ -8,3 +8,21 @@
   background-color: white;
   box-shadow: 0px 0px 15px -5px rgba(34, 37, 40, 0.5);
 }
+
+.bgFullWidth {
+  background-color: $Lipstick;
+  width: 100vw;
+  position: relative; /* Ensure proper sizing */
+  left: 50%; /* Move it 50% to the right */
+  right: 50%;
+  transform: translateX(-50%);
+  box-sizing: border-box;
+
+  &__container {
+    margin: 0 auto;
+    margin-top: -3rem;
+    margin-bottom: -1rem;
+    // padding: 3rem;
+    // overflow: hidden;
+  }
+}

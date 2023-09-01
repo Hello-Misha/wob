@@ -1,9 +1,8 @@
-import { Container, Row, Col } from "react-bootstrap";
-
 import Hero from "../Home/Hero";
 import Icons from "../Home/Icons";
 import Mission from "../Home/Mission";
 import Founders from "../Home/Founders";
+import JoinUs from "../Home/JoinUs";
 
 const Home = () => {
   return (
@@ -12,6 +11,7 @@ const Home = () => {
       <Icons />
       <Mission />
       <Founders />
+      <JoinUs />
     </main>
   );
 };
