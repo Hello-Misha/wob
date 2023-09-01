@@ -3,7 +3,7 @@ import { useTranslation } from "next-i18next";
 // import { Col } from "react-bootstrap";
 
 import classes from "./UI.module.scss";
-const Text = ({ locale, grid, text, link, btnType, btnText, bg, color }) => {
+const Text = ({ locale, text, link, btnType, btnText, bg, color }) => {
   const { t } = useTranslation(locale);
   return (
     <div className={classes.textContainer}>
@@ -16,9 +16,10 @@ const Text = ({ locale, grid, text, link, btnType, btnText, bg, color }) => {
       ))}
 
       <BtnComponent
+        locale={locale}
         link={link}
         btnType={btnType}
-        text={btnText}
+        btnText={btnText}
         bg={bg}
         color={color}
       />

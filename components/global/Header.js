@@ -138,15 +138,16 @@ const Header = () => {
             <BtnComponent
               locale={"common"}
               link={"#"}
-              text="header.btn.joinUs"
+              btnText="header.btn.joinUs"
               bg="bg-blue"
               color="white"
               classes={classes.navbar__container__elements__btn}
               onClick={menuToggleHandler}
             />
             <BtnComponent
+              locale="common"
               link={"#"}
-              text="header.btn.login"
+              btnText="header.btn.login"
               bg="bg-white"
               color="lipstick"
               onClick={menuToggleHandler}
