@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import Image from "next/image";
 import icon from "../../public/img/icon-test.png";
 
-import classes from "./Home.module.scss";
+import classes from "./#Home.module.scss";
 
 const Icons = () => {
   const { t } = useTranslation("home");
