@@ -106,7 +106,7 @@ const Header = () => {
           </nav>
           <div className={classes.navbar__container__elements}>
             {/* LANG TOOGLER */}
-            <div className="d-flex">
+            <div className="d-flex cursor-pointer">
               <h3
                 className={`${
                   currentLocale === "uk" ? "text-bold" : "text"
@@ -143,6 +143,7 @@ const Header = () => {
               locale="common"
               link={"#"}
               btnText="header.btn.login"
+              classes=""
               bg="bg-white"
               color="lipstick"
               onClick={menuToggleHandler}

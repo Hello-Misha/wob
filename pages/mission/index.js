@@ -3,7 +3,7 @@ import { useTranslation } from "next-i18next";
 
 import Head from "next/head";
 
-import Mission from "../components/views/Mission";
+import Mission from "../../components/views/Mission";
 
 function MissionPage() {
   const { t } = useTranslation("meta");

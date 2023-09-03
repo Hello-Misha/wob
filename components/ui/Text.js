@@ -19,7 +19,6 @@ const Text = ({ locale, text, link, btnType, btnText, bg, color }) => {
         <BtnComponent
           locale={locale}
           link={link}
-          btnType={btnType}
           btnText={btnText}
           bg={bg}
           color={color}
