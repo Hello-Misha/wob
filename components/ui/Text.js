@@ -1,12 +1,10 @@
 import BtnComponent from "./BtnComponent";
 import { useTranslation } from "next-i18next";
-// import { Col } from "react-bootstrap";
 
-import classes from "./#UI.module.scss";
 const Text = ({ locale, text, link, btnType, btnText, bg, color }) => {
   const { t } = useTranslation(locale);
   return (
-    <div className={classes.textContainer}>
+    <div className="textContainer">
       {t(text, {
         returnObjects: true,
       }).map((item, index) => (

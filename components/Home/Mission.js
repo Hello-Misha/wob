@@ -14,7 +14,7 @@ const Mission = () => {
         </Row>
         <Row>
           <Col xs="12" md="3" className="order-md-2 order-1">
-            <Image src={about} alt="about" className="img-fluid mb-3" />
+            <Image src={about} alt="about" className="img-fluid mx-auto mb-3" />
           </Col>
           <Col xs="12" md="9" className="order-md-1 order-2">
             <Text

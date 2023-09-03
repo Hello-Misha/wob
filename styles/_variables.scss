@@ -146,12 +146,12 @@ $Charcoal: #222528;
   }
 }
 
-// .textContainer {
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-//   @include breakpoint(md) {
-//     align-items: start;
-//   }
-// }
+  @include breakpoint(md) {
+    align-items: start;
+  }
+}

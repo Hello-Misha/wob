@@ -14,7 +14,7 @@ const Hero = () => {
     <section>
       <Container>
         <Row>
-          <Col md="6">
+          <Col lg="6">
             <h1 className="h1-title lipstick mb-4">{t("hero.title")}</h1>
             <Text
               locale="home"
@@ -26,7 +26,7 @@ const Hero = () => {
               color="white"
             />
           </Col>
-          <Col md="6">
+          <Col lg="6">
             <CarouselComponent imgArr={imgArr} />
           </Col>
         </Row>

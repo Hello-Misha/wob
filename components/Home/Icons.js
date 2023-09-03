@@ -22,6 +22,7 @@ const Icons = () => {
               <Image
                 src={iconsImg[index]}
                 alt={icon}
+                width={80}
                 placeholder="blur"
                 className="mb-2"
               />

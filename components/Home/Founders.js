@@ -31,11 +31,16 @@ const Founders = () => {
             />
           </Col>
         </Row>
-        <Row>
+        <Row className="d-flex justify-content-between">
           {t("founders.cards", {
             returnObjects: true,
           }).map((card, index) => (
-            <Col key={index} className="d-flex flex-column  mx-3">
+            <Col
+              xs="12"
+              md="4"
+              key={index}
+              className="d-flex flex-column mx-auto"
+            >
               <Image
                 src={imgCards[index]}
                 alt={card.name}
