@@ -3,9 +3,9 @@ import { useTranslation } from "next-i18next";
 
 import Head from "next/head";
 
-import Home from "../components/views/Home";
+import Mission from "../components/views/Mission";
 
-function HomePage() {
+function MissionPage() {
   const { t } = useTranslation("meta");
   return (
     <>
@@ -13,17 +13,17 @@ function HomePage() {
         <title>{t("home.title")}</title>
         <meta property="og:description" content={t(`home.description`)} />
       </Head>
-      <Home />
+      <Mission />
     </>
   );
 }
 
-export default HomePage;
+export default MissionPage;
 
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ["home", "common", "meta"])),
+      ...(await serverSideTranslations(locale, ["mission", "common", "meta"])),
     },
   };
 }

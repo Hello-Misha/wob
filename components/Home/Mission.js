@@ -20,7 +20,7 @@ const Mission = () => {
             <Text
               locale="home"
               text="mission.text"
-              link="#"
+              link="/mission"
               btnType={null}
               btnText="mission.btn"
               bg="bg-blue"
