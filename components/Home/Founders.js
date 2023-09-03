@@ -24,7 +24,7 @@ const Founders = () => {
               locale="home"
               text="founders.text"
               link="#"
-              btnType={null}
+              btnType="transparent"
               btnText="founders.btn"
               bg="bg-blue"
               color="white"

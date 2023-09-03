@@ -132,7 +132,7 @@ $Charcoal: #222528;
   margin: 0 !important;
 }
 
-.button {
+.btnSolid {
   padding: 0.5rem 1rem;
   display: inline-flex;
   justify-content: center;
@@ -143,6 +143,18 @@ $Charcoal: #222528;
 
   @include breakpoint(lg) {
     padding: 1rem 2rem;
+  }
+}
+
+.btnTransparent {
+  padding: 0.5rem 0;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.625rem;
+  width: auto;
+  @include breakpoint(lg) {
+    padding: 1rem 0;
   }
 }
 

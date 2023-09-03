@@ -1,13 +1,24 @@
 import Link from "next/link";
 import { useTranslation } from "next-i18next";
-const BtnComponent = ({ link, btnText, bg, color, classes, locale }) => {
+import { motion } from "framer-motion";
+
+const BtnComponent = ({ link, btnText, bg, color, locale }) => {
   const { t } = useTranslation(locale);
+
   return (
-    <Link href={link}>
-      <div className={` button  ${bg} ${classes}`}>
-        <h4 className={`btn-text ${color}`}>{t(btnText)}</h4>
-      </div>
-    </Link>
+    <motion.div
+      whileHover={{
+        scale: 1.03,
+        transition: { duration: 1 },
+      }}
+      whileTap={{ scale: 1 }}
+    >
+      <Link href={link}>
+        <div className={` btnSolid  ${bg}`}>
+          <h4 className={`btn-text ${color}`}>{t(btnText)}</h4>
+        </div>
+      </Link>
+    </motion.div>
   );
 };
 

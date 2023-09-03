@@ -1,4 +1,5 @@
 import BtnComponent from "./BtnComponent";
+import BtnTransparent from "./BtnTransparent";
 import { useTranslation } from "next-i18next";
 
 const Text = ({ locale, text, link, btnType, btnText, bg, color }) => {
@@ -12,15 +13,18 @@ const Text = ({ locale, text, link, btnType, btnText, bg, color }) => {
           {item}
         </p>
       ))}
-
-      <BtnComponent
-        locale={locale}
-        link={link}
-        btnType={btnType}
-        btnText={btnText}
-        bg={bg}
-        color={color}
-      />
+      {btnType === "transparent" ? (
+        <BtnTransparent locale={locale} link={link} btnText={btnText} />
+      ) : (
+        <BtnComponent
+          locale={locale}
+          link={link}
+          btnType={btnType}
+          btnText={btnText}
+          bg={bg}
+          color={color}
+        />
+      )}
     </div>
   );
 };
