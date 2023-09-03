@@ -71,15 +71,15 @@ const Header = () => {
       text: "header.links.about",
     },
     {
-      href: "/",
+      href: "/membership",
       text: "header.links.membership",
     },
     {
-      href: "/",
+      href: "/hc",
       text: "header.links.hc",
     },
     {
-      href: "/",
+      href: "/contacts",
       text: "header.links.contacts",
     },
   ];
