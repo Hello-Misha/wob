@@ -2,7 +2,7 @@ import Link from "next/link";
 import { useTranslation } from "next-i18next";
 import { motion } from "framer-motion";
 
-const BtnComponent = ({ link, btnText, bg, color, locale }) => {
+const BtnComponent = ({ link, btnText, bg, classes, color, locale }) => {
   const { t } = useTranslation(locale);
 
   return (
@@ -14,7 +14,7 @@ const BtnComponent = ({ link, btnText, bg, color, locale }) => {
       whileTap={{ scale: 1 }}
     >
       <Link href={link}>
-        <div className={` btnSolid  ${bg}`}>
+        <div className={` btnSolid  ${bg} ${classes && classes}`}>
           <h4 className={`btn-text ${color}`}>{t(btnText)}</h4>
         </div>
       </Link>

@@ -55,11 +55,6 @@ const Header = () => {
     setMenuOpen((p) => !p);
   };
 
-  const test = () => {
-    console.log(`menuOpen is: ${menuOpen}`);
-    console.log(`size.width < 992 is ${size.width < 992}`);
-  };
-
   /* LANG TOOGLER */
   const router = useRouter();
   const { pathname, asPath, query } = router;
@@ -93,7 +88,7 @@ const Header = () => {
     <header className={`${classes.header}`}>
       <Container className={classes.navbar__container}>
         <Link href="/">
-          <Image src={logo} alt="logo" width={75} height={75} onClick={test} />
+          <Image src={logo} alt="logo" width={75} height={75} />
         </Link>
 
         <div className={`${classes.navbar} ${menuOpen ? "" : classes.hidden}`}>
@@ -101,7 +96,7 @@ const Header = () => {
             {navLinks.map((link, index) => (
               <Link key={index} href={link.href}>
                 <p
-                  className={`text white mb-0 mx-2 `}
+                  className={`text text-center white mx-2 my-2 my-lg-0 `}
                   onClick={menuToggleHandler}
                 >
                   {t(link.text)}
@@ -140,8 +135,8 @@ const Header = () => {
               link={"#"}
               btnText="header.btn.joinUs"
               bg="bg-blue"
-              color="white"
               classes={classes.navbar__container__elements__btn}
+              color="white"
               onClick={menuToggleHandler}
             />
             <BtnComponent
