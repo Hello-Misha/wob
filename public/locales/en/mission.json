@@ -1,0 +1,54 @@
+{
+  "pageTitle": "Our mission",
+  "background": {
+    "title": "Background",
+    "text": "Founded by accomplished business leaders Olena Malynska, Tatiana Furtseva, and Nina Dombrowska, Women on Boards Ukraine was established in response to the challenging circumstances caused by the aggressive invasion of Ukraine in 2022. The founders personally experienced the challenges faced by professional women who were displaced and whose lives and careers were significantly affected. Inspired by the influential professional women communities they encountered outside of Ukraine, they recognized the importance of a strong and supportive network to uplift and empower women. With a firm belief in the critical role of good corporate governance in rebuilding Ukraine and driving its future economic progress, Women on Boards Ukraine was created as a pillar for a better future, where professional women will play a vital role in Building Better Ukraine."
+  },
+  "statement": {
+    "title": "Mission Statement",
+    "text": "Women on Boards Ukraine is established to be a leading not-for-profit organization dedicated to empowering women in leadership roles and advancing the presence of women in corporate boardrooms in Ukraine. Our mission is to create a vibrant community where women uplift and support one another, foster inclusive decision-making, advocate for legislative changes that ensure equal opportunities, and represent the exceptional talents of Ukrainian professional women globally. We firmly believe in the power of collaboration and partnerships to drive positive change and build a more inclusive and equitable future."
+  },
+  "form": {
+    "title": "Organizational Form",
+    "text": "Women on Boards Ukraine operates as a non-profit membership organization with a focus on advocating for equal participation of women on boards, lobbying for legislative changes in Ukraine to align with European Directive (EU) 2022/2381 on improving the gender balance among directors, promoting diversity on boards, and enhancing the image of professional Ukrainian women. Our organization is supported by founders, partners contributions and members' fees and is governed by a Board elected from among the members."
+  },
+  "goals": {
+    "title": "Our Goals",
+    "text": "Our goals encompass engaging with European Women on Boards and sister organizations, fostering partnerships for the exchange of ideas, providing training and mentoring opportunities, and developing joint projects. Additionally, we aim to establish relationships with recruiters to accumulate board mandates for our members and actively promote and lobby for the image of Ukrainian professional women globally."
+  },
+  "milestones": {
+    "title": "Major Development Milestones for the First Year",
+    "list": [
+      "Advocating for Legislative Changes in line with European Directives",
+      "Empowering Ukrainian Professional Women and Positioning Them Globally",
+      "Engaging in Local and International Collaboration",
+      "Championing the Principles of ESG in Rebuilding Ukraine",
+      "Emphasizing Collaboration over Competition"
+    ],
+    "text": "We believe that through our strategic focus on empowering women, fostering inclusive decision-making, advocating for legislative changes, representing Ukrainian professional women, and promoting collaboration, Women on Boards Ukraine will play a pivotal role in transforming the corporate landscape and creating a more equitable and prosperous future for all."
+  },
+  "founders": [
+    {
+      "name": "Nina Dombrowska",
+      "title": "Non-Executive Director, entrepreneur, ex-President Henkel Ukraine",
+      "bio": [
+        "Nina Dombrowska is an accomplished business leader with over 20 years of corporate experience. Nina brings a wealth of strategic leadership and corporate governance expertise to Women on Boards Ukraine due to her achievements as President and Chairman of the Board of Directors at Henkel Ukraine. Nina has also served on a number of boards of private companies and not-for-profit organizations, including as a member of the Board of Directors of the European Business Association. She was recognized a number of times as one of Ukraine's Top 100 most successful women for her corporate career. Nina is also an entrepreneur who has founded a number of digital start-ups in the field of education and beauty. Nina has certification in corporate governance from INSEAD/UCGA and is a member of the CEO Club Ukraine."
+      ]
+    },
+    {
+      "name": "Olena Malynska",
+      "title": "Non-Executive Director, ex-banking CEO",
+      "bio": [
+        "Olena Malynska is an experienced executive leader and accomplished board member with over 20 years of experience. She currently holds several board mandates, including an Independent Non-Executive Director position at UkrPoshta, one of the largest Ukrainian public companies. Olena is also actively involved with not-for-profit organizations that focus on female empowerment and education, reflecting her personal interests. She is certified in Corporate Governance from Insead (IDP-C).",
+        "Prior to her non-executive career, Olena had a successful executive career in both Ukraine and internationally, with 18 years of experience in the Ukrainian banking sector, including 12 years as a CEO. Olena has also served as the CEO for the global organization Women Political Leaders. Currently, she serves as the Chair of YPO Kyiv and is a member of YPO Belgium, among other prestigious global networks."
+      ]
+    },
+    {
+      "name": "Tatiana Furtseva",
+      "title": "Partner Heidrick & Struggles’, expert in executive search and leadership consulting",
+      "bio": [
+        "Tatiana Furtseva is the partner in charge of Heidrick & Struggles’ Kyiv office, manages the Financial Services in the CEE and is a member of the CEO & Board of Directors practices. She is an expert in executive search and leadership consulting with 24 years of experience in senior roles within executive search and HR consulting companies. Before joining Heidrick & Struggles, Tatiana was the country manager and senior partner with WE Partners Ukraine. She is well known in the CEE financial markets having delivered complex leadership development and assessment projects for various international banks. She has successfully managed personal assessment centers and large-scale management team assessments and is a certified ICF coach. Tatiana has certification in corporate governance from INSEAD/UCGA and is the membership officer of YPO Kyiv."
+      ]
+    }
+  ]
+}

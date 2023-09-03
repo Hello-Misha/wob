@@ -67,7 +67,7 @@ const Header = () => {
 
   const navLinks = [
     {
-      href: "/",
+      href: "/mission",
       text: "header.links.about",
     },
     {
