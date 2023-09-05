@@ -1,0 +1,33 @@
+{
+  "title": "Join today",
+  "main": {
+    "title": "What makes us special",
+    "text": [
+      "Our Vacancy Board transparently advertises the full range of board opportunities, opening your eyes to possibility. More importantly, we offer the right support to help you clinch the opportunities.",
+      "Our personalised support is un-paralleled, with 1-on-1 pre-interview support included in our Full Membership, highly affordable individual Board CV reviews and our ‘Ask a Director’ connections for our Directors’ Circle members.",
+      "We are committed to inclusivity, so develop a range of low-cost, high-impact on-demand resources at highly accessible price points. This ensures professionals from all sectors and at all career stages can get the knowledge they need to develop a board career.",
+      "But what is really special about our network is our members. Our community fosters open, honest feedback and shares experience and advice to maximise each others’ chance of success."
+    ],
+    "btn": "JOIN OUR NETWORK TODAY"
+  },
+  "members": {
+    "title": "What our members say",
+    "carousel": [
+      {
+        "name": "Iryna Rubis",
+        "title": "CEO of Biasless, DEI strategist and trainer",
+        "quote": "Fair representation of women on boards is about freedom, dignity and values. The time has come to magnify this."
+      },
+      {
+        "name": "Iryna Rubis",
+        "title": "CEO of Biasless, DEI strategist and trainer",
+        "quote": "Fair representation of women on boards is about freedom, dignity and values. The time has come to magnify this."
+      },
+      {
+        "name": "Iryna Rubis",
+        "title": "CEO of Biasless, DEI strategist and trainer",
+        "quote": "Fair representation of women on boards is about freedom, dignity and values. The time has come to magnify this."
+      }
+    ]
+  }
+}
