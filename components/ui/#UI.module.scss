@@ -1,0 +1,23 @@
+@import "../../styles/variables";
+
+.border {
+  @include breakpoint(md) {
+    position: relative;
+    border-left: 1px solid transparent;
+    padding: 1rem;
+  }
+}
+
+.border::after {
+  @include breakpoint(md) {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 1px; /* Adjust the width of the blurred border */
+    background: #d6d6d6; /* Color of the blurred border */
+    filter: blur(1px); /* Adjust the blur amount as needed */
+    z-index: 1; /* Place it above the original border */
+  }
+}
