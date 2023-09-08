@@ -30,12 +30,10 @@ const CarouselComponent = ({ locale, imgArr, textContent }) => {
                   {t(item.title)}
                 </p>
               </Col>
-              <Col xs="12" md="9" className="">
-                <div className={`${classes.border}`}>
-                  <h2 className="h1-title text-left lipstick">“</h2>
-                  <p className="text-italic blue pb-3">{t(item.quote)}</p>
-                  <h2 className="h1-title text-right lipstick">”</h2>
-                </div>
+              <Col xs="12" md="9">
+                <h2 className="super-title text-left lipstick">“</h2>
+                <p className="text-italic blue pb-3">{t(item.quote)}</p>
+                <h2 className="super-title text-right lipstick">”</h2>
               </Col>
             </Row>
           </Container>

@@ -1,9 +1,11 @@
 import Content from "../Membership/Content";
+import Criteria from "../Membership/Criteria";
 
 const Membership = () => {
   return (
     <main>
-      <Content />
+      <Criteria />
+      {/* <Content /> */}
     </main>
   );
 };

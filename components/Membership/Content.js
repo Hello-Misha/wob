@@ -5,10 +5,13 @@ import Title from "../ui/Title";
 import CarouselComponent from "../ui/CarouselWithText";
 import Text from "../ui/Text";
 
-import image from "../../public/img/membership/Iryna-Rubis.png";
+import Rubis from "../../public/img/membership/Iryna-Rubis.png";
+import Derevyanko from "../../public/img/membership/Anna-Derevyanko.png";
+import Strashna from "../../public/img/membership/Oksana-Strashna.png";
+import Kaestner from "../../public/img/membership/Lisa-Kaestner.png";
 const Content = () => {
   const { t } = useTranslation("membership");
-  const imgArr = [image, image, image];
+  const imgArr = [Rubis, Derevyanko, Strashna, Kaestner];
   return (
     <section>
       <Container>
