@@ -174,3 +174,14 @@ $Charcoal: #222528;
     align-items: start;
   }
 }
+
+@media (min-width: 768px) {
+  .mobile-layout {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .desktop-layout {
+    display: none;
+  }
+}

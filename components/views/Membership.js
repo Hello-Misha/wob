@@ -5,7 +5,7 @@ const Membership = () => {
   return (
     <main>
       <Criteria />
-      {/* <Content /> */}
+      <Content />
     </main>
   );
 };
