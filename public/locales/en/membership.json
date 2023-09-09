@@ -10,6 +10,43 @@
     ],
     "btn": "JOIN OUR NETWORK TODAY"
   },
+  "criteria": {
+    "title": "Membership criteria",
+    "top": "Women on Boards Ukraine has established specific criteria for membership to ensure that the organization remains focused on its mission of promoting women and advancing the presence of women in corporate boardrooms and in leadership roles in Ukraine. Prospective members are evaluated based on their professional qualifications, personal qualities, and commitment to building a better Ukraine.",
+    "li": [
+      {
+        "title": "Eligibility:",
+        "text": "Membership in Women on Boards is open to women executives, board directors, business leaders, entrepreneurs, and professionals with board experience occupying leadership positions across various sectors."
+      },
+      {
+        "title": "Experience:",
+        "text": "Prospective members should possess significant top-level experience in medium to large organizations in the private, public, or non-profit sectors. Professional Board experience and/or a minimum of 10 years of executive committee-level experience or is expected. Experienced Partners of top-level consulting, audit, and recruitment firms also qualify to join as members."
+      },
+      {
+        "title": "Expertise:",
+        "text": "Members should bring a wealth of expertise from diverse industries, including finance, law, technology, marketing, human resources, and more. Their insights and perspectives will contribute to informed decision-making in boardroom discussions. Qualifications in corporate governance from reputable institutions, either in Ukraine or abroad, are valued."
+      },
+      {
+        "title": "Ethical Standards:",
+        "text": "Adherence to high ethical standards in business practices is paramount. Prospective members are required to demonstrate their commitment to integrity, honesty, and transparency in their professional conduct through a declaration of ethical standards in their motivation letter."
+      },
+      {
+        "title": "Leadership Qualities and Strategic Vision:",
+        "text": "Candidates should demonstrate strong leadership qualities and the ability to develop and evolve a strategic vision. This includes conceptualizing key trends, supporting high-quality dialogue, and showcasing commitment and perseverance. Members should draw inspiration from the successful practices of other similar organizations worldwide that promote women's empowerment and gender equality. By learning from their experiences and adopting best practices, members can contribute to fostering innovation and progress within Women on Boards Ukraine. A constructive critical mindset towards established patterns and group mindsets is sought to drive positive change."
+      },
+      {
+        "title": "Values:",
+        "text": "Prospective members should embrace a community based on principles of respect and cooperation. Their willingness to support each other and adhere to the organization's code of conduct is essential."
+      },
+      {
+        "title": "Commitment to Building a Better Ukraine:",
+        "text": "Members of Women on Boards Ukraine should demonstrate a strong commitment to building a better Ukraine. This commitment involves actively participating in the organization's initiatives, working towards gender equality and diversity in corporate leadership, and contributing to the economic progress and development of Ukraine.."
+      }
+    ],
+    "bottom": [
+      "By adhering to these membership criteria, Women on Boards Ukraine ensures a diverse and qualified membership base that can collectively drive positive change in Ukraine's corporate landscape. Through their professional qualifications, personal qualities, commitment to building a better Ukraine, and drawing inspiration from successful practices of other similar organizations, members play an integral role in advancing the organization's mission and promoting the representation of women in leadership positions."
+    ]
+  },
   "members": {
     "title": "What our members say",
     "carousel": [
@@ -19,14 +56,19 @@
         "quote": "Fair representation of women on boards is about freedom, dignity and values. The time has come to magnify this."
       },
       {
-        "name": "Iryna Rubis",
-        "title": "CEO of Biasless, DEI strategist and trainer",
-        "quote": "Fair representation of women on boards is about freedom, dignity and values. The time has come to magnify this."
+        "name": "Anna Derevyanko",
+        "title": "Executive Director, European Business Association Co-founder, Global Business for Ukraine",
+        "quote": "This is an important moment to elevate women in boardrooms. Women on Boards Ukraine is a great initiative that I am proud to join."
       },
       {
-        "name": "Iryna Rubis",
-        "title": "CEO of Biasless, DEI strategist and trainer",
-        "quote": "Fair representation of women on boards is about freedom, dignity and values. The time has come to magnify this."
+        "name": "Oksana Strashna",
+        "title": "Board Member Corporate Governance Professional Association, former Partner Horizon Capital",
+        "quote": "WoB Ukraine mission to uplift women, promote diversity in corporate boardrooms and let exceptional talents of Ukrainian professional women shine resonates deeply with me. Let’s make a meaningful impact together."
+      },
+      {
+        "name": "Lisa Kaestner",
+        "title": "Regional Manager, Ukraine and Moldova, International Finance Corporation, World Bank Group",
+        "quote": "Joining WoB Ukraine underscores my recognition of women business leaders' important role in building resilience and growth of Ukraine’s businesses."
       }
     ]
   }

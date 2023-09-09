@@ -66,6 +66,13 @@ $Charcoal: #222528;
   }
 }
 
+.super-title {
+  font-family: $Montserrat;
+  font-weight: 700;
+  font-size: 125px;
+  // font-size: clamp(6rem, 3vw, 9rem);
+}
+
 .h1-title {
   font-family: $Montserrat;
   font-size: clamp(2.5rem, 3vw, 6rem);
@@ -165,5 +172,16 @@ $Charcoal: #222528;
 
   @include breakpoint(md) {
     align-items: start;
+  }
+}
+
+@media (min-width: 768px) {
+  .mobile-layout {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .desktop-layout {
+    display: none;
   }
 }
