@@ -75,7 +75,7 @@ const Header = () => {
       text: "header.links.membership",
     },
     {
-      href: "/hc",
+      href: "/honor_circle",
       text: "header.links.hc",
     },
     {
