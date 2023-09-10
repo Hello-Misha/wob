@@ -132,7 +132,7 @@ const Header = () => {
 
             <BtnComponent
               locale={"common"}
-              link={"#"}
+              link={"/membership"}
               btnText="header.btn.joinUs"
               bg="bg-blue"
               classes={classes.navbar__container__elements__btn}

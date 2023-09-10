@@ -1,11 +1,13 @@
-import Hero from "../HonorCircle/Hero";
+import Btns from "../HonorCircle/Btns";
 import Members from "../HonorCircle/Members";
+import Supporters from "../HonorCircle/Supporters";
 
 const HonorCircle = () => {
   return (
     <main>
-      <Hero />
+      <Btns />
       <Members />
+      <Supporters />
     </main>
   );
 };
