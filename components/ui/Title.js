@@ -5,7 +5,7 @@ const Title = ({ locale, text, hr }) => {
   const { t } = useTranslation(locale);
   return (
     <Col xs="12" md="8" className={`mb-3 `}>
-      <h2 className="h2-title lipstick  ">{t(text)}</h2>
+      <h2 className="h2-title lipstick">{t(text)}</h2>
       {hr && <hr className="bg-lipstick" />}
     </Col>
   );
