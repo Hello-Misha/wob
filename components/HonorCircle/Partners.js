@@ -3,15 +3,15 @@ import { Container, Row, Col } from "react-bootstrap";
 
 import Title from "../ui/Title";
 
-const Supporters = ({ classes }) => {
+const Partners = ({ classes }) => {
   const { t } = useTranslation("honorCircle");
 
   return (
-    <section id="hc-2" className={classes}>
+    <section id="hc-3" className={classes}>
       <Container>
         <Row>
           <Col xs="12">
-            <Title locale="honorCircle" text="supporters.title" hr={true} />
+            <Title locale="honorCircle" text="partners.title" hr={true} />
           </Col>
         </Row>
       </Container>
@@ -19,4 +19,4 @@ const Supporters = ({ classes }) => {
   );
 };
 
-export default Supporters;
+export default Partners;

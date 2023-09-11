@@ -11,7 +11,7 @@ import Kaestner from "../../public/img/membership/Lisa-Kaestner.png";
 import Derevyanko from "../../public/img/membership/Anna-Derevyanko.png";
 // import Strashna from "../../public/img/membership/Oksana-Strashna.png";
 
-const Members = () => {
+const Members = ({ classes }) => {
   const { t } = useTranslation("honorCircle");
 
   const linkedin = [
@@ -23,7 +23,7 @@ const Members = () => {
   const imgArr = [Rubis, Kaestner, Derevyanko];
 
   return (
-    <section id="hc-0">
+    <section id="hc-1" className={classes}>
       <Container>
         <Row>
           <Col xs="12">

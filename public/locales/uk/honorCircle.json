@@ -1,6 +1,10 @@
 {
   "main": {
-    "btn": ["Почесні члени", "Сапортертери", "Партнери"]
+    "btn": {
+      "members": "Почесні члени",
+      "supporters": "Сапортертери",
+      "partners": "Партнери"
+    }
   },
   "members": {
     "title": "Почесні члени",
@@ -45,5 +49,8 @@
   },
   "supporters": {
     "title": "Corporate Supporters"
+  },
+  "partners": {
+    "title": "Partners"
   }
 }
