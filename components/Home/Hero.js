@@ -3,7 +3,8 @@ import { Container, Row, Col } from "react-bootstrap";
 
 import CarouselComponent from "../ui/Carousel";
 
-import women from "../../public/img/women.png";
+// import women from "../../public/img/women.png";
+import women from "../../public/img/home/WoB-founders.png";
 
 import Text from "../ui/Text";
 
