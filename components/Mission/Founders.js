@@ -14,10 +14,10 @@ const Founders = () => {
     <section className="my-5">
       <Container>
         <Row>
-          {/* <h3 className="h3-title  lipstick pb-3">{t("founders.title")}</h3> */}
+          <h3 className="h3-title lipstick pb-3">{t("founders.title")}</h3>
         </Row>
         <Row className="d-flex justify-content-between">
-          {t("founders", {
+          {t("founders.cards", {
             returnObjects: true,
           }).map((card, index) => (
             <Col

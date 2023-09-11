@@ -66,6 +66,17 @@ $Charcoal: #222528;
   }
 }
 
+@media (min-width: 768px) {
+  .mobile-layout {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .desktop-layout {
+    display: none;
+  }
+}
+
 .super-title {
   font-family: $Montserrat;
   font-weight: 700;
@@ -100,6 +111,14 @@ $Charcoal: #222528;
 .h3-title {
   font-family: $Montserrat;
   font-size: clamp(1.5rem, 3vw, 2.25rem);
+
+  font-weight: 700;
+  line-height: normal;
+}
+
+.h4-title {
+  font-family: $Montserrat;
+  font-size: clamp(1.25rem, 3vw, 2rem);
 
   font-weight: 700;
   line-height: normal;
@@ -175,19 +194,16 @@ $Charcoal: #222528;
   }
 }
 
-@media (min-width: 768px) {
-  .mobile-layout {
-    display: none;
-  }
-}
-@media (max-width: 767px) {
-  .desktop-layout {
-    display: none;
-  }
-}
-
 .sticky-row {
   position: sticky;
   top: 100px;
   background-color: white;
 }
+
+// .block {
+//   display: block;
+// }
+
+// .hidden {
+//   display: none;
+// }

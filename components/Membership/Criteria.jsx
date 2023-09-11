@@ -2,6 +2,7 @@ import { useTranslation } from "next-i18next";
 import { Container, Row, Col } from "react-bootstrap";
 
 import Text from "../ui/Text";
+import BtnComponent from "../ui/BtnComponent";
 
 import Image from "next/image";
 //numbers
@@ -147,15 +148,16 @@ const Criteria = () => {
         </Row>
         <Row>
           <Col xs="12">
-            <Text
-              locale="membership"
-              text="criteria.bottom"
-              link="https://forms.gle/ZVYDwdHryQcYJATh6"
-              btnType={null}
-              btnText="main.btn"
-              bg="bg-lipstick"
-              color="white"
-            />
+            <p className="text blue ">{t("criteria.bottom")}</p>
+            <div className="mx-auto mt-5 d-flex justify-center items-center">
+              <BtnComponent
+                locale="membership"
+                link="https://forms.gle/ZVYDwdHryQcYJATh6"
+                btnText="main.btn"
+                bg="bg-blue"
+                color="white"
+              />
+            </div>
           </Col>
         </Row>
       </Container>

@@ -1,13 +1,19 @@
 import { useTranslation } from "next-i18next";
 import { Container, Row, Col } from "react-bootstrap";
 import Image from "next/image";
-import icon from "../../public/img/icon-test.png";
+
+//icons
+import icon1 from "../../public/img/home/Icon-1.png";
+import icon2 from "../../public/img/home/Icon-2.png";
+import icon3 from "../../public/img/home/Icon-3.png";
+import icon4 from "../../public/img/home/Icon-4.png";
+import icon5 from "../../public/img/home/Icon-5.png";
 
 import classes from "./#Home.module.scss";
 
 const Icons = () => {
   const { t } = useTranslation("home");
-  const iconsImg = [icon, icon, icon, icon, icon];
+  const iconsImg = [icon1, icon2, icon3, icon4, icon5];
   return (
     <section className={`${classes.iconsContainer}`}>
       <Container>
