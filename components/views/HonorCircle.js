@@ -8,6 +8,9 @@ import { useTranslation } from "next-i18next";
 import { Container, Row, Col } from "react-bootstrap";
 import Link from "next/link";
 
+import { IconContext } from "react-icons";
+import { AiOutlineArrowDown, AiOutlineArrowUp } from "react-icons/ai";
+
 const HonorCircle = () => {
   const { t } = useTranslation("honorCircle");
   const [count, setCount] = useState(1);
@@ -18,11 +21,28 @@ const HonorCircle = () => {
     setShow(!show);
   };
 
-  function componentProps(num) {
+  const componentProps = (num) => {
     return {
       classes: count === num ? "block" : "hidden",
     };
-  }
+  };
+
+  const Arrows = ({ num }) => {
+    return (
+      <IconContext.Provider
+        value={{
+          color: "2f4858",
+          size: "3rem",
+        }}
+      >
+        {num === count ? (
+          <AiOutlineArrowDown className="ml-5" />
+        ) : (
+          <AiOutlineArrowUp className="ml-5" />
+        )}
+      </IconContext.Provider>
+    );
+  };
 
   return (
     <main>
@@ -30,12 +50,15 @@ const HonorCircle = () => {
         <Row>
           <Col xs="12" md="4" className="py-4 sticky-row">
             <Link href={`#hc-1`}>
-              <h4
-                className="h4-title blue text-center"
+              <div
+                className="d-flex align-middle"
                 onClick={() => handleClick(1)}
               >
-                {t("main.btn.members")}
-              </h4>
+                <h4 className="h4-title blue text-center">
+                  {t("main.btn.members")}
+                </h4>
+                <Arrows num={1} />
+              </div>
             </Link>
           </Col>
           {show && (
@@ -45,12 +68,13 @@ const HonorCircle = () => {
           )}
           <Col xs="12" md="4" className="py-4 sticky-row">
             <Link href={`#hc-2`}>
-              <h4
-                className="h4-title blue text-center"
+              <div
+                className="d-flex align-middle"
                 onClick={() => handleClick(2)}
               >
-                {t("main.btn.supporters")}
-              </h4>
+                <h4 className="h4-title blue ">{t("main.btn.supporters")}</h4>
+                <Arrows num={2} />
+              </div>
             </Link>
           </Col>
           {show && (
@@ -60,12 +84,15 @@ const HonorCircle = () => {
           )}
           <Col xs="12" md="4" className="py-4 sticky-row">
             <Link href={`#hc-3`}>
-              <h4
-                className="h4-title blue text-center"
+              <div
+                className="d-flex align-middle"
                 onClick={() => handleClick(3)}
               >
-                {t("main.btn.partners")}
-              </h4>
+                <h4 className="h4-title blue text-center">
+                  {t("main.btn.partners")}
+                </h4>
+                <Arrows num={3} />
+              </div>
             </Link>
           </Col>
           {show && (
