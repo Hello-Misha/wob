@@ -1,0 +1,38 @@
+@import "../../styles/variables";
+
+.colContainer {
+  position: relative;
+
+  &__image {
+    overflow: hidden;
+    position: sticky;
+    z-index: 1;
+    top: 150px;
+    @include breakpoint(md) {
+      top: 320px;
+      height: calc(100vh - 20rem);
+    }
+    @include breakpoint(lg) {
+      top: 200px;
+      height: calc(100vh - 10rem);
+    }
+    @include breakpoint(xl) {
+      top: 150px;
+      height: calc(100vh - 2rem);
+    }
+  }
+
+  //   &__shape {
+  //     overflow: hidden;
+  //     position: absolute;
+  //     width: 50rem;
+  //     height: 50rem;
+  //     background-color: $Lipstick;
+  //     border-radius: 50%;
+  //     z-index: 0;
+  //     top: 150px;
+
+  //     left: 50%;
+  //     transform: translateX(-20%);
+  //   }
+}

@@ -74,6 +74,8 @@ $Charcoal: #222528;
 @media (max-width: 767px) {
   .desktop-layout {
     display: none;
+    position: relative;
+    top: auto;
   }
 }
 

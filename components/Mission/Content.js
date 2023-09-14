@@ -2,8 +2,11 @@ import { useTranslation } from "next-i18next";
 import { Container, Row, Col } from "react-bootstrap";
 import Title from "../ui/Title";
 
+import classes from "./#Mission.module.scss";
+
 import Image from "next/image";
 import womenPic from "../../public/img/mission-woman.png";
+// import womenPic from "../../public/img/mission-woman-2.png";
 const Content = () => {
   const { t } = useTranslation("mission");
   return (
@@ -12,8 +15,8 @@ const Content = () => {
         <Row className="mb-5">
           <Title locale="mission" text="pageTitle" hr={true} />
         </Row>
-        <Row className="relative overflow-visible	">
-          <Col md="7">
+        <Row className="relative">
+          <Col xs="12" md="7">
             {/* background */}
             <Row className="mb-5">
               <Col xs="12">
@@ -47,16 +50,16 @@ const Content = () => {
               </Col>
             </Row>
           </Col>
-          <Col md="5" className="relative">
-            <div className="sticky z-1 top-10 h-[calc(100vh-2rem)] overflow-hidden">
+          <Col md="5" className={`${classes.colContainer} desktop-layout`}>
+            <div className={classes.colContainer__image}>
               <Image
                 src={womenPic}
                 alt="business woman"
-                className="img-fluid"
+                className="img-fluid "
                 placeholder="blur"
               />
+              {/* <span className={classes.colContainer__shape} /> */}
             </div>
-            <div class="w-[78.25rem] h-[78.25rem] rounded-[78.25rem] bg-lipstick absolute top-10 z-0 overflow-visible!important"></div>
           </Col>
         </Row>
         {/* milestones */}
