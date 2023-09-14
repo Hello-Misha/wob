@@ -60,22 +60,38 @@ const Content = () => {
           </Col>
         </Row>
         {/* milestones */}
-        <Row className="mb-5">
-          <Col xs="12">
-            <h3 className="h3-title  lipstick pb-3">{t("milestones.title")}</h3>
-
-            <ul>
-              {t("milestones.list", {
-                returnObjects: true,
-              }).map((item, index) => (
-                <p key={index} className="text blue pb-3">
-                  <span className="text-bold lipstick">{`${index + 1}) `}</span>{" "}
-                  {item}
-                </p>
-              ))}
-            </ul>
-            <p className="text blue pb-3">{t("milestones.text")}</p>
-          </Col>
+        <Row className="bg-blue w-screen relative left-1/2 right-1/2 transform -translate-x-1/2 box-border">
+          <Container className=" my-5 py-5 mx-auto">
+            <Row>
+              <Col xs="12">
+                <div className="mx-auto">
+                  <h3 className="h3-title white pb-3">
+                    {t("milestones.title")}
+                  </h3>
+                  <hr class="border-b-3 border-white" />
+                  <Row className="d-flex justify-between ">
+                    {t("milestones.list", {
+                      returnObjects: true,
+                    }).map((item, index) => (
+                      <Col
+                        md="2"
+                        key={index}
+                        className="d-flex flex-col align-items-center"
+                      >
+                        <div class="w-20 h-20 rounded-full bg-white my-1">
+                          <p className="blue h1-title text-center">
+                            {index + 1}
+                          </p>
+                        </div>
+                        <p className="text white pb-3 text-center">{item}</p>
+                      </Col>
+                    ))}
+                  </Row>
+                  <p className="text white pb-3">{t("milestones.text")}</p>
+                </div>
+              </Col>
+            </Row>
+          </Container>
         </Row>
       </Container>
     </section>
