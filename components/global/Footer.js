@@ -26,7 +26,7 @@ const Footer = () => {
   const { t } = useTranslation("common");
   return (
     <footer className="bg-lipstick mt-5">
-      <Container className="mx-auto h-96 py-5">
+      <Container className="mx-auto py-5">
         <Row>
           <Col xs="6" md="4">
             <Link href="/" className="mb-5">
@@ -62,7 +62,7 @@ const Footer = () => {
               </Link>
             ))}
           </Col>
-          <Col xs="6" md="3">
+          <Col xs="12" md="3">
             {/* EMAIL */}
             <div className="d-flex mb-4 align-items-center">
               <IconContext.Provider

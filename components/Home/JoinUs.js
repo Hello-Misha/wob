@@ -25,7 +25,7 @@ const JoinUs = () => {
             <h2 className="h2-title white mb-4">{t("joinUs.title")}</h2>
             <BtnComponent
               locale="home"
-              link="/"
+              link="/membership"
               classes={""}
               btnText="joinUs.btn"
               bg="bg-blue"

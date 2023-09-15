@@ -1,7 +1,7 @@
 import { useTranslation } from "next-i18next";
 import { Container, Row, Col } from "react-bootstrap";
 
-import Text from "../ui/Text";
+import { motion } from "framer-motion";
 import BtnComponent from "../ui/BtnComponent";
 
 import Image from "next/image";
@@ -150,13 +150,21 @@ const Criteria = () => {
           <Col xs="12">
             <p className="text blue ">{t("criteria.bottom")}</p>
             <div className="mx-auto mt-5 d-flex justify-center items-center">
-              <BtnComponent
-                locale="membership"
-                link="https://forms.gle/ZVYDwdHryQcYJATh6"
-                btnText="main.btn"
-                bg="bg-blue"
-                color="white"
-              />
+              <motion.div
+                whileHover={{
+                  scale: 1.01,
+                  transition: { duration: 1 },
+                }}
+                whileTap={{ scale: 1 }}
+              >
+                <BtnComponent
+                  locale="membership"
+                  link="https://forms.gle/ZVYDwdHryQcYJATh6"
+                  btnText="main.btn"
+                  bg="bg-blue"
+                  color="white"
+                />
+              </motion.div>
             </div>
           </Col>
         </Row>

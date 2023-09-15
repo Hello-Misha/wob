@@ -11,7 +11,7 @@ const Founders = () => {
   const { t } = useTranslation("mission");
   const imgCards = [nina, olena, tetiana];
   return (
-    <section className="my-5">
+    <section className="my-5" id="founders">
       <Container>
         <Row>
           <h3 className="h3-title lipstick pb-3">{t("founders.title")}</h3>

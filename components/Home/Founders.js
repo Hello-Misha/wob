@@ -23,7 +23,7 @@ const Founders = () => {
             <Text
               locale="home"
               text="founders.text"
-              link="#"
+              link="/mission#founders"
               btnType="transparent"
               btnText="founders.btn"
               bg="bg-blue"
