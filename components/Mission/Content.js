@@ -12,7 +12,7 @@ const Content = () => {
   const { t } = useTranslation("mission");
   return (
     <>
-      <div className={classes.shapeContainer}>
+      <div className={`${classes.shapeContainer} desktop-layout`}>
         <Image
           src={circle}
           alt="circle"
