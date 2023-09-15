@@ -81,7 +81,9 @@ const Content = () => {
           <Row>
             <Col xs="12">
               <div className="mx-auto">
-                <h3 className="h3-title white pb-3">{t("milestones.title")}</h3>
+                <h3 className="h3-title text-center white pb-3">
+                  {t("milestones.title")}
+                </h3>
                 <hr class="border-b-3 border-white" />
                 <Row className="d-flex justify-between ">
                   {t("milestones.list", {
@@ -90,7 +92,7 @@ const Content = () => {
                     <Col
                       md="2"
                       key={index}
-                      className="d-flex flex-col align-items-center"
+                      className="d-flex flex-col align-items-center my-3"
                     >
                       <div class="w-20 h-20 rounded-full bg-white my-1 d-flex justify-center align-items-center">
                         <p className="blue h1-title">{index + 1}</p>
