@@ -32,7 +32,7 @@ const HonorCircle = () => {
       <IconContext.Provider
         value={{
           color: "2f4858",
-          size: "3rem",
+          size: "2rem",
         }}
       >
         {num === count ? (
@@ -48,10 +48,10 @@ const HonorCircle = () => {
     <main>
       <Container className="sticky-row">
         <Row>
-          <Col xs="12" md="4" className="py-4 sticky-row">
+          <Col xs="12" md="6" className="py-4 sticky-row d-flex justify-center">
             <Link href={`#hc-1`}>
               <div
-                className="d-flex align-middle"
+                className="d-flex align-items-center"
                 onClick={() => handleClick(1)}
               >
                 <h4 className="h4-title blue text-center">
@@ -66,26 +66,11 @@ const HonorCircle = () => {
               <Members {...componentProps(1)} />
             </div>
           )}
-          <Col xs="12" md="4" className="py-4 sticky-row">
-            <Link href={`#hc-2`}>
-              <div
-                className="d-flex align-middle"
-                onClick={() => handleClick(2)}
-              >
-                <h4 className="h4-title blue ">{t("main.btn.supporters")}</h4>
-                <Arrows num={2} />
-              </div>
-            </Link>
-          </Col>
-          {show && (
-            <div className="mobile-layout">
-              <Supporters {...componentProps(2)} />
-            </div>
-          )}
-          <Col xs="12" md="4" className="py-4 sticky-row">
+
+          <Col xs="12" md="6" className="py-4 sticky-row d-flex justify-center">
             <Link href={`#hc-3`}>
               <div
-                className="d-flex align-middle"
+                className="d-flex align-items-center"
                 onClick={() => handleClick(3)}
               >
                 <h4 className="h4-title blue text-center">

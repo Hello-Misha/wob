@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { useTranslation } from "next-i18next";
 import { Container, Row, Col } from "react-bootstrap";
 
@@ -14,6 +15,13 @@ import Derevyanko from "../../public/img/membership/Anna-Derevyanko.png";
 const Members = ({ classes }) => {
   const { t } = useTranslation("honorCircle");
 
+  const [expandStates, setExpandStates] = useState([]);
+  const toggleExpand = (index) => {
+    const newExpandStates = [...expandStates];
+    newExpandStates[index] = !newExpandStates[index];
+    setExpandStates(newExpandStates);
+  };
+
   const linkedin = [
     "https://www.linkedin.com/in/iryna-rubis/",
     "https://www.linkedin.com/in/lisa-kaestner-1952341/",
@@ -21,6 +29,8 @@ const Members = ({ classes }) => {
   ];
 
   const imgArr = [Rubis, Kaestner, Derevyanko];
+
+  const cards = t("members.cards", { returnObjects: true });
 
   return (
     <section id="hc-1" className={classes}>
@@ -30,47 +40,67 @@ const Members = ({ classes }) => {
             <Title locale="honorCircle" text="members.title" hr={true} />
           </Col>
         </Row>
-        {t("members.cards", { returnObjects: true }).map((card, index) => (
+        {cards.map((card, index) => (
           <Container className="my-5" key={index}>
             <Row>
-              <Col xs="12" md="3">
-                <Image src={imgArr[index]} alt={card.name} placeholder="blur" />
-              </Col>
-              <Col xs="12" md="9">
-                <Row>
-                  <Col xs="12">
-                    <h3 className="h3-title text-left lipstick mb-2">
-                      {card.name}
-                    </h3>
-                  </Col>
-                </Row>
-                <Row className="d-flex justify-between">
-                  <Col xs="9">
-                    <p className="text-italic blue pb-3">{card.title}</p>
-                  </Col>
-                  <Col xs="3">
-                    <Link href={linkedin[index]}>
-                      <p className="text-bold lipstick text-right">
-                        {card.btn}
-                      </p>
-                    </Link>
-                  </Col>
-                </Row>
+              <Row className="mb-3">
+                <Col
+                  xs="12"
+                  md="4"
+                  className="d-flex flex-column justify-between align-items-center"
+                >
+                  <Image
+                    src={imgArr[index]}
+                    alt={card.name}
+                    placeholder="blur"
+                    className="img-fluid"
+                  />
+                  <h4
+                    className="h4-title blue text-center cursor-pointer mt-3"
+                    onClick={() => toggleExpand(index)}
+                  >
+                    Learn More
+                  </h4>
+                </Col>
+                <Col
+                  xs="12"
+                  md="8"
+                  className="d-flex flex-column justify-center"
+                >
+                  <Row>
+                    <h2 className="super-title text-left lipstick -mb-10 -mt-5">
+                      “
+                    </h2>
+                    <p className="text-italic blue -mt-5 -pt-5">{card.quote}</p>
+                    <h2 className="super-title text-right lipstick -my-5 ">
+                      ”
+                    </h2>
+                  </Row>
+
+                  <Row className="d-flex align-items-bottom">
+                    <Col xs="9">
+                      <h3 className="h3-title lipstick">{card.name}</h3>
+                      <p className="text-italic blue ">{card.title}</p>
+                    </Col>
+                    <Col xs="3">
+                      <Link href={linkedin[index]} target="_blank">
+                        <p className="text-bold lipstick">{card.btn}</p>
+                      </Link>
+                    </Col>
+                  </Row>
+                </Col>
+              </Row>
+              {expandStates[index] && (
                 <Row>
                   <Col xs="12">
                     {card.bio.map((item, index) => (
-                      <p key={index} className="text blue">
+                      <p key={index} className="text blue mb-3">
                         {item}
                       </p>
                     ))}
                   </Col>
                 </Row>
-              </Col>
-            </Row>
-            <Row>
-              <h2 className="super-title text-left lipstick -my-5">“</h2>
-              <p className="text-italic blue pb-3 -my-5">{card.quote}</p>
-              <h2 className="super-title text-right lipstick -mt-2">”</h2>
+              )}
             </Row>
           </Container>
         ))}
