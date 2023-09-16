@@ -76,8 +76,8 @@ const Content = () => {
       </section>
 
       {/* milestones */}
-      <section className="bg-blue w-screen relative left-1/2 right-1/2 transform -translate-x-1/2 box-border">
-        <Container className=" my-5 py-5 mx-auto">
+      <section className="bg-lipstick w-screen relative left-1/2 right-1/2 transform -translate-x-1/2 box-border">
+        <Container className=" my-5  mx-auto">
           <Row>
             <Col xs="12">
               <div className="mx-auto">
@@ -95,7 +95,7 @@ const Content = () => {
                       className="d-flex flex-col align-items-center my-3"
                     >
                       <div class="w-20 h-20 rounded-full bg-white my-1 d-flex justify-center align-items-center">
-                        <p className="blue h1-title">{index + 1}</p>
+                        <p className="lipstick h1-title">{index + 1}</p>
                       </div>
                       <p className="text white pb-3 text-center">{item}</p>
                     </Col>

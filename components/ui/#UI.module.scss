@@ -1,5 +1,14 @@
 @import "../../styles/variables";
 
+.carousel {
+  // @include breakpoint(lg) {
+  //   margin-top: 15%;
+  // }
+  @include breakpoint(sl) {
+    margin-top: 20%;
+  }
+}
+
 .border {
   @include breakpoint(md) {
     position: relative;
