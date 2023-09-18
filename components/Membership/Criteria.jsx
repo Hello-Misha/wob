@@ -59,47 +59,58 @@ const Criteria = () => {
               ))}
             </Container>
           </Col>
-          <Col md="5">
+          <Col md="5" className="d-flex flex-col justify-around">
             <Row>
               <Col md="12">
                 <Image
                   src={gl1}
                   alt="business women №1"
-                  className="img-fluid m-2"
+                  className="img-fluid mx-auto"
                   placeholder="blur"
                 />
               </Col>
             </Row>
             <Row>
-              <Col md="6">
+              <Col md="9">
                 <Image
                   src={gl2}
                   alt="business women №2"
-                  className="img-fluid m-2"
-                  placeholder="blur"
-                />
-                <Image
-                  src={gl4}
-                  alt="business women №3"
-                  className="img-fluid m-2"
-                  placeholder="blur"
-                />
-              </Col>
-              <Col md="6">
-                <Image
-                  src={gl3}
-                  alt="business women №4"
-                  className="img-fluid m-2"
-                  placeholder="blur"
-                />
-                <Image
-                  src={gl5}
-                  alt="business women №5"
-                  className="img-fluid m-2"
+                  className="img-fluid mx-auto"
                   placeholder="blur"
                 />
               </Col>
             </Row>
+            <Row className="d-flex justify-end">
+              <Col md="9">
+                <Image
+                  src={gl4}
+                  alt="business women №3"
+                  className="img-fluid mx-auto"
+                  placeholder="blur"
+                />
+              </Col>
+            </Row>
+            <Row>
+              <Col md="9">
+                <Image
+                  src={gl5}
+                  alt="business women №5"
+                  className="img-fluid mx-auto"
+                  placeholder="blur"
+                />
+              </Col>
+            </Row>
+            <Row className="d-flex justify-end">
+              <Col md="9">
+                <Image
+                  src={gl3}
+                  alt="business women №4"
+                  className="img-fluid mx-auto"
+                  placeholder="blur"
+                />
+              </Col>
+            </Row>
+
             <Row>
               <Col md="12">
                 <Image
