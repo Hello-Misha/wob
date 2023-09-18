@@ -1,0 +1,15 @@
+@import "../../styles/variables";
+
+.tabContainer {
+  border-radius: 1rem 1rem 0rem 0rem;
+  box-shadow: 0px -5px 5px 0px rgba(0, 0, 0, 0.25);
+}
+
+.passive {
+  background-color: $Lipstick;
+  // color: white;
+}
+.active {
+  // color: $Lipstick;
+  background-color: white;
+}

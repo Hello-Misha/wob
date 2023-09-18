@@ -33,7 +33,7 @@ const Members = ({ classes }) => {
   const cards = t("members.cards", { returnObjects: true });
 
   return (
-    <section id="hc-1" className={classes}>
+    <section id="hc-1" className={`my-5 ${classes}`}>
       <Container>
         <Row>
           <Col xs="12">
