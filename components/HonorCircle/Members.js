@@ -33,7 +33,7 @@ const Members = ({ classes }) => {
   const cards = t("members.cards", { returnObjects: true });
 
   return (
-    <section id="hc-1" className={classes}>
+    <section id="hc-1" className={`my-5 ${classes}`}>
       <Container>
         <Row>
           <Col xs="12">
@@ -55,12 +55,6 @@ const Members = ({ classes }) => {
                     placeholder="blur"
                     className="img-fluid"
                   />
-                  <h4
-                    className="h4-title blue text-center cursor-pointer mt-3"
-                    onClick={() => toggleExpand(index)}
-                  >
-                    Learn More
-                  </h4>
                 </Col>
                 <Col
                   xs="12"
@@ -68,7 +62,7 @@ const Members = ({ classes }) => {
                   className="d-flex flex-column justify-center"
                 >
                   <Row>
-                    <h2 className="super-title text-left lipstick -mb-10 -mt-5">
+                    <h2 className="super-title text-left lipstick -mb-5 -mt-5">
                       “
                     </h2>
                     <p className="text-italic blue -mt-5 -pt-5">{card.quote}</p>
@@ -84,23 +78,32 @@ const Members = ({ classes }) => {
                     </Col>
                     <Col xs="3">
                       <Link href={linkedin[index]} target="_blank">
-                        <p className="text-bold lipstick">{card.btn}</p>
+                        <p className="text-bold lipstick text-right">
+                          Linkedin
+                        </p>
                       </Link>
                     </Col>
                   </Row>
                 </Col>
               </Row>
-              {expandStates[index] && (
-                <Row>
-                  <Col xs="12">
-                    {card.bio.map((item, index) => (
-                      <p key={index} className="text blue mb-3">
+              <Row>
+                <Col xs="12">
+                  <Col xs="4">
+                    <h4
+                      className="h4-title blue text-center cursor-pointer mb-3"
+                      onClick={() => toggleExpand(index)}
+                    >
+                      {t("members.bioBtn")}
+                    </h4>
+                  </Col>
+                  {expandStates[index] &&
+                    card.bio.map((item, index) => (
+                      <p key={index} className="text blue mb-3 ">
                         {item}
                       </p>
                     ))}
-                  </Col>
-                </Row>
-              )}
+                </Col>
+              </Row>
             </Row>
           </Container>
         ))}

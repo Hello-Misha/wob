@@ -64,6 +64,8 @@ body {
   line-height: normal;
   overflow-x: hidden;
   position: relative;
+
+  // background-color: #dadada;
 }
 
 #__next {
@@ -77,6 +79,7 @@ main {
   display: flex;
   flex-direction: column;
   max-width: 1440px;
+  // background-color: white;
 
   @include breakpoint(md) {
     margin-top: 75px;

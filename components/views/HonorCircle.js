@@ -1,24 +1,20 @@
 import { useState } from "react";
+import { useTranslation } from "next-i18next";
+import Title from "../ui/Title";
+import Tab from "../HonorCircle/Tabs";
 
 import Members from "../HonorCircle/Members";
 import Supporters from "../HonorCircle/Supporters";
 import Partners from "../HonorCircle/Partners";
 
-import { useTranslation } from "next-i18next";
 import { Container, Row, Col } from "react-bootstrap";
-import Link from "next/link";
-
-import { IconContext } from "react-icons";
-import { AiOutlineArrowDown, AiOutlineArrowUp } from "react-icons/ai";
 
 const HonorCircle = () => {
   const { t } = useTranslation("honorCircle");
   const [count, setCount] = useState(1);
-  const [show, setShow] = useState(true);
 
-  const handleClick = (newCount) => {
+  const handleTabClick = (newCount) => {
     setCount(newCount);
-    setShow(!show);
   };
 
   const componentProps = (num) => {
@@ -27,73 +23,78 @@ const HonorCircle = () => {
     };
   };
 
-  const Arrows = ({ num }) => {
-    return (
-      <IconContext.Provider
-        value={{
-          color: "2f4858",
-          size: "2rem",
-        }}
-      >
-        {num === count ? (
-          <AiOutlineArrowDown className="ml-5" />
-        ) : (
-          <AiOutlineArrowUp className="ml-5" />
-        )}
-      </IconContext.Provider>
-    );
-  };
-
   return (
     <main>
+      <Row className="mb-5">
+        <Title locale="honorCircle" text="main.title" hr={true} />
+        <p className="text blue">{t("main.text")}</p>
+      </Row>
       <Container className="sticky-row">
-        <Row>
-          <Col xs="12" md="6" className="py-4 sticky-row d-flex justify-center">
-            <Link href={`#hc-1`}>
-              <div
-                className="d-flex align-items-center"
-                onClick={() => handleClick(1)}
-              >
-                <h4 className="h4-title blue text-center">
-                  {t("main.btn.members")}
-                </h4>
-                <Arrows num={1} />
-              </div>
-            </Link>
+        <Row className="row gx-2">
+          <Col xs="4" className="gx-3">
+            <Tab
+              index={1}
+              text={"main.btn.members"}
+              onClick={handleTabClick}
+              count={count}
+            />
           </Col>
-          {show && (
-            <div className="mobile-layout">
-              <Members {...componentProps(1)} />
-            </div>
-          )}
-
-          <Col xs="12" md="6" className="py-4 sticky-row d-flex justify-center">
-            <Link href={`#hc-3`}>
-              <div
-                className="d-flex align-items-center"
-                onClick={() => handleClick(3)}
-              >
-                <h4 className="h4-title blue text-center">
-                  {t("main.btn.partners")}
-                </h4>
-                <Arrows num={3} />
-              </div>
-            </Link>
+          <Col xs="4" className="gx-3">
+            <Tab
+              index={2}
+              text={"main.btn.supporters"}
+              onClick={handleTabClick}
+              count={count}
+            />
           </Col>
-          {show && (
-            <div className="mobile-layout">
-              <Partners {...componentProps(3)} />
-            </div>
-          )}
+          <Col xs="4" className="gx-3">
+            <Tab
+              index={3}
+              text={"main.btn.partners"}
+              onClick={handleTabClick}
+              count={count}
+            />
+          </Col>
         </Row>
       </Container>
-      <div className="desktop-layout">
-        <Members {...componentProps(1)} />
-        <Supporters {...componentProps(2)} />
-        <Partners {...componentProps(3)} />
-      </div>
+      <Members {...componentProps(1)} />
+      <Supporters {...componentProps(2)} />
+      <Partners {...componentProps(3)} />
     </main>
   );
 };
 
 export default HonorCircle;
+
+{
+  /* <Col xs="12" md="4" className="py-4 sticky-row d-flex justify-center">
+            <Link href={`#hc-3`}>
+              <div
+                className="d-flex align-items-center"
+                onClick={() => handleClick(2)}
+              >
+                <h4 className="h4-title blue text-center">
+                  {t("main.btn.partners")}
+                </h4>
+                <Arrows num={2} />
+              </div>
+            </Link>
+          </Col> */
+}
+
+// const Arrows = ({ num }) => {
+//   return (
+//     <IconContext.Provider
+//       value={{
+//         color: "2f4858",
+//         size: "2rem",
+//       }}
+//     >
+//       {num === count ? (
+//         <AiOutlineArrowDown className="ml-5" />
+//       ) : (
+//         <AiOutlineArrowUp className="ml-5" />
+//       )}
+//     </IconContext.Provider>
+//   );
+// };

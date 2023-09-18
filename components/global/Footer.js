@@ -62,7 +62,7 @@ const Footer = () => {
               </Link>
             ))}
           </Col>
-          <Col xs="12" md="3">
+          <Col xs="12" md="5">
             {/* EMAIL */}
             <div className="d-flex mb-4 align-items-center">
               <IconContext.Provider

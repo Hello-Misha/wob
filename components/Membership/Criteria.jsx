@@ -1,6 +1,8 @@
 import { useTranslation } from "next-i18next";
 import { Container, Row, Col } from "react-bootstrap";
 
+import Title from "../ui/Title";
+
 import { motion } from "framer-motion";
 import BtnComponent from "../ui/BtnComponent";
 
@@ -27,6 +29,10 @@ const Criteria = () => {
   const womenImgs = [gl1, gl2, gl3, gl4, gl5, gl6];
   return (
     <section>
+      <Row className="mb-5">
+        <Title locale="membership" text="main.title" hr={true} />
+        <p className="text blue">{t("main.text")}</p>
+      </Row>
       <Container>
         <Row>
           <Col xs="12">
@@ -59,47 +65,58 @@ const Criteria = () => {
               ))}
             </Container>
           </Col>
-          <Col md="5">
+          <Col md="5" className="d-flex flex-col justify-around">
             <Row>
               <Col md="12">
                 <Image
                   src={gl1}
                   alt="business women №1"
-                  className="img-fluid m-2"
+                  className="img-fluid mx-auto"
                   placeholder="blur"
                 />
               </Col>
             </Row>
             <Row>
-              <Col md="6">
+              <Col md="9">
                 <Image
                   src={gl2}
                   alt="business women №2"
-                  className="img-fluid m-2"
-                  placeholder="blur"
-                />
-                <Image
-                  src={gl4}
-                  alt="business women №3"
-                  className="img-fluid m-2"
-                  placeholder="blur"
-                />
-              </Col>
-              <Col md="6">
-                <Image
-                  src={gl3}
-                  alt="business women №4"
-                  className="img-fluid m-2"
-                  placeholder="blur"
-                />
-                <Image
-                  src={gl5}
-                  alt="business women №5"
-                  className="img-fluid m-2"
+                  className="img-fluid mx-auto"
                   placeholder="blur"
                 />
               </Col>
             </Row>
+            <Row className="d-flex justify-end">
+              <Col md="9">
+                <Image
+                  src={gl4}
+                  alt="business women №3"
+                  className="img-fluid mx-auto"
+                  placeholder="blur"
+                />
+              </Col>
+            </Row>
+            <Row>
+              <Col md="9">
+                <Image
+                  src={gl5}
+                  alt="business women №5"
+                  className="img-fluid mx-auto"
+                  placeholder="blur"
+                />
+              </Col>
+            </Row>
+            <Row className="d-flex justify-end">
+              <Col md="9">
+                <Image
+                  src={gl3}
+                  alt="business women №4"
+                  className="img-fluid mx-auto"
+                  placeholder="blur"
+                />
+              </Col>
+            </Row>
+
             <Row>
               <Col md="12">
                 <Image

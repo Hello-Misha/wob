@@ -1,56 +1,56 @@
 {
   "main": {
+    "title": "Women on Boards Члени, Сапортери та Партнери",
+    "text": "Твердо віримо в силу співпраці та партнерства для сприяння позитивних змін і побудови більш інклюзивного та справедливого майбутнього.",
     "btn": {
       "members": "Почесні члени",
-      "supporters": "Сапортертери",
+      "supporters": "Прихильники",
       "partners": "Партнери"
     }
   },
   "members": {
     "title": "Почесні члени",
+    "bioBtn": "Біографія",
     "cards": [
       {
-        "name": "Iryna Rubis",
-        "title": "CEO of Biasless. DEI strategist and trainer",
+        "name": "Ірина Рубіс",
+        "title": "CEO Biasless. Стратегиня та тренерка з питань різноманітності, рівності та інклюзії ",
         "quote": [
-          "Ukraine puts the bar high in terms of fighting for its freedom, dignity and values. Fair representation of women on boards is also about freedom, dignity and values. The time has come to make most of the accepted approach to increase the quality of decisions and magnify their positive impact."
+          "Україна ставить високу планку у боротьбі за свою свободу, гідність та цінності. Справедливе представництво жінок у радах директорів - це також про свободу, гідність та цінності. Настав час максимально використати загальноприйнятий підхід для підвищення якості рішень та посилення їхнього позитивного впливу"
         ],
         "bio": [
-          "Iryna stands as a leading Diversity, Equity, and Inclusion (DEI) strategist and trainer in Ukraine and is now CEO of Biasles. She has dedicated a significant portion of her career to help both Ukrainian and multinational enterprises within Ukraine in the realms of gender equality, shared values and sustainability. Iryna's commitment to gender equality and diversity and inclusion advocacy dates back to 2011, and her numerous publications on these topics in esteemed Ukrainian media underscore her expertise. Her background also includes leadership roles at well-regarded media platforms such as delo.ua, womo.ua and mmr.ua, highlighting her proficiency in the spheres of freedom of speech and media. Additionally, her active involvement as a strong promoter of Sustainable Development Goals (SDGs) further underscores her impactful contributions."
-        ],
-        "btn": "Linkedin page"
+          "Ірина - провідна експертка та тренерка з питань розмаїття, рівності та інклюзії (DEI) в Україні, а зараз є генеральною директоркою Biasles. Значну частину своєї кар'єри вона присвятила допомозі як українським, так і міжнародним компаніям в Україні у сфері гендерної рівності, спільних цінностей та сталого розвитку. Ірина займається адвокацією гендерної рівності, різноманітності та інклюзивності з 2011 року, а її численні публікації на цю тему в авторитетних українських ЗМІ підкреслюють її експертизу. Вона також обіймала керівні посади на таких авторитетних медіа-платформах, як delo.ua, womo.ua та mmr.ua, що підкреслює її професіоналізм у сфері свободи слова та медіа. Крім того, її активна участь у просуванні Цілей сталого розвитку (ЦСР) ще більше підкреслює її впливовий внесок."
+        ]
       },
       {
-        "name": "Lisa Kaestner",
-        "title": "Regional Manager, Ukraine and Moldova, International Finance Corporation, World Bank Group",
+        "name": "Ліза Кестнер",
+        "title": "Регіональний менеджер, Україна та Молдова, Міжнародна фінансова корпорація, Група Світового банку",
         "quote": [
-          "I am very pleased to join WoB Ukraine to support women’s participations in the boards in Ukraine. Research – including IFC’s – continues to demonstrate that gender diversity in the boardroom boosts financial performance, promotes better decision-making processes and improved environment, social and governance (ESG) practices. Women business leaders have an important role to play in the resilience and growth of Ukraine’s businesses."
+          "Я дуже рада приєднатися до Світового банку в Україні, щоб підтримати участь жінок у радах директорів в Україні. Дослідження, в тому числі МФК, продовжують демонструвати, що гендерне розмаїття в радах директорів підвищує фінансові показники, сприяє покращенню процесів прийняття рішень та вдосконаленню екологічних, соціальних та управлінських практик (ESG). Жінки-лідери бізнесу відіграють важливу роль у забезпеченні стійкості та зростання українського бізнесу"
         ],
         "bio": [
-          "Lisa Kaestner was appointed as IFC’s Regional Manager for Ukraine and Moldova in July 2022. In this capacity, she is responsible for IFC’s work to mobilize investment and support the private sector in the two countries while overseeing IFC’s response in Ukraine to Russia’s invasion. Ms. Kaestner has taken on this new role at a time when the region is deeply affected by the war and economic uncertainty. Despite the challenges, the private sector can play a significant role in the recovery of the region and its economic transformation.",
-          "A US national, Kaestner joined IFC in 1999 as the resident representative in Georgia.  Since then, she has fulfilled a variety of roles in both IFC and World Bank mostly in Eastern Europe and Central Asia.  In 2018-2022, Ms. Kaestner turned her attention to Africa, where she led IFC's advisory services to governments in Eastern and Southern Africa, supporting reforms and policy implementation for private sector-led growth across a range of sectors—including agribusiness, tourism, and housing to ICT and the financial sector. Most recently, she briefly served as the County Manager for Sri Lanka and Maldives until being asked to take up the role in Ukraine and Moldova, due to the unprecedented circumstances. Before IFC, she worked with several nonprofit development organizations in the South Caucasus region. Lisa holds a Master’s degree in Public Policy and Economics from Princeton University."
-        ],
-        "btn": "Linkedin page"
+          "Ліза Кестнер була призначена регіональним менеджером IFC в Україні та Молдові в липні 2022 року. На цій посаді вона відповідає за роботу МФК з мобілізації інвестицій та підтримки приватного сектору в цих двох країнах, а також курує діяльність МФК в Україні у відповідь на російське вторгнення. Пані Кестнер взяла на себе цю нову роль у той час, коли регіон глибоко постраждав від війни та економічної невизначеності. Незважаючи на виклики, приватний сектор може відігравати значну роль у відновленні регіону та його економічній трансформації.",
+          "Пані Кестнер, громадянка США, приєдналася до МФК у 1999 році як постійний представник у Грузії.  З того часу вона обіймала різні посади в МФК та Світовому банку, переважно у Східній Європі та Центральній Азії.  У 2018-2022 роках пані Кестнер зосередила свою увагу на Африці, де очолювала консультаційні послуги МФК для урядів країн Східної та Південної Африки, підтримуючи реформи та впровадження політики для зростання під керівництвом приватного сектору в різних галузях - від агробізнесу, туризму та житлового будівництва до ІКТ та фінансового сектору.Зовсім недавно вона недовгий час працювала регіональним менеджером у Шрі-Ланці та на Мальдівах, доки її не попросили обійняти цю посаду в Україні та Молдові через безпрецедентні обставини.До IFC вона працювала з кількома неприбутковими організаціями розвитку в регіоні Південного Кавказу.Ліза має ступінь магістра з публічної політики та економіки Прінстонського університету. "
+        ]
       },
       {
-        "name": "Anna Derevyanko",
-        "title": "Executive Director, European Business Association, Co-founder of Global Business for Ukraine",
+        "name": "Анна Дерев'янко",
+        "title": "Виконавчий директор, Європейська Бізнес Асоціація, співзасновник Global Business for Ukraine",
         "quote": [
-          " The significance of women's roles within the Ukrainian business landscape is on a pronounced rise. While it is important to acknowledge that war and a complicated procedure for men to leave the country play a role, they are by no means the sole reasons behind this shift. Presently, more and more women are taking the stage at global events, actively engaging in discussions, negotiations, and more.",
-          "Yet, the real task at hand is to seize this momentum and consistently bolster this trend. This is a responsible moment to elevate women, not only to grow, but also achieve remarkable success. In light of this, the Women on Boards Ukraine initiative stands out as a great initiative that could help women ascend as leaders. That is why I have decided to support and join the Women on Boards Ukraine initiative, recognizing it as a significant enrichment of the business landscape."
+          "Значення ролі жінок в українському бізнес-середовищі помітно зростає. Важливо визнати, що війна та складна процедура виїзду чоловіків з країни відіграють певну роль, але це далеко не єдина причина таких змін. Сьогодні дедалі більше жінок виступають на глобальних заходах, беруть активну участь у дискусіях, переговорах тощо.",
+          "Проте реальне завдання полягає в тому, щоб скористатися цим імпульсом і послідовно підтримувати цю тенденцію. Це відповідальний момент для того, щоб жінки не лише зростали, але й досягали значних успіхів. У світлі цього ініціатива Women on Boards Ukraine виділяється як чудова ініціатива, яка може допомогти жінкам стати лідерами. Саме тому я вирішила підтримати ініціативу Women on Boards Ukraine та приєднатися до неї, визнаючи, що вона суттєво збагачує бізнес-ландшафт."
         ],
         "bio": [
-          "Anna Derevyanko has been serving as the Executive Director of the European Business Association since 2003. This organization stands as Ukraine's largest and most influential business association, fostering collaboration among over 900 Ukrainian and international enterprises that collectively generate more than two million jobs within the country. Under her guidance, the Association's growth has surged nearly fourfold, extending its presence to four regional branches beyond Kyiv, namely Dnipro, Lviv, Odesa, and Kharkiv.",
-          "Anna's leadership has also steered the Association towards actively implementing top-tier European business practices to elevate Ukraine's appeal for business and investment. Beyond her role at the European Business Association, Anna holds various positions including: Member of the Supervisory Board of Raiffeisen Bank, member at the GLOBSEC Support Council, Ukraine Invest, Business Ombudsman, member at the Board of Directors for the Children of Heroes and the Advisory Council of the Norwegian-Ukrainian Chamber of Commerce. Additionally, Anna is a co-founder of Global Business for Ukraine, an organization with a mission to unite international businesses around Ukraine, strengthening trade and economic ties, helping to find partners in the country and give information to potential investors."
-        ],
-        "btn": "Linkedin page"
+          "Анна Дерев'янко обіймає посаду виконавчого директора Європейської Бізнес Асоціації з 2003 року. Ця організація є найбільшою та найвпливовішою бізнес-асоціацією в Україні, що сприяє співпраці понад 900 українських та міжнародних підприємств, які разом створюють понад два мільйони робочих місць в країні. Під її керівництвом Асоціація зросла майже в чотири рази, розширивши свою присутність до чотирьох регіональних відділень за межами Києва, а саме: Дніпра, Львова, Одеси та Харкова.",
+          "Під її керівництвом Асоціація активно впроваджує кращі європейські практики ведення бізнесу, щоб підвищити привабливість України для ведення бізнесу та залучення інвестицій. Окрім своєї ролі в Європейській Бізнес Асоціації, Анна обіймає різні посади, зокрема: Член Наглядової ради Райффайзен Банку, член Ради підтримки GLOBSEC, Ukraine Invest, бізнес-омбудсмен, член Ради директорів фонду \"Діти Героїв\" та Консультативної ради Норвезько-Української торгової палати. Крім того, Анна є співзасновницею Global Business for Ukraine, організації, місією якої є об'єднання міжнародного бізнесу навколо України, зміцнення торговельно-економічних зв'язків, допомога в пошуку партнерів в країні та надання інформації потенційним інвесторам."
+        ]
       }
     ]
   },
   "supporters": {
-    "title": "Corporate Supporters"
+    "title": "Сапортертери"
   },
   "partners": {
-    "title": "Partners"
+    "title": "Партнери"
   }
 }

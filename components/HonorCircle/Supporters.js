@@ -7,7 +7,7 @@ const Supporters = ({ classes }) => {
   const { t } = useTranslation("honorCircle");
 
   return (
-    <section id="hc-2" className={classes}>
+    <section id="hc-2" className={`my-5 ${classes}`}>
       <Container>
         <Row>
           <Col xs="12">

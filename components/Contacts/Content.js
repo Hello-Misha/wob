@@ -3,7 +3,10 @@ import { Container, Row, Col } from "react-bootstrap";
 import Title from "../ui/Title";
 
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
+
+import kyiv from "../../public/img/kyiv.jpg";
 
 import { IconContext } from "react-icons";
 import {
@@ -22,7 +25,7 @@ const Content = () => {
         </Row>
         <Row className="mb-5">
           <Col xs="12" md="6">
-            <h4 className="h4-title blue">{t("text")}</h4>
+            <Image src={kyiv} alt="Kyiv" className="img-fluid" />
           </Col>
           <Col xs="12" md="6">
             {/* EMAIL */}
