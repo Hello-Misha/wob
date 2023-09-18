@@ -1,13 +1,16 @@
 {
   "main": {
+    "title": "Women on Boards Members, Supporters and Partners",
+    "text": "Firmly believing in the power of collaboration and partnerships to drive positive change and build a more inclusive and equitable future.",
     "btn": {
-      "members": "Почесні члени",
-      "supporters": "Сапортертери",
-      "partners": "Партнери"
+      "members": "Honorary members",
+      "supporters": "Supporters",
+      "partners": "Partners"
     }
   },
   "members": {
     "title": "Почесні члени",
+    "bioBtn": "Bio",
     "cards": [
       {
         "name": "Iryna Rubis",
@@ -17,8 +20,7 @@
         ],
         "bio": [
           "Iryna stands as a leading Diversity, Equity, and Inclusion (DEI) strategist and trainer in Ukraine and is now CEO of Biasles. She has dedicated a significant portion of her career to help both Ukrainian and multinational enterprises within Ukraine in the realms of gender equality, shared values and sustainability. Iryna's commitment to gender equality and diversity and inclusion advocacy dates back to 2011, and her numerous publications on these topics in esteemed Ukrainian media underscore her expertise. Her background also includes leadership roles at well-regarded media platforms such as delo.ua, womo.ua and mmr.ua, highlighting her proficiency in the spheres of freedom of speech and media. Additionally, her active involvement as a strong promoter of Sustainable Development Goals (SDGs) further underscores her impactful contributions."
-        ],
-        "btn": "Linkedin page"
+        ]
       },
       {
         "name": "Lisa Kaestner",
@@ -29,8 +31,7 @@
         "bio": [
           "Lisa Kaestner was appointed as IFC’s Regional Manager for Ukraine and Moldova in July 2022. In this capacity, she is responsible for IFC’s work to mobilize investment and support the private sector in the two countries while overseeing IFC’s response in Ukraine to Russia’s invasion. Ms. Kaestner has taken on this new role at a time when the region is deeply affected by the war and economic uncertainty. Despite the challenges, the private sector can play a significant role in the recovery of the region and its economic transformation.",
           "A US national, Kaestner joined IFC in 1999 as the resident representative in Georgia.  Since then, she has fulfilled a variety of roles in both IFC and World Bank mostly in Eastern Europe and Central Asia.  In 2018-2022, Ms. Kaestner turned her attention to Africa, where she led IFC's advisory services to governments in Eastern and Southern Africa, supporting reforms and policy implementation for private sector-led growth across a range of sectors—including agribusiness, tourism, and housing to ICT and the financial sector. Most recently, she briefly served as the County Manager for Sri Lanka and Maldives until being asked to take up the role in Ukraine and Moldova, due to the unprecedented circumstances. Before IFC, she worked with several nonprofit development organizations in the South Caucasus region. Lisa holds a Master’s degree in Public Policy and Economics from Princeton University."
-        ],
-        "btn": "Linkedin page"
+        ]
       },
       {
         "name": "Anna Derevyanko",
@@ -42,8 +43,7 @@
         "bio": [
           "Anna Derevyanko has been serving as the Executive Director of the European Business Association since 2003. This organization stands as Ukraine's largest and most influential business association, fostering collaboration among over 900 Ukrainian and international enterprises that collectively generate more than two million jobs within the country. Under her guidance, the Association's growth has surged nearly fourfold, extending its presence to four regional branches beyond Kyiv, namely Dnipro, Lviv, Odesa, and Kharkiv.",
           "Anna's leadership has also steered the Association towards actively implementing top-tier European business practices to elevate Ukraine's appeal for business and investment. Beyond her role at the European Business Association, Anna holds various positions including: Member of the Supervisory Board of Raiffeisen Bank, member at the GLOBSEC Support Council, Ukraine Invest, Business Ombudsman, member at the Board of Directors for the Children of Heroes and the Advisory Council of the Norwegian-Ukrainian Chamber of Commerce. Additionally, Anna is a co-founder of Global Business for Ukraine, an organization with a mission to unite international businesses around Ukraine, strengthening trade and economic ties, helping to find partners in the country and give information to potential investors."
-        ],
-        "btn": "Linkedin page"
+        ]
       }
     ]
   },

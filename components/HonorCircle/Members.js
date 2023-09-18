@@ -62,7 +62,7 @@ const Members = ({ classes }) => {
                   className="d-flex flex-column justify-center"
                 >
                   <Row>
-                    <h2 className="super-title text-left lipstick -mb-10 -mt-5">
+                    <h2 className="super-title text-left lipstick -mb-5 -mt-5">
                       “
                     </h2>
                     <p className="text-italic blue -mt-5 -pt-5">{card.quote}</p>
@@ -78,7 +78,9 @@ const Members = ({ classes }) => {
                     </Col>
                     <Col xs="3">
                       <Link href={linkedin[index]} target="_blank">
-                        <p className="text-bold lipstick">{card.btn}</p>
+                        <p className="text-bold lipstick text-right">
+                          Linkedin
+                        </p>
                       </Link>
                     </Col>
                   </Row>
@@ -88,15 +90,15 @@ const Members = ({ classes }) => {
                 <Col xs="12">
                   <Col xs="4">
                     <h4
-                      className="h4-title blue text-center cursor-pointer mt-3"
+                      className="h4-title blue text-center cursor-pointer mb-3"
                       onClick={() => toggleExpand(index)}
                     >
-                      Learn More
+                      {t("members.bioBtn")}
                     </h4>
                   </Col>
                   {expandStates[index] &&
                     card.bio.map((item, index) => (
-                      <p key={index} className="text blue mb-3">
+                      <p key={index} className="text blue mb-3 ">
                         {item}
                       </p>
                     ))}

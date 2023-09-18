@@ -1,6 +1,8 @@
 import { useTranslation } from "next-i18next";
 import { Container, Row, Col } from "react-bootstrap";
 
+import Title from "../ui/Title";
+
 import { motion } from "framer-motion";
 import BtnComponent from "../ui/BtnComponent";
 
@@ -27,6 +29,10 @@ const Criteria = () => {
   const womenImgs = [gl1, gl2, gl3, gl4, gl5, gl6];
   return (
     <section>
+      <Row className="mb-5">
+        <Title locale="membership" text="main.title" hr={true} />
+        <p className="text blue">{t("main.text")}</p>
+      </Row>
       <Container>
         <Row>
           <Col xs="12">

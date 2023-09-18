@@ -26,3 +26,21 @@
     // overflow: hidden;
   }
 }
+
+.partnerContainer {
+  position: relative;
+  top: 0%;
+  right: 0%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include breakpoint(lg) {
+    justify-content: end;
+  }
+  @include breakpoint(xl) {
+    top: 0%;
+    justify-content: end;
+  }
+}

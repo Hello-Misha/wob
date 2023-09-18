@@ -18,8 +18,8 @@ const Tab = ({ index, text, onClick, count }) => {
 
   return (
     <Col
-      xs="4"
-      className={`py-4 sticky-row d-flex justify-center mt-4 mb-2  gx-2 ${
+      xs="12"
+      className={`py-4 sticky-row d-flex justify-center mt-4 ${
         classes.tabContainer
       } ${count === index ? classes.active : classes.passive}`}
     >
