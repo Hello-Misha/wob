@@ -13,7 +13,7 @@ const CarouselComponent = ({ imgArr }) => {
             src={img}
             placeholder="blur"
             width={1000}
-            height={700}
+            height={1000}
             alt="Slide"
           />
         </Carousel.Item>

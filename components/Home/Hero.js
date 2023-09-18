@@ -5,12 +5,15 @@ import CarouselComponent from "../ui/Carousel";
 
 // import women from "../../public/img/women.png";
 import women from "../../public/img/women.png";
+import women2 from "../../public/img/WoB-founders.png";
+import test from "../../public/img/membership/Anna-Derevyanko.png";
+import test2 from "../../public/img/membership/Oksana-Strashna.png";
 
 import Text from "../ui/Text";
 
 const Hero = () => {
   const { t } = useTranslation("home");
-  const imgArr = [women, women, women];
+  const imgArr = [women, women2, test, test2];
   return (
     <section>
       <Container>
@@ -33,7 +36,7 @@ const Hero = () => {
               color="white"
             />
           </Col>
-          <Col xs="12" lg="6">
+          <Col xs="12" lg="6" className="d-flex flex-column justify-end">
             <CarouselComponent imgArr={imgArr} />
           </Col>
         </Row>

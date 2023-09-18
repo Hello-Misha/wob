@@ -66,7 +66,7 @@ const Content = () => {
                 <Image
                   src={womenPic}
                   alt="business woman"
-                  className="img-fluid "
+                  className="img-fluid"
                   placeholder="blur"
                 />
               </div>
@@ -94,8 +94,8 @@ const Content = () => {
                       key={index}
                       className="d-flex flex-col align-items-center my-3"
                     >
-                      <div class="w-20 h-20 rounded-full bg-white my-1 d-flex justify-center align-items-center">
-                        <p className="lipstick h1-title">{index + 1}</p>
+                      <div class="w-20 h-20 rounded-full bg-blue my-1 d-flex justify-center align-items-center">
+                        <p className="white h1-title">{index + 1}</p>
                       </div>
                       <p className="text white pb-3 text-center">{item}</p>
                     </Col>

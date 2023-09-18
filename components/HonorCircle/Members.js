@@ -55,12 +55,6 @@ const Members = ({ classes }) => {
                     placeholder="blur"
                     className="img-fluid"
                   />
-                  <h4
-                    className="h4-title blue text-center cursor-pointer mt-3"
-                    onClick={() => toggleExpand(index)}
-                  >
-                    Learn More
-                  </h4>
                 </Col>
                 <Col
                   xs="12"
@@ -90,17 +84,24 @@ const Members = ({ classes }) => {
                   </Row>
                 </Col>
               </Row>
-              {expandStates[index] && (
-                <Row>
-                  <Col xs="12">
-                    {card.bio.map((item, index) => (
+              <Row>
+                <Col xs="12">
+                  <Col xs="4">
+                    <h4
+                      className="h4-title blue text-center cursor-pointer mt-3"
+                      onClick={() => toggleExpand(index)}
+                    >
+                      Learn More
+                    </h4>
+                  </Col>
+                  {expandStates[index] &&
+                    card.bio.map((item, index) => (
                       <p key={index} className="text blue mb-3">
                         {item}
                       </p>
                     ))}
-                  </Col>
-                </Row>
-              )}
+                </Col>
+              </Row>
             </Row>
           </Container>
         ))}

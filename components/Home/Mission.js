@@ -13,10 +13,10 @@ const Mission = () => {
           <Title locale="home" text="mission.title" hr={true} />
         </Row>
         <Row>
-          <Col xs="12" md="3" className="order-md-2 order-1">
+          <Col xs="12" lg="3" className="order-lg-2 order-1">
             <Image src={about} alt="about" className="img-fluid mx-auto mb-3" />
           </Col>
-          <Col xs="12" md="9" className="order-md-1 order-2">
+          <Col xs="12" lg="9" className="order-md-1 order-2">
             <Text
               locale="home"
               text="mission.text"
