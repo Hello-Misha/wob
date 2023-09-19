@@ -9,7 +9,7 @@ const Text = ({ locale, text, link, btnType, btnText, bg, color }) => {
       {t(text, {
         returnObjects: true,
       }).map((item, index) => (
-        <p key={index} className="text-s blue pb-3">
+        <p key={index} className="text blue pb-3">
           {item}
         </p>
       ))}
