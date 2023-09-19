@@ -96,12 +96,14 @@ const Members = ({ classes }) => {
                       {t("members.bioBtn")}
                     </h4>
                   </Col>
-                  {expandStates[index] &&
-                    card.bio.map((item, index) => (
-                      <p key={index} className="text blue mb-3 ">
-                        {item}
-                      </p>
-                    ))}
+                  <Col xs="12">
+                    {expandStates[index] &&
+                      card.bio.map((item, index) => (
+                        <p key={index} className="text blue mb-3 ">
+                          {item}
+                        </p>
+                      ))}
+                  </Col>
                 </Col>
               </Row>
             </Row>

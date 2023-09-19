@@ -21,11 +21,11 @@ const Tab = ({ index, text, onClick, count }) => {
       xs="12"
       className={`py-4 sticky-row d-flex justify-center mt-4 ${
         classes.tabContainer
-      } ${count === index ? classes.active : classes.passive}`}
+      } ${count === index ? "classes.active" : classes.passive}`}
     >
       <Link href={`#hc-${index}`}>
         <div
-          className={`d-flex align-items-center flex-wrap justify-center ${
+          className={`d-flex flex-col md:flex-row align-items-center flex-wrap justify-end md:justify-center mx-auto ${
             count === index ? "block" : "hidden"
           }`}
           onClick={() => handleClick(index)}
@@ -33,14 +33,14 @@ const Tab = ({ index, text, onClick, count }) => {
           <h4
             className={`${
               count === index ? "text-bold lipstick" : "text white"
-            } text-center my-2`}
+            } text-center my-2 mx-auto`}
           >
             {t(text)}
           </h4>
           <Image
             src={count === index ? active : passive}
             alt="triangle icon"
-            className="img-fluid ml-3 my-1"
+            className="img-fluid my-1 ml-0 md:ml-2"
             width={30}
           />
         </div>
