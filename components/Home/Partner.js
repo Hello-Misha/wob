@@ -10,15 +10,16 @@ const Partner = () => {
     <section className="my-5 ">
       <Container>
         <Row>
-          <Col xs="12" md="9" className="my-auto">
+          <Col xs="12" md="auto" className="mx-auto my-auto">
             <Title locale="home" text="partner" hr={false} />
           </Col>
-          <Col xs="3" className="mx-auto">
+          <Col xs="auto" md="auto" className="mx-auto">
             <Image
               src={partnerLogo}
               alt="partner logo"
               className="img-fluid mx-auto"
             />
+            <p className="text blue text-center">Women on Boards UK</p>
           </Col>
         </Row>
       </Container>

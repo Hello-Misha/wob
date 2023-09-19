@@ -62,7 +62,7 @@ const Members = ({ classes }) => {
                   className="d-flex flex-col md:flex-col-reverse justify-between"
                 >
                   <Row className="d-flex align-items-bottom mt-3 md:mt-0">
-                    <Row>
+                    <Row className="d-flex align-items-center">
                       <Col xs="9">
                         <h3 className="h3-title lipstick">{card.name}</h3>
                       </Col>
@@ -74,7 +74,7 @@ const Members = ({ classes }) => {
                         </Link>
                       </Col>
                       <Col xs="12">
-                        <p className="text-italic blue ">{card.title}</p>
+                        <p className="text-italic blue">{card.title}</p>
                       </Col>
                     </Row>
                   </Row>
@@ -83,9 +83,7 @@ const Members = ({ classes }) => {
                       <h2 className="super-title text-left lipstick -mb-5 -mt-5">
                         “
                       </h2>
-                      <p className="text-italic blue -mt-5 -pt-5">
-                        {card.quote}
-                      </p>
+                      <p className="text-i-l blue -mt-5 -pt-5">{card.quote}</p>
                       <h2 className="super-title text-right lipstick -my-5 ">
                         ”
                       </h2>
@@ -95,13 +93,14 @@ const Members = ({ classes }) => {
               </Row>
               <Row>
                 <Col xs="12">
-                  <h4
-                    className="h4-title blue text-center cursor-pointer mb-3"
-                    onClick={() => toggleExpand(index)}
-                  >
-                    {t("members.bioBtn")}
-                  </h4>
-                  {/* <hr className="mb-5" /> */}
+                  <Col xs="12" md="4">
+                    <h4
+                      className={`h4-title blue cursor-pointer mb-3 text-center`}
+                      onClick={() => toggleExpand(index)}
+                    >
+                      {t("members.bioBtn")}
+                    </h4>
+                  </Col>
 
                   <Col xs="12">
                     {expandStates[index] &&
@@ -110,7 +109,9 @@ const Members = ({ classes }) => {
                           {item}
                         </p>
                       ))}
-                    <hr className={expandStates[index] ? "mt-5" : ""} />
+                    {expandStates[index] && (
+                      <hr className={expandStates[index] ? "mt-5" : ""} />
+                    )}
                   </Col>
                 </Col>
               </Row>
