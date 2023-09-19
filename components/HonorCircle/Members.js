@@ -37,7 +37,7 @@ const Members = ({ classes }) => {
       <Container>
         <Row>
           <Col xs="12">
-            <Title locale="honorCircle" text="members.title" hr={true} />
+            <Title locale="honorCircle" text="members.title" hr={false} />
           </Col>
         </Row>
         {cards.map((card, index) => (

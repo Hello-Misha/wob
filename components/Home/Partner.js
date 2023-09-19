@@ -3,7 +3,7 @@ import Title from "../ui/Title";
 
 import Image from "next/image";
 
-import partnerLogo from "../../public/img/home/partner-wob.png";
+import partnerLogo from "../../public/img/home/logo.webp";
 
 const Partner = () => {
   return (
@@ -11,7 +11,7 @@ const Partner = () => {
       <Container>
         <Row>
           <Col xs="12" md="9" className="my-auto">
-            <Title locale="home" text="partners" hr={false} />
+            <Title locale="home" text="partner" hr={false} />
           </Col>
           <Col xs="3" className="mx-auto">
             <Image

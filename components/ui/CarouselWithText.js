@@ -21,13 +21,23 @@ const CarouselComponent = ({ locale, imgArr, textContent }) => {
                   alt="Slide"
                 />
               </Col>
-              <Col xs="12" md="7" lg="8">
-                <h2 className="super-title text-left lipstick -mb-10">“</h2>
-                <p className="text-italic blue -mt-5 -pt-5">{t(item.quote)}</p>
-                <h2 className="super-title text-right lipstick -mt-5">”</h2>
-
-                <h3 className="h3-title lipstick mt-2">{t(item.name)}</h3>
-                <p className="text-italic blue mb-5">{t(item.title)}</p>
+              <Col
+                xs="12"
+                md="7"
+                lg="8"
+                className="d-flex flex-col md:flex-col-reverse"
+              >
+                <div>
+                  <h3 className="h3-title lipstick mt-2">{t(item.name)}</h3>
+                  <p className="text-italic blue mb-5">{t(item.title)}</p>
+                </div>
+                <div>
+                  <h2 className="super-title text-left lipstick -mb-10">“</h2>
+                  <p className="text-italic blue -mt-5 -pt-5">
+                    {t(item.quote)}
+                  </p>
+                  <h2 className="super-title text-right lipstick -mt-5">”</h2>
+                </div>
               </Col>
             </Row>
           </Container>

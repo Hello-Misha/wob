@@ -25,9 +25,6 @@ const Content = () => {
         </Row>
         <Row className="mb-5">
           <Col xs="12" md="6">
-            <Image src={kyiv} alt="Kyiv" className="img-fluid" />
-          </Col>
-          <Col xs="12" md="6">
             {/* EMAIL */}
             <div className="d-flex mb-4 align-items-center">
               <IconContext.Provider
@@ -75,6 +72,9 @@ const Content = () => {
                 </IconContext.Provider>
               </Link>
             </motion.div>
+          </Col>
+          <Col xs="12" md="6">
+            <Image src={kyiv} alt="Kyiv" className="img-fluid" />
           </Col>
         </Row>
       </Container>
