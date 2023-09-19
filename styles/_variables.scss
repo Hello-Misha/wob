@@ -154,6 +154,13 @@ $Charcoal: #222528;
   font-weight: 400;
   line-height: normal;
 }
+.text-i-l {
+  font-family: $Montserrat;
+  font-size: clamp(1.5rem, 1vw, 2rem);
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
+}
 
 .btn-text {
   font-family: $Montserrat;
