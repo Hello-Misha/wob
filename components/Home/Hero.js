@@ -21,8 +21,8 @@ const Hero = () => {
   return (
     <section>
       <Container>
-        <Row className="d-flex align-bottom justify-around">
-          <Col xs="12" lg="6" xl="5" xxl="6">
+        <Row className="d-flex align-items-center xxl:align-items-start justify-around xxl:justify-start">
+          <Col xs="12" lg="6" xl="6" xxl="6">
             <h1 className="h1-title lipstick mb-4">{t("hero.title")}</h1>
             <Text
               locale="home"

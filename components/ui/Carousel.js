@@ -5,7 +5,7 @@ import classes from "./#UI.module.scss";
 
 const CarouselComponent = ({ imgArr }) => {
   return (
-    <Carousel className={classes.carousel}>
+    <Carousel slide={false} className={classes.carousel}>
       {imgArr.map((img, index) => (
         <Carousel.Item key={index}>
           <Image

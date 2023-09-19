@@ -35,8 +35,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 1rem;
 
   @include breakpoint(lg) {
+    margin-top: 0;
     justify-content: end;
   }
   @include breakpoint(xl) {
