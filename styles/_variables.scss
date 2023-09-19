@@ -133,7 +133,7 @@ $Charcoal: #222528;
 
 .text {
   font-family: $Montserrat;
-  font-size: clamp(1rem, 2vw, 1.5rem);
+  font-size: clamp(1rem, 1vw, 1.5rem);
 
   font-weight: 400;
   line-height: normal;
@@ -141,7 +141,7 @@ $Charcoal: #222528;
 }
 .text-bold {
   font-family: $Montserrat;
-  font-size: clamp(1rem, 2vw, 1.5rem);
+  font-size: clamp(1rem, 1vw, 1.5rem);
 
   font-weight: 700;
   line-height: normal;
@@ -149,7 +149,7 @@ $Charcoal: #222528;
 }
 .text-italic {
   font-family: $Montserrat;
-  font-size: clamp(1.25rem, 2vw, 1.75rem);
+  font-size: clamp(1rem, 1vw, 1.5rem);
   font-style: italic;
   font-weight: 400;
   line-height: normal;

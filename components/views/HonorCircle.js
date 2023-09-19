@@ -29,9 +29,9 @@ const HonorCircle = () => {
         <Title locale="honorCircle" text="main.title" hr={true} />
         <p className="text blue">{t("main.text")}</p>
       </Row>
-      <Container className="sticky-row">
+      <Container className="sticky-row mx-auto">
         <Row className="row gx-0 md:gx-2 justify-between">
-          <Col xs="4" className="gx-0 md:gx-2">
+          <Col xs="4" className="xs:gx-0 md:gx-3">
             <Tab
               index={1}
               text={"main.btn.members"}
@@ -39,7 +39,7 @@ const HonorCircle = () => {
               count={count}
             />
           </Col>
-          <Col xs="4" md="4" className="gx-0 md:gx-2">
+          <Col xs="4" md="4" className="xs:gx-0 md:gx-3">
             <Tab
               index={2}
               text={"main.btn.supporters"}
@@ -47,7 +47,7 @@ const HonorCircle = () => {
               count={count}
             />
           </Col>
-          <Col xs="4" md="4" className="gx-0 md:gx-2">
+          <Col xs="4" md="4" className="xs:gx-0 md:gx-3">
             <Tab
               index={3}
               text={"main.btn.partners"}

@@ -37,7 +37,7 @@ const Members = ({ classes }) => {
       <Container>
         <Row>
           <Col xs="12">
-            <Title locale="honorCircle" text="members.title" hr={true} />
+            <Title locale="honorCircle" text="members.title" hr={false} />
           </Col>
         </Row>
         {cards.map((card, index) => (
@@ -59,43 +59,50 @@ const Members = ({ classes }) => {
                 <Col
                   xs="12"
                   md="8"
-                  className="d-flex flex-column justify-center"
+                  className="d-flex flex-col md:flex-col-reverse justify-between"
                 >
-                  <Row>
-                    <h2 className="super-title text-left lipstick -mb-5 -mt-5">
-                      “
-                    </h2>
-                    <p className="text-italic blue -mt-5 -pt-5">{card.quote}</p>
-                    <h2 className="super-title text-right lipstick -my-5 ">
-                      ”
-                    </h2>
+                  <Row className="d-flex align-items-bottom mt-3 md:mt-0">
+                    <Row>
+                      <Col xs="9">
+                        <h3 className="h3-title lipstick">{card.name}</h3>
+                      </Col>
+                      <Col xs="3">
+                        <Link href={linkedin[index]} target="_blank">
+                          <p className="text-bold lipstick text-right">
+                            Linkedin
+                          </p>
+                        </Link>
+                      </Col>
+                      <Col xs="12">
+                        <p className="text-italic blue ">{card.title}</p>
+                      </Col>
+                    </Row>
                   </Row>
-
-                  <Row className="d-flex align-items-bottom">
-                    <Col xs="9">
-                      <h3 className="h3-title lipstick">{card.name}</h3>
-                      <p className="text-italic blue ">{card.title}</p>
-                    </Col>
-                    <Col xs="3">
-                      <Link href={linkedin[index]} target="_blank">
-                        <p className="text-bold lipstick text-right">
-                          Linkedin
-                        </p>
-                      </Link>
+                  <Row className="mt-3 md:mt-0">
+                    <Col xs="12">
+                      <h2 className="super-title text-left lipstick -mb-5 -mt-5">
+                        “
+                      </h2>
+                      <p className="text-italic blue -mt-5 -pt-5">
+                        {card.quote}
+                      </p>
+                      <h2 className="super-title text-right lipstick -my-5 ">
+                        ”
+                      </h2>
                     </Col>
                   </Row>
                 </Col>
               </Row>
               <Row>
                 <Col xs="12">
-                  <Col xs="4">
-                    <h4
-                      className="h4-title blue text-center cursor-pointer mb-3"
-                      onClick={() => toggleExpand(index)}
-                    >
-                      {t("members.bioBtn")}
-                    </h4>
-                  </Col>
+                  <h4
+                    className="h4-title blue text-center cursor-pointer mb-3"
+                    onClick={() => toggleExpand(index)}
+                  >
+                    {t("members.bioBtn")}
+                  </h4>
+                  {/* <hr className="mb-5" /> */}
+
                   <Col xs="12">
                     {expandStates[index] &&
                       card.bio.map((item, index) => (
@@ -103,6 +110,7 @@ const Members = ({ classes }) => {
                           {item}
                         </p>
                       ))}
+                    <hr className={expandStates[index] ? "mt-5" : ""} />
                   </Col>
                 </Col>
               </Row>

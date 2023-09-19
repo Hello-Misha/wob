@@ -6,7 +6,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-import kyiv from "../../public/img/kyiv.jpg";
+import ukraine from "../../public/img/ukranian.jpg";
 
 import { IconContext } from "react-icons";
 import {
@@ -18,15 +18,12 @@ import {
 const Content = () => {
   const { t } = useTranslation("contacts");
   return (
-    <section className="my-5">
+    <section className="">
       <Container>
         <Row className="mb-5">
           <Title locale="contacts" text="title" hr={true} />
         </Row>
         <Row className="mb-5">
-          <Col xs="12" md="6">
-            <Image src={kyiv} alt="Kyiv" className="img-fluid" />
-          </Col>
           <Col xs="12" md="6">
             {/* EMAIL */}
             <div className="d-flex mb-4 align-items-center">
@@ -54,27 +51,33 @@ const Content = () => {
               <p className="text blue ml-5">+38 050 800 13 45</p>
             </div>
             {/* SOCIALS */}
-            <motion.div
-              whileHover={{
-                scale: 1.01,
-                transition: { duration: 1 },
-              }}
-              whileTap={{ scale: 1 }}
-            >
-              <Link
-                href="https://www.linkedin.com/company/women-on-boards-ukraine"
-                target="_blank"
+            <div className="d-flex mb-4 align-items-center">
+              <motion.div
+                whileHover={{
+                  scale: 1.01,
+                  transition: { duration: 1 },
+                }}
+                whileTap={{ scale: 1 }}
               >
-                <IconContext.Provider
-                  value={{
-                    color: "981b46",
-                    size: "3rem",
-                  }}
+                <Link
+                  href="https://www.linkedin.com/company/women-on-boards-ukraine"
+                  target="_blank"
                 >
-                  <AiOutlineLinkedin className="ml-5" />
-                </IconContext.Provider>
-              </Link>
-            </motion.div>
+                  <IconContext.Provider
+                    value={{
+                      color: "981b46",
+                      size: "3rem",
+                    }}
+                  >
+                    <AiOutlineLinkedin className="ml-5" />
+                  </IconContext.Provider>
+                </Link>
+              </motion.div>
+              <p className="text blue ml-5">Women on Boards Ukraine</p>
+            </div>
+          </Col>
+          <Col xs="12" md="6">
+            <Image src={ukraine} alt="Kyiv" className="img-fluid rounded-md " />
           </Col>
         </Row>
       </Container>

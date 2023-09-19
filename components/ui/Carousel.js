@@ -5,7 +5,7 @@ import classes from "./#UI.module.scss";
 
 const CarouselComponent = ({ imgArr }) => {
   return (
-    <Carousel slide={false} className={classes.carousel}>
+    <Carousel className={classes.carousel}>
       {imgArr.map((img, index) => (
         <Carousel.Item key={index}>
           <Image
@@ -13,7 +13,7 @@ const CarouselComponent = ({ imgArr }) => {
             src={img}
             placeholder="blur"
             width={1000}
-            height={1000}
+            height={700}
             alt="Slide"
           />
         </Carousel.Item>
