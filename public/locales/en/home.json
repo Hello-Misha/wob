@@ -2,7 +2,7 @@
   "hero": {
     "title": "Women on Boards Ukraine",
     "text": [
-      "Women on Boards Ukraine is established to be a leading not-for-profit organization dedicated to empowering women in leadership roles and advancing the presence of women in corporate boardrooms. Our mission is to create a vibrant community where women uplift and support one another, foster inclusive decision-making, advocate for legislative changes that ensure equal opportunities. We firmly believe in the power of collaboration and partnerships to drive positive change and build a more inclusive and equitable future."
+      "Women on Boards Ukraine is established to be a leading not-for-profit organization dedicated to empowering women in leadership roles and advancing the presence of women in corporate boardrooms . We aim to create a vibrant community where women uplift and support one another, foster inclusive decision-making, and advocate for legislative changes that ensure equal opportunities. We firmly believe in the power of collaboration and partnerships to build a more inclusive and equitable future for all. Together with our strategic partners we plan to offer development and educational opportunities for all our members. The goal of these initiatives is to support our members in their pursuit of thriving and attaining greater success in their professional careers."
     ],
     "btn": "Join Us"
   },
@@ -10,19 +10,27 @@
     "Advocacy for legislative changes",
     "Women's leadership",
     "Professional networking",
-    "The implementation of ESG in Ukraine",
+    "Implementation of ESG in Ukraine",
     "Building Better  Ukraine"
   ],
   "partner": "Partner support",
   "mission": {
     "title": "Mission and Goals",
-    "text": [
-      "Our mission is to create a vibrant community where women uplift and support one another, foster inclusive decision-making, advocate for legislative changes that ensure equal opportunities, and represent the exceptional talents of Ukrainian professional women globally. We firmly believe in the power of collaboration and partnerships to drive positive change and build a more inclusive and equitable future.",
-
-      "Our goals encompass engaging with European Women on Boards and sister organizations, fostering partnerships for the exchange of ideas, providing training and mentoring opportunities, and developing joint projects. Additionally, we aim to establish relationships with recruiters to accumulate board mandates for our members and actively promote and lobby for the image of Ukrainian professional women globally.",
-      "We believe that through our strategic focus on empowering women, fostering inclusive decision-making, advocating for legislative changes, representing Ukrainian professional women, and promoting collaboration, Women on Boards Ukraine will play a pivotal role in transforming the corporate landscape and creating a more equitable and prosperous future for all."
-    ],
-    "btn": "Background"
+    "text": {
+      "t1": "Our commitment lies in nurturing a vibrant community where women elevate one another, building the way for enhanced diversity within corporate boardrooms. We are dedicated to unleashing the exceptional talents of professional women in Ukraine and onto the global stage.",
+      "t2": "Women on Boards Ukraine offers its members:",
+      "t2_ol": [
+        "Supportive Community: Members uplift and empower each other, creating a strong network.",
+        "Career Advancement: Peer mentorship and support help members navigate corporate challenges.",
+        "Diversity Advocacy: The organization promotes diversity in corporate boardrooms.",
+        "Global Exposure: Members gain visibility and opportunities beyond national borders.",
+        "Professional Development: Access to training and educational programs fosters growth.",
+        "Advocacy: The organization champions legislative changes for equal opportunities, benefiting women in various sectors."
+      ],
+      "t3": "Our mission statement underscores the organization's dedication to fostering a supportive community, promoting diversity, and advancing the professional development and global recognition of its members. These benefits collectively empower women to excel in their careers and contribute to positive change within the corporate world and society at large.",
+      "t4": "We believe that through such strategic focus Women on Boards Ukraine together with its members will play a pivotal role in transforming the corporate landscape and creating a more equitable and prosperous future."
+    },
+    "btn": "Our story"
   },
   "founders": {
     "title": "Founders of WOB Ukraine",
