@@ -15,14 +15,7 @@ import BtnComponent from "../ui/BtnComponent";
 import logo from "../../public/img/Logo-WoB.png";
 
 const Footer = () => {
-  const navLinks = [
-    "/mission",
-    "/membership",
-    "/honor_circle",
-    "/contacts",
-    "/legal",
-    "/privacy",
-  ];
+  const navLinks = ["/mission", "/membership", "/honor_circle", "/contacts"];
   const { t } = useTranslation("common");
   return (
     <footer className="bg-lipstick mt-5">

@@ -11,12 +11,5 @@
       "login": "Membership Login"
     }
   },
-  "footer": [
-    "About",
-    "Membership",
-    "Honor Circle",
-    "Contacts"
-    // "Legal",
-    // "Privacy"
-  ]
+  "footer": ["About", "Membership", "Honor Circle", "Contacts"]
 }

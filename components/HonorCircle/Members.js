@@ -10,7 +10,8 @@ import Title from "../ui/Title";
 import Rubis from "../../public/img/membership/Iryna-Rubis.png";
 import Kaestner from "../../public/img/membership/Lisa-Kaestner.png";
 import Derevyanko from "../../public/img/membership/Anna-Derevyanko.png";
-// import Strashna from "../../public/img/membership/Oksana-Strashna.png";
+import Voloshina from "../../public/img/membership/Voloshina.png";
+import Strashna from "../../public/img/membership/Oksana-Strashna.png";
 
 const Members = ({ classes }) => {
   const { t } = useTranslation("honorCircle");
@@ -26,9 +27,11 @@ const Members = ({ classes }) => {
     "https://www.linkedin.com/in/iryna-rubis/",
     "https://www.linkedin.com/in/lisa-kaestner-1952341/",
     "https://www.linkedin.com/in/anna-derevyanko-b5307a1/",
+    "",
+    "https://www.linkedin.com/in/ostrashna/",
   ];
 
-  const imgArr = [Rubis, Kaestner, Derevyanko];
+  const imgArr = [Rubis, Kaestner, Derevyanko, Voloshina, Strashna];
 
   const cards = t("members.cards", { returnObjects: true });
 
@@ -40,6 +43,7 @@ const Members = ({ classes }) => {
             <Title locale="honorCircle" text="members.title" hr={false} />
           </Col>
         </Row>
+
         {cards.map((card, index) => (
           <Container className="my-5" key={index}>
             <Row>
@@ -67,11 +71,13 @@ const Members = ({ classes }) => {
                         <h3 className="h3-title lipstick">{card.name}</h3>
                       </Col>
                       <Col xs="3">
-                        <Link href={linkedin[index]} target="_blank">
-                          <p className="text-bold lipstick text-right">
-                            Linkedin
-                          </p>
-                        </Link>
+                        {linkedin[index] && (
+                          <Link href={linkedin[index]} target="_blank">
+                            <p className="text-bold lipstick text-right">
+                              Linkedin
+                            </p>
+                          </Link>
+                        )}
                       </Col>
                       <Col xs="12">
                         <p className="text-italic blue">{card.title}</p>

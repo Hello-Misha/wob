@@ -7,7 +7,7 @@ import classes from "./#Mission.module.scss";
 import Image from "next/image";
 import womenPic from "../../public/img/mission-woman.png";
 import circle from "../../public/img/circle.png";
-// import womenPic from "../../public/img/mission-woman-2.png";
+
 const Content = () => {
   const { t } = useTranslation("mission");
   return (
@@ -41,7 +41,13 @@ const Content = () => {
                   <h3 className="h3-title  lipstick pb-3">
                     {t("statement.title")}
                   </h3>
-                  <p className="text blue pb-3">{t("statement.text")}</p>
+                  {t("statement.text", { returnObjects: true }).map(
+                    (item, index) => (
+                      <div key={index}>
+                        <p className="text blue pb-3">{item}</p>
+                      </div>
+                    )
+                  )}
                 </Col>
               </Row>
               {/* form */}
