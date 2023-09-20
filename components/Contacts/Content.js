@@ -24,7 +24,7 @@ const Content = () => {
           <Title locale="contacts" text="title" hr={true} />
         </Row>
         <Row className="mb-5">
-          <Col xs="12" md="5">
+          <Col xs="12" md="4">
             {/* EMAIL */}
             <div className="d-flex mb-4 align-items-center">
               <IconContext.Provider
@@ -76,7 +76,7 @@ const Content = () => {
               <p className="text blue ml-5">Women on Boards Ukraine</p>
             </div>
           </Col>
-          <Col xs="12" md="7">
+          <Col xs="12" md="8">
             <Image src={kyiv} alt="Kyiv" className="img-fluid rounded-md " />
           </Col>
         </Row>

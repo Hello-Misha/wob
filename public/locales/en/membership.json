@@ -4,12 +4,30 @@
     "text": {
       "t1": "By combining professionalism, personal qualities, and commitment, we can achieve significant changes. Women on Boards Ukraine aims to offer several key benefits for its members:",
       "t2_ol": [
-        "Supportive Community: Members of the organization can expect to be part of a vibrant and supportive community of women. This community serves as a platform where women uplift and empower each other. It fosters a sense of belonging and camaraderie among members, creating a network of like-minded individuals who share common goals and aspirations.",
-        "Career Advancement: The mission emphasizes the importance of women elevating one another. This means that members can look forward to mentorship, guidance, and support from their peers. Such mentorship and support can be instrumental in career advancement, helping women navigate the complexities of corporate environments and boardrooms.",
-        "Enhanced Diversity: By aiming to enhance diversity within corporate boardrooms, the organization is actively working towards creating more inclusive and representative leadership structures in the corporate world. Members benefit from being part of a movement that advocates for equal opportunities and equitable representation, which can result in a more diverse and dynamic professional landscape.",
-        "Global Exposure: The commitment to unleash the exceptional talents of professional women in Ukraine onto the global stage signifies that the organization is dedicated to promoting the visibility and recognition of its members beyond national borders. This can open up opportunities for international collaborations, networking, and exposure to a broader audience, potentially leading to global career prospects.",
-        "Professional Development: As the organization focuses on talent development, members can expect access to various developmental opportunities, such as training, workshops, and educational programs. These initiatives can help members enhance their skills, knowledge, and capabilities, ultimately boosting their professional growth and competence.",
-        "Advocacy: The mission statement implies that the organization is committed to advocating for legislative changes that ensure equal opportunities. This advocacy can lead to improved legal frameworks and policies that benefit professional women in various sectors, positively impacting their careers and work environments."
+        {
+          "start": "Supportive Community:",
+          "text": "Members of the organization can expect to be part of a vibrant and supportive community of women. This community serves as a platform where women uplift and empower each other. It fosters a sense of belonging and camaraderie among members, creating a network of like-minded individuals who share common goals and aspirations."
+        },
+        {
+          "start": "Career Advancement:",
+          "text": "The mission emphasizes the importance of women elevating one another. This means that members can look forward to mentorship, guidance, and support from their peers. Such mentorship and support can be instrumental in career advancement, helping women navigate the complexities of corporate environments and boardrooms."
+        },
+        {
+          "start": "Enhanced Diversity:",
+          "text": "By aiming to enhance diversity within corporate boardrooms, the organization is actively working towards creating more inclusive and representative leadership structures in the corporate world. Members benefit from being part of a movement that advocates for equal opportunities and equitable representation, which can result in a more diverse and dynamic professional landscape."
+        },
+        {
+          "start": "Global Exposure:",
+          "text": "The commitment to unleash the exceptional talents of professional women in Ukraine onto the global stage signifies that the organization is dedicated to promoting the visibility and recognition of its members beyond national borders. This can open up opportunities for international collaborations, networking, and exposure to a broader audience, potentially leading to global career prospects."
+        },
+        {
+          "start": "Professional Development:",
+          "text": "As the organization focuses on talent development, members can expect access to various developmental opportunities, such as training, workshops, and educational programs. These initiatives can help members enhance their skills, knowledge, and capabilities, ultimately boosting their professional growth and competence."
+        },
+        {
+          "start": "Advocacy:",
+          "text": "The mission statement implies that the organization is committed to advocating for legislative changes that ensure equal opportunities. This advocacy can lead to improved legal frameworks and policies that benefit professional women in various sectors, positively impacting their careers and work environments."
+        }
       ]
     },
     "btn": "JOIN OUR NETWORK TODAY"

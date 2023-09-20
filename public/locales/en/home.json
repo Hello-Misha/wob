@@ -15,17 +15,35 @@
   ],
   "partner": "Partner support",
   "mission": {
-    "title": "Mission and Goals",
+    "title": "Our Impact",
     "text": {
       "t1": "Our commitment lies in nurturing a vibrant community where women elevate one another, building the way for enhanced diversity within corporate boardrooms. We are dedicated to unleashing the exceptional talents of professional women in Ukraine and onto the global stage.",
       "t2": "Women on Boards Ukraine offers its members:",
       "t2_ol": [
-        "Supportive Community: Members uplift and empower each other, creating a strong network.",
-        "Career Advancement: Peer mentorship and support help members navigate corporate challenges.",
-        "Diversity Advocacy: The organization promotes diversity in corporate boardrooms.",
-        "Global Exposure: Members gain visibility and opportunities beyond national borders.",
-        "Professional Development: Access to training and educational programs fosters growth.",
-        "Advocacy: The organization champions legislative changes for equal opportunities, benefiting women in various sectors."
+        {
+          "start": "Supportive Community:",
+          "text": "Members uplift and empower each other, creating a strong network."
+        },
+        {
+          "start": "Career Advancement:",
+          "text": "Peer mentorship and support help members navigate corporate challenges."
+        },
+        {
+          "start": "Diversity Advocacy:",
+          "text": "The organization promotes diversity in corporate boardrooms."
+        },
+        {
+          "start": "Global Exposure:",
+          "text": "Members gain visibility and opportunities beyond national borders."
+        },
+        {
+          "start": "Professional Development:",
+          "text": "Access to training and educational programs fosters growth."
+        },
+        {
+          "start": "Advocacy:",
+          "text": "The organization champions legislative changes for equal opportunities, benefiting women in various sectors."
+        }
       ],
       "t3": "Our mission statement underscores the organization's dedication to fostering a supportive community, promoting diversity, and advancing the professional development and global recognition of its members. These benefits collectively empower women to excel in their careers and contribute to positive change within the corporate world and society at large.",
       "t4": "We believe that through such strategic focus Women on Boards Ukraine together with its members will play a pivotal role in transforming the corporate landscape and creating a more equitable and prosperous future."
