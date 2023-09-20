@@ -54,7 +54,7 @@ const Criteria = () => {
           </Col>
         </Row>
         {/* DESKTOP-LAYOUT*/}
-        <Row className="my-5 desktop-layout">
+        <Row className="my-1 desktop-layout">
           <Col md="7">
             <Container>
               {t("criteria.li", { returnObjects: true }).map((item, index) => (
@@ -130,7 +130,7 @@ const Criteria = () => {
           </Col>
         </Row>
         {/* MOBILE-LAYOUT*/}
-        <Row className="my-5 mobile-layout">
+        <Row className="my-2 mobile-layout">
           <Col xs="12">
             {t("criteria.li", { returnObjects: true }).map((item, index) => (
               <Container key={index}>
