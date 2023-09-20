@@ -19,13 +19,13 @@ const Tab = ({ index, text, onClick, count }) => {
   return (
     <Col
       xs="12"
-      className={`py-4 sticky-row d-flex justify-center mt-4 ${
+      className={`py-2 sticky-row d-flex justify-center h-full mt-4 ${
         classes.tabContainer
       } ${count === index ? "classes.active" : classes.passive}`}
     >
       <Link href={`#hc-${index}`}>
         <div
-          className={`d-flex flex-col md:flex-row align-items-center flex-wrap justify-end md:justify-center mx-auto ${
+          className={`pt-2 d-flex flex-col md:flex-row align-items-center flex-wrap justify-end md:justify-center mx-auto ${
             count === index ? "block" : "hidden"
           }`}
           onClick={() => handleClick(index)}
