@@ -22,29 +22,27 @@ const Hero = () => {
   return (
     <section className="">
       <Container className="">
-        <Row className="d-flex align-items-center justify-around my-3">
-          <Col xs="12" lg="6" xl="6">
-            <h1 className="h1-title lipstick mb-4">{t("hero.title")}</h1>
-            <Text
-              locale="home"
-              text="hero.text"
-              link="#"
-              btnType={null}
-              btnText="hero.btn"
-              bg="bg-blue"
-              color="white"
-            />
+        <Row className="d-flex  justify-around my-3">
+          <Col
+            xs="12"
+            lg="6"
+            xl="6"
+            className="d-flex flex-column justify-center"
+          >
+            <div className="mb-3">
+              <h1 className="h1-title lipstick mb-4">{t("hero.title")}</h1>
+              <Text
+                locale="home"
+                text="hero.text"
+                link="#"
+                btnType={null}
+                btnText="hero.btn"
+                bg="bg-blue"
+                color="white"
+              />
+            </div>
           </Col>
           <Col xs="12" lg="6" className="d-flex flex-column justify-end">
-            {/* <div className={classes.partnerContainer}>
-              <p className="text-bold lipstick mr-5">{t("partner")}</p>
-              <Image
-                src={partnerLogo}
-                alt="partner logo"
-                className="img-fluid"
-                width={100}
-              />
-            </div> */}
             <CarouselComponent imgArr={imgArr} />
           </Col>
         </Row>

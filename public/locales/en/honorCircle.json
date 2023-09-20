@@ -1,10 +1,10 @@
 {
   "main": {
-    "title": "Women on Boards Members, Supporters and Partners",
-    "text": "Firmly believing in the power of collaboration and partnerships to drive positive change and build a more inclusive and equitable future.",
+    "title": "Partners, Honorary Members and Honorary Supporters play an essential role in the development of our initiatives",
+    "text": "We express immense gratitude to our Partners, Honorary Members, and Honorary Supporters for their invaluable endorsements and commitment. Their support extends beyond mere words, as it encompasses meaningful connections and practical assistance, which have been instrumental in laying the foundation of our community. With their collaborative efforts, we are poised to make a lasting and far-reaching impact in the future, benefiting our members and the development of coporate governance in Ukraine.",
     "btn": {
       "members": "Honorary members",
-      "supporters": "Supporters",
+      "supporters": "Honorary Supporters",
       "partners": "Partners"
     }
   },
@@ -37,12 +37,38 @@
         "name": "Anna Derevyanko",
         "title": "Executive Director, European Business Association, Co-founder of Global Business for Ukraine",
         "quote": [
-          " The significance of women's roles within the Ukrainian business landscape is on a pronounced rise. While it is important to acknowledge that war and a complicated procedure for men to leave the country play a role, they are by no means the sole reasons behind this shift. Presently, more and more women are taking the stage at global events, actively engaging in discussions, negotiations, and more.",
+          "The significance of women's roles within the Ukrainian business landscape is on a pronounced rise. While it is important to acknowledge that war and a complicated procedure for men to leave the country play a role, they are by no means the sole reasons behind this shift. Presently, more and more women are taking the stage at global events, actively engaging in discussions, negotiations, and more.",
           "Yet, the real task at hand is to seize this momentum and consistently bolster this trend. This is a responsible moment to elevate women, not only to grow, but also achieve remarkable success. In light of this, the Women on Boards Ukraine initiative stands out as a great initiative that could help women ascend as leaders. That is why I have decided to support and join the Women on Boards Ukraine initiative, recognizing it as a significant enrichment of the business landscape."
         ],
         "bio": [
           "Anna Derevyanko has been serving as the Executive Director of the European Business Association since 2003. This organization stands as Ukraine's largest and most influential business association, fostering collaboration among over 900 Ukrainian and international enterprises that collectively generate more than two million jobs within the country. Under her guidance, the Association's growth has surged nearly fourfold, extending its presence to four regional branches beyond Kyiv, namely Dnipro, Lviv, Odesa, and Kharkiv.",
           "Anna's leadership has also steered the Association towards actively implementing top-tier European business practices to elevate Ukraine's appeal for business and investment. Beyond her role at the European Business Association, Anna holds various positions including: Member of the Supervisory Board of Raiffeisen Bank, member at the GLOBSEC Support Council, Ukraine Invest, Business Ombudsman, member at the Board of Directors for the Children of Heroes and the Advisory Council of the Norwegian-Ukrainian Chamber of Commerce. Additionally, Anna is a co-founder of Global Business for Ukraine, an organization with a mission to unite international businesses around Ukraine, strengthening trade and economic ties, helping to find partners in the country and give information to potential investors."
+        ]
+      },
+      {
+        "name": "Olena Voloshyna",
+        "title": "Country Officer Ukraine, IFC (a member of the World Bank Group)",
+        "quote": [
+          "Experts say companies with more than 30% female executives are more likely to outperform companies that don’t. My experience proves that male and female professionals are stronger together. Business is better when it is led by the brightest minds from both halves of the global talent pool."
+        ],
+        "bio": [
+          "Elena Voloshina, based in Kyiv, leads International Finance Corporation’s (IFC’s) investment and advisory operations in the country effective as of December 1996. She is responsible for managing a significant investment program – over US$3 billion of long-term finance in Ukraine as well as an extensive advisory program focused on improving the business environment, expanding access to finance, promoting a green economy, modernizing supply chains and opening new markets.",
+          "Prior to joining IFC, Ms. Voloshyna served as a Deputy Project Manager and later as a Project Manager for Small Privatization in Ukraine (1994-1996), managing the work of small privatization consultants in 18 cities across the country and coordinating liaison with the Government of Ukraine at all levels.",
+          "Ms. Voloshyna began her career at IFC in 1992 when IFC launched its first operations in Ukraine. During this time, she held various positions, which allowed her to gain extensive advisory experience in privatization and investment.",
+          "Elena graduated from the Faculty of Foreign Languages of Taras Shevchenko National University of Kyiv in 1985. Olena holds a PhD in linguistics."
+        ]
+      },
+      {
+        "name": "Oksana Strashna",
+        "title": "a Board Member of the Corporate Governance Professional Association (CGPA) of Ukraine and a former Horizon Capital Partner as an Honorary member. ",
+        "quote": [
+          "Experts say companies with more than 30% female executives are more likely to outperform companies that don’t. My experience proves that male and female professionals are stronger together. Business is better when it is led by the brightest minds from both halves of the global talent pool."
+        ],
+        "bio": [
+          "Oksana Strashna has decades of successful experience in the field of investment advisory and non-executive directorship with both for-profit and not-for-profit sector organizations, consistently aiming to catalyze growth and development while operating ethically and transparently. During her tenure as a Partner at Horizon Capital (Ukraine-based leading regional private equity fund manager), Oksana served as a Board Director representing Horizon Capital on multiple portfolio companies’ Boards and worked closely with executive teams on value creation opportunities. Oksana is experienced in working with companies operating in a variety of industries, such as FMCG, construction materials, services, and technology.",
+          "As the founder of Aspirum, an independent advisory practice, she works with ambitious business owners and Boards to develop and execute sustainable growth strategies, reach capital raising targets, and boost shareholder value.",
+          "As a current Board Member Oksana represents CGPA at ecoDa, a European umbrella organization uniting national corporate governance institutes.",
+          "A Northwestern University alumna, Oksana received her MBA degree from Kellogg School of Management."
         ]
       }
     ]

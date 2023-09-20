@@ -6,15 +6,18 @@
   },
   "statement": {
     "title": "Заява про місію",
-    "text": "Організація \"Жінки в раді директорів\" була створена як провідна неприбуткова організація, покликана розширювати можливості жінок на керівних посадах та сприяти збільшенню присутності жінок у наглядових радах компаній в Україні. Наша місія полягає у створенні активної спільноти, де жінки надихають та підтримують одна одну, сприяють інклюзивному прийняттю рішень, виступають за законодавчі зміни, що забезпечують рівні можливості, та представляють виняткові таланти українських жінок-професіоналок на міжнародному рівні. Ми твердо віримо в силу співпраці та партнерства для просування позитивних змін та побудови більш інклюзивного та справедливого майбутнього."
+    "text": [
+      "Наша місія дбати про спільноту, де жінки підтримують одна одну, відкриваючи шлях для посилення різноманітності в корпоративних радах та  розкривати вийняткові таланти українських професіональних жінок в Україні та на світовій арені.",
+      "Фокус: У центрі нашої уваги лежить прагнення до рівної представленості жінок у корпоративних радах, відповідно до Європейських Директив з різноманітності. Співпрацюючи з міжнародними партнерами та донорами, ми беремо зобов'язання будувати кращу Україну. Ми щиро віримо, що українські професіональні жінки візьмуть на себе ключову роль у процесі трансформації."
+    ]
   },
   "form": {
     "title": "Організаційна форма",
-    "text": "Жінки в раді директорів України діє як неприбуткова членська організація, діяльність якої зосереджена на адвокації рівної участі жінок у радах директорів, лобіюванні законодавчих змін в Україні для приведення їх у відповідність до Європейської Директиви (ЄС) 2022/2381 щодо покращення гендерного балансу серед директорів, просуванні різноманітності в радах директорів та підвищенні іміджу українських жінок-професіоналок. Наша організація фінансується за рахунок внесків засновників, партнерів та членських внесків і керується Правлінням, яке обирається з числа членів організації."
+    "text": "Women on Boards Ukraine діє як неприбуткова організація на членських засадах з акцентом на просуванні рівної участі жінок у радах директорів, лобіюванні змін в законодавстві України для відповідності Європейській директиві (ЄС) 2022/2381 щодо покращення гендерного балансу серед директорів, підтримці різноманітності в радах директорів та підвищенні іміджу професійних українських жінок. Нашу організацію підтримують засновники, партнерські внески та членські внески. Організація керується Радою Директорів."
   },
   "goals": {
     "title": "Наші цілі",
-    "text": "Наші цілі охоплюють взаємодію з Європейськими жінками в радах директорів та спорідненими організаціями, сприяння партнерству для обміну ідеями, надання можливостей для навчання та наставництва, а також розробку спільних проектів. Крім того, ми прагнемо налагодити зв'язки з рекрутерами, щоб акумулювати мандати для наших членів, а також активно просувати та лобіювати імідж українських жінок-професіоналок на міжнародному рівні."
+    "text": "Наші цілі включають участь у співпраці з організаціями Women on Boards у різних куточках світу і сестринськими організаціями, сприяння створенню партнерств для обміну ідеями, надання можливостей для навчання та менторингу, а також розробки спільних проектів. Крім того, нашою метою є налагодження відносин з рекрутерами для накопичення попиту на посади в радах для наших членів та активна підтримка та лобіювання іміджу українських професійних жінок на світовому рівні."
   },
   "milestones": {
     "title": "Основні етапи розвитку",
@@ -28,27 +31,27 @@
     "text": "Ми віримо, що завдяки нашому стратегічному фокусу на розширенні прав і можливостей жінок, сприянні інклюзивному прийняттю рішень, адвокації законодавчих змін, представництві українських жінок-професіоналок та заохоченні співпраці, Women on Boards Ukraine відіграватиме ключову роль у трансформації корпоративного ландшафту та створенні більш справедливого і процвітаючого майбутнього для всіх."
   },
   "founders": {
-    "title": "Засновниці WOB",
+    "title": "Засновниці WoB Ukraine",
     "cards": [
       {
-        "name": "Nina Dombrowska",
-        "title": "Non-Executive Director, entrepreneur, ex-President Henkel Ukraine",
+        "name": "Ніна Домбровська",
+        "title": "Невиконавчий директор, підприємець, екс-президент Хенкель Україна",
         "bio": [
           "Nina Dombrowska is an accomplished business leader with over 20 years of corporate experience. Nina brings a wealth of strategic leadership and corporate governance expertise to Women on Boards Ukraine due to her achievements as President and Chairman of the Board of Directors at Henkel Ukraine. Nina has also served on a number of boards of private companies and not-for-profit organizations, including as a member of the Board of Directors of the European Business Association. She was recognized a number of times as one of Ukraine's Top 100 most successful women for her corporate career. Nina is also an entrepreneur who has founded a number of digital start-ups in the field of education and beauty. Nina has certification in corporate governance from INSEAD/UCGA and is a member of the CEO Club Ukraine.",
           ""
         ]
       },
       {
-        "name": "Olena Malynska",
-        "title": "Non-Executive Director, ex-banking CEO",
+        "name": "Олена Малинська",
+        "title": "Невиконавчий директор, екс-голова правління банку",
         "bio": [
           "Olena Malynska is an experienced executive leader and accomplished board member with over 20 years of experience. She currently holds several board mandates, including an Independent Non-Executive Director position at UkrPoshta, one of the largest Ukrainian public companies. Olena is also actively involved with not-for-profit organizations that focus on female empowerment and education, reflecting her personal interests. She is certified in Corporate Governance from Insead (IDP-C).",
           "Prior to her non-executive career, Olena had a successful executive career in both Ukraine and internationally, with 18 years of experience in the Ukrainian banking sector, including 12 years as a CEO. Olena has also served as the CEO for the global organization Women Political Leaders. Currently, she serves as the Chair of YPO Kyiv and is a member of YPO Belgium, among other prestigious global networks."
         ]
       },
       {
-        "name": "Tatiana Furtseva",
-        "title": "Partner Heidrick & Struggles’, expert in executive search and leadership consulting",
+        "name": "Тетяна Фурцева",
+        "title": "Партнер Heidrick & Struggles, експерт з пошуку керівників та лідерського консалтингу",
         "bio": [
           "Tatiana Furtseva is the partner in charge of Heidrick & Struggles’ Kyiv office, manages the Financial Services in the CEE and is a member of the CEO & Board of Directors practices. She is an expert in executive search and leadership consulting with 24 years of experience in senior roles within executive search and HR consulting companies. Before joining Heidrick & Struggles, Tatiana was the country manager and senior partner with WE Partners Ukraine. She is well known in the CEE financial markets having delivered complex leadership development and assessment projects for various international banks. She has successfully managed personal assessment centers and large-scale management team assessments and is a certified ICF coach. Tatiana has certification in corporate governance from INSEAD/UCGA and is the membership officer of YPO Kyiv.",
           ""

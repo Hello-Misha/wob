@@ -1,12 +1,22 @@
 {
   "main": {
     "title": "We Invite you to join Women on Boards Ukraine",
-    "text": "By combining professionalism, personal qualities, and commitment, we can achieve significant changes. Let's tackle challenges together and build a better and more just Ukraine.",
+    "text": {
+      "t1": "By combining professionalism, personal qualities, and commitment, we can achieve significant changes. Women on Boards Ukraine aims to offer several key benefits for its members:",
+      "t2_ol": [
+        "Supportive Community: Members of the organization can expect to be part of a vibrant and supportive community of women. This community serves as a platform where women uplift and empower each other. It fosters a sense of belonging and camaraderie among members, creating a network of like-minded individuals who share common goals and aspirations.",
+        "Career Advancement: The mission emphasizes the importance of women elevating one another. This means that members can look forward to mentorship, guidance, and support from their peers. Such mentorship and support can be instrumental in career advancement, helping women navigate the complexities of corporate environments and boardrooms.",
+        "Enhanced Diversity: By aiming to enhance diversity within corporate boardrooms, the organization is actively working towards creating more inclusive and representative leadership structures in the corporate world. Members benefit from being part of a movement that advocates for equal opportunities and equitable representation, which can result in a more diverse and dynamic professional landscape.",
+        "Global Exposure: The commitment to unleash the exceptional talents of professional women in Ukraine onto the global stage signifies that the organization is dedicated to promoting the visibility and recognition of its members beyond national borders. This can open up opportunities for international collaborations, networking, and exposure to a broader audience, potentially leading to global career prospects.",
+        "Professional Development: As the organization focuses on talent development, members can expect access to various developmental opportunities, such as training, workshops, and educational programs. These initiatives can help members enhance their skills, knowledge, and capabilities, ultimately boosting their professional growth and competence.",
+        "Advocacy: The mission statement implies that the organization is committed to advocating for legislative changes that ensure equal opportunities. This advocacy can lead to improved legal frameworks and policies that benefit professional women in various sectors, positively impacting their careers and work environments."
+      ]
+    },
     "btn": "JOIN OUR NETWORK TODAY"
   },
   "criteria": {
     "title": "Membership criteria",
-    "top": "Women on Boards Ukraine has established specific criteria for membership to ensure that the organization remains focused on its mission of promoting women and advancing the presence of women in corporate boardrooms and in leadership roles in Ukraine. Prospective members are evaluated based on their professional qualifications, personal qualities, and commitment to building a better Ukraine.",
+    "top": "Women on Boards Ukraine has established specific criteria for membership to ensure that the organization remains focused on its mission of promoting women and advancing the presence of women in corporate boardrooms and in leadership roles in Ukraine. Prospective members are evaluated based on their professional qualifications, personal qualities, and commitment to Building Better Ukraine.",
     "li": [
       {
         "title": "Eligibility:",
@@ -14,11 +24,11 @@
       },
       {
         "title": "Experience:",
-        "text": "Prospective members should possess significant top-level experience in medium to large organizations in the private, public, or non-profit sectors. Professional Board experience and/or a minimum of 10 years of executive committee-level experience or is expected. Experienced Partners of top-level consulting, audit, and recruitment firms also qualify to join as members."
+        "text": "Prospective members should possess significant top-level experience in medium to large organizations in the private, public, or non-profit sectors. Professional Board experience and/or a minimum of 10 years of executive committee-level experience is expected. Experienced Partners of top-level consulting, audit, and recruitment firms also qualify to join as members."
       },
       {
         "title": "Expertise:",
-        "text": "Members should bring a wealth of expertise from diverse industries, including finance, law, technology, marketing, human resources, and more. Their insights and perspectives will contribute to informed decision-making in boardroom discussions. Qualifications in corporate governance from reputable institutions, either in Ukraine or abroad, are valued."
+        "text": "Members should bring a wealth of expertise from diverse industries and backgrounds, including finance, law, technology, marketing, human resources, and more. Their insights and perspectives will contribute to informed decision-making in boardroom discussions. Qualifications in corporate governance from reputable institutions, either in Ukraine or abroad, are valued."
       },
       {
         "title": "Ethical Standards:",
@@ -33,11 +43,11 @@
         "text": "Prospective members should embrace a community based on principles of respect and cooperation. Their willingness to support each other and adhere to the organization's code of conduct is essential."
       },
       {
-        "title": "Commitment to Building a Better Ukraine:",
-        "text": "Members of Women on Boards Ukraine should demonstrate a strong commitment to building a better Ukraine. This commitment involves actively participating in the organization's initiatives, working towards gender equality and diversity in corporate leadership, and contributing to the economic progress and development of Ukraine.."
+        "title": "Commitment to Building Better Ukraine:",
+        "text": "Members of Women on Boards Ukraine should demonstrate a strong commitment to Building Better Ukraine. This commitment involves actively participating in the organization's initiatives, working towards gender equality and diversity in corporate leadership, and contributing to the economic progress and development of Ukraine."
       }
     ],
-    "bottom": "By adhering to these membership criteria, Women on Boards Ukraine ensures a diverse and qualified membership base that can collectively drive positive change in Ukraine's corporate landscape. Through their professional qualifications, personal qualities, commitment to building a better Ukraine, and drawing inspiration from successful practices of other similar organizations, members play an integral role in advancing the organization's mission and promoting the representation of women in leadership positions."
+    "bottom": "By adhering to these membership criteria, Women on Boards Ukraine ensures a diverse and qualified membership base that can collectively drive positive change in Ukraine's corporate landscape. Through their professional qualifications, personal qualities, commitment to Building Better Ukraine, and drawing inspiration from successful practices of other similar organizations, members play an integral role in advancing the organization's mission and promoting the representation of women in leadership positions."
   },
   "members": {
     "title": "What our members say",

@@ -6,15 +6,18 @@
   },
   "statement": {
     "title": "Mission Statement",
-    "text": "Women on Boards Ukraine is established to be a leading not-for-profit organization dedicated to empowering women in leadership roles and advancing the presence of women in corporate boardrooms in Ukraine. Our mission is to create a vibrant community where women uplift and support one another, foster inclusive decision-making, advocate for legislative changes that ensure equal opportunities, and represent the exceptional talents of Ukrainian professional women globally. We firmly believe in the power of collaboration and partnerships to drive positive change and build a more inclusive and equitable future."
+    "text": [
+      "Our commitment lies in nurturing a vibrant community where women elevate one another, building the way for enhanced diversity within corporate boardrooms. We are dedicated to unleashing the exceptional talents of professional women in Ukraine and onto the global stage.",
+      "Focus: At the heart of our vision is the pursuit of equal representation for women on boards, in line with European Directives on diversity. Collaborating with international partners and donors, we are committed to Building Better Ukraine. We firmly believe that Ukrainian professional women will play a pivotal role in this transformative process."
+    ]
   },
   "form": {
     "title": "Organizational Form",
-    "text": "Women on Boards Ukraine operates as a non-profit membership organization with a focus on advocating for equal participation of women on boards, lobbying for legislative changes in Ukraine to align with European Directive (EU) 2022/2381 on improving the gender balance among directors, promoting diversity on boards, and enhancing the image of professional Ukrainian women. Our organization is supported by founders, partners contributions and members' fees and is governed by a Board elected from among the members."
+    "text": "Women on Boards Ukraine operates as a non-profit membership organization with a focus on advocating for equal participation of women on boards, lobbying for legislative changes in Ukraine to align with European Directive (EU) 2022/2381 on improving the gender balance among directors, promoting diversity on boards, and enhancing the image of professional Ukrainian women. Our organization is supported by founders, partners contributions and members' fees. The organization  is governed by a Board of Directors."
   },
   "goals": {
     "title": "Our Goals",
-    "text": "Our goals encompass engaging with European Women on Boards and sister organizations, fostering partnerships for the exchange of ideas, providing training and mentoring opportunities, and developing joint projects. Additionally, we aim to establish relationships with recruiters to accumulate board mandates for our members and actively promote and lobby for the image of Ukrainian professional women globally."
+    "text": "Our goals encompass engaging with Women on Boards in other geographies and sister organizations, fostering partnerships for the exchange of ideas, providing training and mentoring opportunities, and developing joint projects. Additionally, we aim to establish relationships with recruiters to accumulate board mandates for our members and actively promote and lobby for the image of Ukrainian professional women globally."
   },
   "milestones": {
     "title": "Major Development Milestones",
@@ -28,7 +31,7 @@
     "text": "We believe that through our strategic focus on empowering women, fostering inclusive decision-making, advocating for legislative changes, representing Ukrainian professional women, and promoting collaboration, Women on Boards Ukraine will play a pivotal role in transforming the corporate landscape and creating a more equitable and prosperous future for all."
   },
   "founders": {
-    "title": "Засновниці WOB",
+    "title": "Founders of WoB Ukraine",
     "cards": [
       {
         "name": "Nina Dombrowska",
