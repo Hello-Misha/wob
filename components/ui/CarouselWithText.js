@@ -33,9 +33,7 @@ const CarouselComponent = ({ locale, imgArr, textContent }) => {
                 </div>
                 <div>
                   <h2 className="super-title text-left lipstick -mb-10">“</h2>
-                  <p className="text-italic blue -mt-5 -pt-5">
-                    {t(item.quote)}
-                  </p>
+                  <p className="text-i-l blue -mt-5 -pt-5">{t(item.quote)}</p>
                   <h2 className="super-title text-right lipstick -mt-5">”</h2>
                 </div>
               </Col>

@@ -24,11 +24,10 @@ const Mission = () => {
             {t("mission.text.t2_ol", { returnObjects: true }).map(
               (item, index) => (
                 <ol key={index}>
-                  <li className="text blue pb-3">
-                    <span className="text-bold blue pb-3">{`${
-                      index + 1
-                    }) `}</span>
-                    {item}
+                  <li className="mb-3">
+                    <span className="text-bold blue">{`${index + 1}. `}</span>
+                    <span className="text-bold blue">{`${item.start} `}</span>
+                    <span className="text blue">{item.text}</span>
                   </li>
                 </ol>
               )

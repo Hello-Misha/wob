@@ -82,27 +82,30 @@ const Footer = () => {
               <p className="text white ml-5">+38 050 800 13 45</p>
             </div>
             {/* SOCIALS */}
-            <motion.div
-              whileHover={{
-                scale: 1.01,
-                transition: { duration: 1 },
-              }}
-              whileTap={{ scale: 1 }}
-            >
-              <Link
-                href="https://www.linkedin.com/company/women-on-boards-ukraine"
-                target="_blank"
+            <div className="d-flex mb-4 align-items-center">
+              <motion.div
+                whileHover={{
+                  scale: 1.01,
+                  transition: { duration: 1 },
+                }}
+                whileTap={{ scale: 1 }}
               >
-                <IconContext.Provider
-                  value={{
-                    color: "white",
-                    size: "3rem",
-                  }}
+                <Link
+                  href="https://www.linkedin.com/company/women-on-boards-ukraine"
+                  target="_blank"
                 >
-                  <AiOutlineLinkedin className="ml-5" />
-                </IconContext.Provider>
-              </Link>
-            </motion.div>
+                  <IconContext.Provider
+                    value={{
+                      color: "white",
+                      size: "3rem",
+                    }}
+                  >
+                    <AiOutlineLinkedin className="ml-5" />
+                  </IconContext.Provider>
+                </Link>
+              </motion.div>
+              <p className="text white ml-5">Women on Boards Ukraine</p>
+            </div>
           </Col>
         </Row>
       </Container>
