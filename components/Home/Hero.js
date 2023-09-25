@@ -19,6 +19,14 @@ import Text from "../ui/Text";
 const Hero = () => {
   const { t } = useTranslation("home");
   const imgArr = [women, test, test2, women2];
+  const first = imgArr[0];
+  let rest = imgArr.slice(1);
+  for (let i = rest.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [rest[i], rest[j]] = [rest[j], rest[i]];
+  }
+  let shuffledImgs = [first, ...rest];
+
   return (
     <section className="">
       <Container className="">
@@ -43,7 +51,7 @@ const Hero = () => {
             </div>
           </Col>
           <Col xs="12" lg="6" className="d-flex flex-column justify-end">
-            <CarouselComponent imgArr={imgArr} />
+            <CarouselComponent imgArr={shuffledImgs} />
           </Col>
         </Row>
       </Container>
