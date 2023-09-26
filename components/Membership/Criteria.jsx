@@ -22,25 +22,41 @@ import gl3 from "../../public/img/membership/gl-3.png";
 import gl4 from "../../public/img/membership/gl-4.png";
 import gl5 from "../../public/img/membership/gl-5.png";
 import gl6 from "../../public/img/membership/gl-6.png";
+//icons
+import icon1 from "../../public/img/home/icon-6.png";
+import icon2 from "../../public/img/home/icon-2.png";
+import icon3 from "../../public/img/home/icon-8.png";
+import icon4 from "../../public/img/home/icon-3.png";
+import icon5 from "../../public/img/home/icon-7.png";
+import icon6 from "../../public/img/home/icon-1.png";
 
 const Criteria = () => {
   const { t } = useTranslation("membership");
   const numbers = [img1, img2, img3, img4, img5, img6, img7];
   const womenImgs = [gl1, gl2, gl3, gl4, gl5, gl6];
+  const icons = [icon1, icon2, icon3, icon4, icon5, icon6];
   return (
     <section>
       <Row className="mb-5">
         <Title locale="membership" text="main.title" hr={true} />
-        <p className="text blue mb-3">{t("main.text.t1")}</p>
-        {t("main.text.t2_ol", { returnObjects: true }).map((item, index) => (
-          <ol key={index}>
-            <li className="mb-3">
-              <span className="text-bold blue">{`${index + 1}. `}</span>
-              <span className="text-bold blue">{`${item.start} `}</span>
-              <span className="text blue">{item.text}</span>
-            </li>
-          </ol>
-        ))}
+        <Row>
+          <p className="text blue mb-3">{t("main.text.t1")}</p>
+        </Row>
+        <Row>
+          {t("main.text.t2_ol", { returnObjects: true }).map((item, index) => (
+            <Col
+              xs="6"
+              md="4"
+              key={index}
+              className="d-flex flex-column align-items-center my-3"
+            >
+              <Image src={icons[index]} alt="icon" />
+
+              <h4 className="text-bold blue my-3">{`${item.start} `}</h4>
+              <p className="text blue">{item.text}</p>
+            </Col>
+          ))}
+        </Row>
       </Row>
       <Container>
         <Row>
