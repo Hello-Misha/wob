@@ -139,7 +139,7 @@ const Header = () => {
               color="white"
               onClick={menuToggleHandler}
             />
-            <BtnComponent
+            {/* <BtnComponent
               locale="common"
               link={"#"}
               btnText="header.btn.login"
@@ -147,7 +147,7 @@ const Header = () => {
               bg="bg-white"
               color="lipstick"
               onClick={menuToggleHandler}
-            />
+            /> */}
           </div>
         </div>
         <div className={`${classes.menuControls}`}>

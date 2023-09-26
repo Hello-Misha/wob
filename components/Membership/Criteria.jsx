@@ -48,7 +48,7 @@ const Criteria = () => {
               xs="6"
               md="4"
               key={index}
-              className="d-flex flex-column align-items-center"
+              className="d-flex flex-column align-items-center my-3"
             >
               <Image src={icons[index]} alt="icon" />
 

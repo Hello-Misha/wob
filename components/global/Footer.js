@@ -39,14 +39,14 @@ const Footer = () => {
               classes={"mb-5"}
               color="white"
             />
-            <BtnComponent
+            {/* <BtnComponent
               locale="common"
               link={"#"}
               btnText="header.btn.login"
               bg="bg-white"
               classes={"mb-5"}
               color="lipstick"
-            />
+            /> */}
           </Col>
           <Col xs="6" md="3">
             {t("footer", { returnObjects: true }).map((item, index) => (
