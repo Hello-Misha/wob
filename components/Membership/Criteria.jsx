@@ -23,12 +23,12 @@ import gl4 from "../../public/img/membership/gl-4.png";
 import gl5 from "../../public/img/membership/gl-5.png";
 import gl6 from "../../public/img/membership/gl-6.png";
 //icons
-import icon1 from "../../public/img/icons/icon-6.svg";
-import icon2 from "../../public/img/icons/icon-2.svg";
-import icon3 from "../../public/img/icons/icon-8.svg";
-import icon4 from "../../public/img/icons/icon-3.svg";
-import icon5 from "../../public/img/icons/icon-7.svg";
-import icon6 from "../../public/img/icons/icon-1.svg";
+import icon1 from "../../public/img/icons/i6.svg";
+import icon2 from "../../public/img/icons/i2.svg";
+import icon3 from "../../public/img/icons/i8.svg";
+import icon4 from "../../public/img/icons/i3.svg";
+import icon5 from "../../public/img/icons/i7.svg";
+import icon6 from "../../public/img/icons/i1.svg";
 
 const Criteria = () => {
   const { t } = useTranslation("membership");
