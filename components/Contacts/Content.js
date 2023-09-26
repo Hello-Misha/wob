@@ -77,7 +77,12 @@ const Content = () => {
             </div>
           </Col>
           <Col xs="12" md="8">
-            <Image src={kyiv} alt="Kyiv" className="img-fluid rounded-md " />
+            <Image
+              src={kyiv}
+              alt="Kyiv"
+              className="img-fluid rounded-md"
+              placeholder="blur"
+            />
           </Col>
         </Row>
       </Container>
