@@ -2,12 +2,12 @@ import { useTranslation } from "next-i18next";
 import { Container, Row, Col } from "react-bootstrap";
 import Image from "next/image";
 
-//icons
-import icon1 from "../../public/img/icons/Icon-2.svg";
-import icon2 from "../../public/img/icons/Icon-3.svg";
-import icon3 from "../../public/img/icons/Icon-4.svg";
-import icon4 from "../../public/img/icons/Icon-5.svg";
-import icon5 from "../../public/img/icons/Icon-1.svg";
+
+import icon1 from "../../public/img/icons/i2.svg";
+import icon2 from "../../public/img/icons/i3.svg";
+import icon3 from "../../public/img/icons/i4.svg";
+import icon4 from "../../public/img/icons/i5.svg";
+import icon5 from "../../public/img/icons/i1.svg";
 
 import classes from "./#Home.module.scss";
 
