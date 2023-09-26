@@ -3,11 +3,11 @@ import { Container, Row, Col } from "react-bootstrap";
 import Image from "next/image";
 
 //icons
-import icon1 from "../../public/img/home/Icon-2.png";
-import icon2 from "../../public/img/home/Icon-3.png";
-import icon3 from "../../public/img/home/Icon-4.png";
-import icon4 from "../../public/img/home/Icon-5.png";
-import icon5 from "../../public/img/home/Icon-1.png";
+import icon1 from "../../public/img/icons/Icon-2.svg";
+import icon2 from "../../public/img/icons/Icon-3.svg";
+import icon3 from "../../public/img/icons/Icon-4.svg";
+import icon4 from "../../public/img/icons/Icon-5.svg";
+import icon5 from "../../public/img/icons/Icon-1.svg";
 
 import classes from "./#Home.module.scss";
 
