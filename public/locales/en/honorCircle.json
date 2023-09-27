@@ -13,24 +13,16 @@
     "bioBtn": "Read Bio",
     "cards": [
       {
-        "name": "Iryna Rubis",
-        "title": "CEO of Biasless. DEI strategist and trainer",
+        "name": "Olena Voloshyna",
+        "title": "Country Officer Ukraine, IFC (a member of the World Bank Group)",
         "quote": [
-          "Ukraine puts the bar high in terms of fighting for its freedom, dignity and values. Fair representation of women on boards is also about freedom, dignity and values. The time has come to make most of the accepted approach to increase the quality of decisions and magnify their positive impact."
+          "Experts say companies with more than 30% female executives are more likely to outperform companies that don’t. My experience proves that male and female professionals are stronger together. Business is better when it is led by the brightest minds from both halves of the global talent pool."
         ],
         "bio": [
-          "Iryna stands as a leading Diversity, Equity, and Inclusion (DEI) strategist and trainer in Ukraine and is now CEO of Biasles. She has dedicated a significant portion of her career to help both Ukrainian and multinational enterprises within Ukraine in the realms of gender equality, shared values and sustainability. Iryna's commitment to gender equality and diversity and inclusion advocacy dates back to 2011, and her numerous publications on these topics in esteemed Ukrainian media underscore her expertise. Her background also includes leadership roles at well-regarded media platforms such as delo.ua, womo.ua and mmr.ua, highlighting her proficiency in the spheres of freedom of speech and media. Additionally, her active involvement as a strong promoter of Sustainable Development Goals (SDGs) further underscores her impactful contributions."
-        ]
-      },
-      {
-        "name": "Lisa Kaestner",
-        "title": "Regional Manager, Ukraine and Moldova, International Finance Corporation, World Bank Group",
-        "quote": [
-          "I am very pleased to join WoB Ukraine to support women’s participations in the boards in Ukraine. Research – including IFC’s – continues to demonstrate that gender diversity in the boardroom boosts financial performance, promotes better decision-making processes and improved environment, social and governance (ESG) practices. Women business leaders have an important role to play in the resilience and growth of Ukraine’s businesses."
-        ],
-        "bio": [
-          "Lisa Kaestner was appointed as IFC’s Regional Manager for Ukraine and Moldova in July 2022. In this capacity, she is responsible for IFC’s work to mobilize investment and support the private sector in the two countries while overseeing IFC’s response in Ukraine to Russia’s invasion. Ms. Kaestner has taken on this new role at a time when the region is deeply affected by the war and economic uncertainty. Despite the challenges, the private sector can play a significant role in the recovery of the region and its economic transformation.",
-          "A US national, Kaestner joined IFC in 1999 as the resident representative in Georgia.  Since then, she has fulfilled a variety of roles in both IFC and World Bank mostly in Eastern Europe and Central Asia.  In 2018-2022, Ms. Kaestner turned her attention to Africa, where she led IFC's advisory services to governments in Eastern and Southern Africa, supporting reforms and policy implementation for private sector-led growth across a range of sectors—including agribusiness, tourism, and housing to ICT and the financial sector. Most recently, she briefly served as the County Manager for Sri Lanka and Maldives until being asked to take up the role in Ukraine and Moldova, due to the unprecedented circumstances. Before IFC, she worked with several nonprofit development organizations in the South Caucasus region. Lisa holds a Master’s degree in Public Policy and Economics from Princeton University."
+          "Elena Voloshina, based in Kyiv, leads International Finance Corporation’s (IFC’s) investment and advisory operations in the country effective as of December 1996. She is responsible for managing a significant investment program – over US$3 billion of long-term finance in Ukraine as well as an extensive advisory program focused on improving the business environment, expanding access to finance, promoting a green economy, modernizing supply chains and opening new markets.",
+          "Prior to joining IFC, Ms. Voloshyna served as a Deputy Project Manager and later as a Project Manager for Small Privatization in Ukraine (1994-1996), managing the work of small privatization consultants in 18 cities across the country and coordinating liaison with the Government of Ukraine at all levels.",
+          "Ms. Voloshyna began her career at IFC in 1992 when IFC launched its first operations in Ukraine. During this time, she held various positions, which allowed her to gain extensive advisory experience in privatization and investment.",
+          "Elena graduated from the Faculty of Foreign Languages of Taras Shevchenko National University of Kyiv in 1985. Olena holds a PhD in linguistics."
         ]
       },
       {
@@ -45,17 +37,26 @@
           "Anna's leadership has also steered the Association towards actively implementing top-tier European business practices to elevate Ukraine's appeal for business and investment. Beyond her role at the European Business Association, Anna holds various positions including: Member of the Supervisory Board of Raiffeisen Bank, member at the GLOBSEC Support Council, Ukraine Invest, Business Ombudsman, member at the Board of Directors for the Children of Heroes and the Advisory Council of the Norwegian-Ukrainian Chamber of Commerce. Additionally, Anna is a co-founder of Global Business for Ukraine, an organization with a mission to unite international businesses around Ukraine, strengthening trade and economic ties, helping to find partners in the country and give information to potential investors."
         ]
       },
+
       {
-        "name": "Olena Voloshyna",
-        "title": "Country Officer Ukraine, IFC (a member of the World Bank Group)",
+        "name": "Lisa Kaestner",
+        "title": "Regional Manager, Ukraine and Moldova, International Finance Corporation, World Bank Group",
         "quote": [
-          "Experts say companies with more than 30% female executives are more likely to outperform companies that don’t. My experience proves that male and female professionals are stronger together. Business is better when it is led by the brightest minds from both halves of the global talent pool."
+          "I am very pleased to join WoB Ukraine to support women’s participations in the boards in Ukraine. Research – including IFC’s – continues to demonstrate that gender diversity in the boardroom boosts financial performance, promotes better decision-making processes and improved environment, social and governance (ESG) practices. Women business leaders have an important role to play in the resilience and growth of Ukraine’s businesses."
         ],
         "bio": [
-          "Elena Voloshina, based in Kyiv, leads International Finance Corporation’s (IFC’s) investment and advisory operations in the country effective as of December 1996. She is responsible for managing a significant investment program – over US$3 billion of long-term finance in Ukraine as well as an extensive advisory program focused on improving the business environment, expanding access to finance, promoting a green economy, modernizing supply chains and opening new markets.",
-          "Prior to joining IFC, Ms. Voloshyna served as a Deputy Project Manager and later as a Project Manager for Small Privatization in Ukraine (1994-1996), managing the work of small privatization consultants in 18 cities across the country and coordinating liaison with the Government of Ukraine at all levels.",
-          "Ms. Voloshyna began her career at IFC in 1992 when IFC launched its first operations in Ukraine. During this time, she held various positions, which allowed her to gain extensive advisory experience in privatization and investment.",
-          "Elena graduated from the Faculty of Foreign Languages of Taras Shevchenko National University of Kyiv in 1985. Olena holds a PhD in linguistics."
+          "Lisa Kaestner was appointed as IFC’s Regional Manager for Ukraine and Moldova in July 2022. In this capacity, she is responsible for IFC’s work to mobilize investment and support the private sector in the two countries while overseeing IFC’s response in Ukraine to Russia’s invasion. Ms. Kaestner has taken on this new role at a time when the region is deeply affected by the war and economic uncertainty. Despite the challenges, the private sector can play a significant role in the recovery of the region and its economic transformation.",
+          "A US national, Kaestner joined IFC in 1999 as the resident representative in Georgia.  Since then, she has fulfilled a variety of roles in both IFC and World Bank mostly in Eastern Europe and Central Asia.  In 2018-2022, Ms. Kaestner turned her attention to Africa, where she led IFC's advisory services to governments in Eastern and Southern Africa, supporting reforms and policy implementation for private sector-led growth across a range of sectors—including agribusiness, tourism, and housing to ICT and the financial sector. Most recently, she briefly served as the County Manager for Sri Lanka and Maldives until being asked to take up the role in Ukraine and Moldova, due to the unprecedented circumstances. Before IFC, she worked with several nonprofit development organizations in the South Caucasus region. Lisa holds a Master’s degree in Public Policy and Economics from Princeton University."
+        ]
+      },
+      {
+        "name": "Iryna Rubis",
+        "title": "CEO of Biasless. DEI strategist and trainer",
+        "quote": [
+          "Ukraine puts the bar high in terms of fighting for its freedom, dignity and values. Fair representation of women on boards is also about freedom, dignity and values. The time has come to make most of the accepted approach to increase the quality of decisions and magnify their positive impact."
+        ],
+        "bio": [
+          "Iryna stands as a leading Diversity, Equity, and Inclusion (DEI) strategist and trainer in Ukraine and is now CEO of Biasles. She has dedicated a significant portion of her career to help both Ukrainian and multinational enterprises within Ukraine in the realms of gender equality, shared values and sustainability. Iryna's commitment to gender equality and diversity and inclusion advocacy dates back to 2011, and her numerous publications on these topics in esteemed Ukrainian media underscore her expertise. Her background also includes leadership roles at well-regarded media platforms such as delo.ua, womo.ua and mmr.ua, highlighting her proficiency in the spheres of freedom of speech and media. Additionally, her active involvement as a strong promoter of Sustainable Development Goals (SDGs) further underscores her impactful contributions."
         ]
       },
       {

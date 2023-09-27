@@ -4,14 +4,28 @@ import { Container, Row, Col } from "react-bootstrap";
 import CarouselComponent from "../ui/Carousel";
 
 import WobFounders from "../../public/img/home/WoB-founders.png";
-import test from "../../public/img/test.png";
-import test2 from "../../public/img/test-2.png";
+import Rubis from "../../public/img/home/Iryna-Rubis.png";
+import Kaestner from "../../public/img/home/Lisa-Kaestner.png";
+import Derevyanko from "../../public/img/home/Anna-Derevyanko.png";
+import Voloshina from "../../public/img/home/Voloshina.png";
+import Strashna from "../../public/img/home/Oksana-Strashna.png";
+import Chopivsky from "../../public/img/home/Alexa-Chopivsky.png";
+import Bielkova from "../../public/img/home/Olga-Bielkova.png";
 
 import Text from "../ui/Text";
 
 const Hero = () => {
   const { t } = useTranslation("home");
-  const imgArr = [WobFounders, test, test2];
+  const imgArr = [
+    WobFounders,
+    Rubis,
+    Kaestner,
+    Derevyanko,
+    Voloshina,
+    Strashna,
+    Chopivsky,
+    Bielkova,
+  ];
   const first = imgArr[0];
   let rest = imgArr.slice(1);
   for (let i = rest.length - 1; i > 0; i--) {

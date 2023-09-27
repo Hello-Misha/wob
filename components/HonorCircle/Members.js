@@ -76,22 +76,26 @@ const Members = ({ classes }) => {
                   className="d-flex flex-col md:flex-col-reverse justify-between"
                 >
                   <Row className="d-flex align-items-bottom mt-3 md:mt-0">
-                    <Row className="d-flex align-items-center">
-                      <Col xs="9">
-                        <h3 className="h3-title lipstick">{card.name}</h3>
-                      </Col>
-                      <Col xs="3">
-                        {linkedin[index] && (
-                          <Link href={linkedin[index]} target="_blank">
-                            <p className="text-bold lipstick text-right">
-                              Linkedin
-                            </p>
-                          </Link>
-                        )}
-                      </Col>
-                      <Col xs="12">
-                        <p className="text-italic blue">{card.title}</p>
-                      </Col>
+                    <Row className="d-flex align-items-center ">
+                      <Row className="mb-3">
+                        <Col xs="9">
+                          <h3 className="h3-title lipstick">{card.name}</h3>
+                        </Col>
+                        <Col xs="3">
+                          {linkedin[index] && (
+                            <Link href={linkedin[index]} target="_blank">
+                              <p className="text-bold lipstick text-right">
+                                Linkedin
+                              </p>
+                            </Link>
+                          )}
+                        </Col>
+                      </Row>
+                      <Row>
+                        <Col xs="12">
+                          <p className="text-italic blue">{card.title}</p>
+                        </Col>
+                      </Row>
                     </Row>
                   </Row>
                   <Row className="mt-3 md:mt-0">
