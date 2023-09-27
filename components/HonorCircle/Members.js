@@ -12,6 +12,8 @@ import Kaestner from "../../public/img/membership/Lisa-Kaestner.png";
 import Derevyanko from "../../public/img/membership/Anna-Derevyanko.png";
 import Voloshina from "../../public/img/membership/Voloshina.png";
 import Strashna from "../../public/img/membership/Oksana-Strashna.png";
+import Chopivsky from "../../public/img/membership/Alexa-Chopivsky.png";
+import Bielkova from "../../public/img/membership/Olga-Bielkova.png";
 
 const Members = ({ classes }) => {
   const { t } = useTranslation("honorCircle");
@@ -24,14 +26,22 @@ const Members = ({ classes }) => {
   };
 
   const linkedin = [
-    "https://www.linkedin.com/in/iryna-rubis/",
-    "https://www.linkedin.com/in/lisa-kaestner-1952341/",
-    "https://www.linkedin.com/in/anna-derevyanko-b5307a1/",
     "",
+    "https://www.linkedin.com/in/anna-derevyanko-b5307a1/",
+    "https://www.linkedin.com/in/lisa-kaestner-1952341/",
+    "https://www.linkedin.com/in/iryna-rubis/",
     "https://www.linkedin.com/in/ostrashna/",
   ];
 
-  const imgArr = [Rubis, Kaestner, Derevyanko, Voloshina, Strashna];
+  const imgArr = [
+    Voloshina,
+    Derevyanko,
+    Kaestner,
+    // Bielkova,
+    Rubis,
+    // Chopivsky,
+    Strashna,
+  ];
 
   const cards = t("members.cards", { returnObjects: true });
 

@@ -29,7 +29,6 @@ const Icons = () => {
                 src={iconsImg[index]}
                 alt={icon}
                 width={80}
-                placeholder="blur"
                 className="mb-2"
               />
               <p className="text-italic text-center blue pb-3">{icon}</p>

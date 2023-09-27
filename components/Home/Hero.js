@@ -3,22 +3,15 @@ import { Container, Row, Col } from "react-bootstrap";
 
 import CarouselComponent from "../ui/Carousel";
 
-// import classes from "./#Home.module.scss";
-
-// import Image from "next/image";
-
-import women from "../../public/img/women.png";
-
+import WobFounders from "../../public/img/home/WoB-founders.png";
 import test from "../../public/img/test.png";
 import test2 from "../../public/img/test-2.png";
-
-// import partnerLogo from "../../public/img/home/partner-wob.png";
 
 import Text from "../ui/Text";
 
 const Hero = () => {
   const { t } = useTranslation("home");
-  const imgArr = [women, test, test2];
+  const imgArr = [WobFounders, test, test2];
   const first = imgArr[0];
   let rest = imgArr.slice(1);
   for (let i = rest.length - 1; i > 0; i--) {
