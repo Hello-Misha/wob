@@ -12,7 +12,7 @@ const CarouselComponent = ({ locale, imgArr, textContent }) => {
       {t(textContent, { returnObjects: true }).map((item, index) => (
         <Carousel.Item key={index}>
           <Container>
-            <Row className="d-flex align-items-center">
+            <Row className="d-flex align-items-start">
               <Col xs="12" md="5" lg="4">
                 <Image
                   className="img-fluid d-block mx-auto"
@@ -33,12 +33,14 @@ const CarouselComponent = ({ locale, imgArr, textContent }) => {
                 </div>
                 <div>
                   <h2 className="super-title text-left lipstick -mb-10">“</h2>
-                  {console.log(carousel[index].quote)}
-                  {carousel[index].quote.map((item, index) => (
-                    <p key={index} className="text-i-l blue -mt-5 -pt-5">
-                      {item}
-                    </p>
-                  ))}
+
+                  <div className="-my-5 -py-5">
+                    {carousel[index].quote.map((item, index) => (
+                      <p key={index} className="text-i-l blue mb-3">
+                        {item}
+                      </p>
+                    ))}
+                  </div>
 
                   <h2 className="super-title text-right lipstick -mt-5">”</h2>
                 </div>
