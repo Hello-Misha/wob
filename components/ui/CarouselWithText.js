@@ -3,10 +3,10 @@ import Image from "next/image";
 import Carousel from "react-bootstrap/Carousel";
 import { Container, Row, Col } from "react-bootstrap";
 
-import classes from "./#UI.module.scss";
-
 const CarouselComponent = ({ locale, imgArr, textContent }) => {
   const { t } = useTranslation(locale);
+
+  const carousel = t("members.carousel", { returnObjects: true });
   return (
     <Carousel className="my-5">
       {t(textContent, { returnObjects: true }).map((item, index) => (
@@ -33,7 +33,13 @@ const CarouselComponent = ({ locale, imgArr, textContent }) => {
                 </div>
                 <div>
                   <h2 className="super-title text-left lipstick -mb-10">“</h2>
-                  <p className="text-i-l blue -mt-5 -pt-5">{t(item.quote)}</p>
+                  {console.log(carousel[index].quote)}
+                  {carousel[index].quote.map((item, index) => (
+                    <p key={index} className="text-i-l blue -mt-5 -pt-5">
+                      {item}
+                    </p>
+                  ))}
+
                   <h2 className="super-title text-right lipstick -mt-5">”</h2>
                 </div>
               </Col>

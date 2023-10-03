@@ -70,69 +70,68 @@ const Members = ({ classes }) => {
                     className="img-fluid"
                   />
                 </Col>
-                <Col
-                  xs="12"
-                  md="8"
-                  className="d-flex flex-col md:flex-col-reverse justify-between"
-                >
-                  <Row className="d-flex align-items-bottom mt-3 md:mt-0">
-                    <Row className="d-flex align-items-center ">
-                      <Row className="mb-3">
-                        <Col xs="9">
-                          <h3 className="h3-title lipstick">{card.name}</h3>
-                        </Col>
-                        <Col xs="3">
-                          {linkedin[index] && (
-                            <Link href={linkedin[index]} target="_blank">
-                              <p className="text-bold lipstick text-right">
-                                Linkedin
-                              </p>
-                            </Link>
-                          )}
-                        </Col>
-                      </Row>
-                      <Row>
-                        <Col xs="12">
-                          <p className="text-italic blue">{card.title}</p>
-                        </Col>
+                <Col xs="12" md="8">
+                  {/* TITLE AND QUOTE */}
+                  <Row className="d-flex flex-col md:flex-col-reverse justify-between">
+                    {/* TITLE */}
+                    <Row className="d-flex align-items-bottom mt-3 md:mt-0">
+                      <Row className="d-flex align-items-center ">
+                        <Row className="mb-3">
+                          <Col xs="9">
+                            <h3 className="h3-title lipstick">{card.name}</h3>
+                          </Col>
+                          <Col xs="3">
+                            {linkedin[index] && (
+                              <Link href={linkedin[index]} target="_blank">
+                                <p className="text-bold lipstick text-right">
+                                  Linkedin
+                                </p>
+                              </Link>
+                            )}
+                          </Col>
+                        </Row>
+                        <Row>
+                          <Col xs="12">
+                            <p className="text-italic blue">{card.title}</p>
+                          </Col>
+                        </Row>
                       </Row>
                     </Row>
+                    {/* QUOTE */}
+                    <Row className="mt-3 md:mt-0">
+                      <Col xs="12">
+                        <h2 className="super-title text-left lipstick -mb-5 -mt-5">
+                          “
+                        </h2>
+                        <p className="text-i-l blue -mt-5 -pt-5">
+                          {card.quote}
+                        </p>
+                        <h2 className="super-title text-right lipstick -my-5 ">
+                          ”
+                        </h2>
+                      </Col>
+                    </Row>
                   </Row>
-                  <Row className="mt-3 md:mt-0">
+                  {/* BIO */}
+                  <Row>
                     <Col xs="12">
-                      <h2 className="super-title text-left lipstick -mb-5 -mt-5">
-                        “
-                      </h2>
-                      <p className="text-i-l blue -mt-5 -pt-5">{card.quote}</p>
-                      <h2 className="super-title text-right lipstick -my-5 ">
-                        ”
-                      </h2>
+                      <h4
+                        className={`h4-title blue cursor-pointer my-3`}
+                        onClick={() => toggleExpand(index)}
+                      >
+                        {t("members.bioBtn")}
+                      </h4>
+                      {expandStates[index] &&
+                        card.bio.map((item, index) => (
+                          <p key={index} className="text blue mb-3 ">
+                            {item}
+                          </p>
+                        ))}
+                      {expandStates[index] && (
+                        <hr className={expandStates[index] ? "mt-5" : ""} />
+                      )}
                     </Col>
                   </Row>
-                </Col>
-              </Row>
-              <Row>
-                <Col xs="12">
-                  <Col xs="12" md="4">
-                    <h4
-                      className={`h4-title blue cursor-pointer mb-3 text-center`}
-                      onClick={() => toggleExpand(index)}
-                    >
-                      {t("members.bioBtn")}
-                    </h4>
-                  </Col>
-
-                  <Col xs="12">
-                    {expandStates[index] &&
-                      card.bio.map((item, index) => (
-                        <p key={index} className="text blue mb-3 ">
-                          {item}
-                        </p>
-                      ))}
-                    {expandStates[index] && (
-                      <hr className={expandStates[index] ? "mt-5" : ""} />
-                    )}
-                  </Col>
                 </Col>
               </Row>
             </Row>

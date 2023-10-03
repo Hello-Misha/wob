@@ -3,13 +3,23 @@ import { Container, Row, Col } from "react-bootstrap";
 
 import CarouselComponent from "../ui/CarouselWithText";
 
-import Rubis from "../../public/img/membership/Iryna-Rubis.png";
-import Derevyanko from "../../public/img/membership/Anna-Derevyanko.png";
-import Strashna from "../../public/img/membership/Oksana-Strashna.png";
-import Kaestner from "../../public/img/membership/Lisa-Kaestner.png";
+import Volchko from "../../public/img/membership/M_Oksana_Volchko.png";
+import Makarenko from "../../public/img/membership/M_Olena_Makarenko.png";
+import Sinichkina from "../../public/img/membership/M_Lana_Sinichkina.png";
+import Kaznacheeva from "../../public/img/membership/M_Nadiia_Kaznacheeva.png";
+import Tomash from "../../public/img/membership/M_Olga_Tomash.png";
+import Kvashnina from "../../public/img/membership/M_Maryna_Kvashnina.png";
+
 const Content = () => {
   const { t } = useTranslation("membership");
-  const imgArr = [Rubis, Derevyanko, Strashna, Kaestner];
+  const imgArr = [
+    Volchko,
+    Makarenko,
+    Sinichkina,
+    Kaznacheeva,
+    Tomash,
+    Kvashnina,
+  ];
   return (
     <section>
       <Container>

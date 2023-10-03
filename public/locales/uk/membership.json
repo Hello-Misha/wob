@@ -71,24 +71,50 @@
     "title": "Що кажуть наші почестні членкині та учасниці",
     "carousel": [
       {
-        "name": "Iryna Rubis",
-        "title": "CEO of Biasless, DEI strategist and trainer",
-        "quote": "Fair representation of women on boards is about freedom, dignity and values. The time has come to magnify this."
+        "name": "Оксана Волчко",
+        "title": "Членкиня Наглядової ради | Chapter Zero Ukraine and Caucasus (Georgia and Armenia)",
+        "quote": [
+          "Бути жінкою-директором - це не просто знаходитися у кімнаті. Це успішно консультувати вищий менеджмент щодо ключових рішень, підтримувати стратегічні зміни, забезпечуючи широкий інституційний контроль, демонструвати глибоке розуміння питань і впливати під час обговорень на раді, враховуючи те, що гендерні бар'єри все ще існують."
+        ]
       },
       {
-        "name": "Anna Derevyanko",
-        "title": "Executive Director, European Business Association Co-founder, Global Business for Ukraine",
-        "quote": "This is an important moment to elevate women in boardrooms. Women on Boards Ukraine is a great initiative that I am proud to join."
+        "name": "Олена Макаренко",
+        "title": "Партнерка, Консалтинг з ризиків, Керівниця відділу Форензики, Сталості та ЕSG, Лідерка KPMG Insight Academy",
+        "quote": [
+          "Я пишаюся тим, що є частиною спільноти \"Women on Boards Ukraine\" і радо підтримую її місію – піднімати та підтримувати жінок та сприяти інклюзивному прийняттю рішень.",
+          "Я глибоко вірю, що принципи інклюзивності та різноманіття повинні бути серед ключових бізнес-цілей. І я також переконаний, що жінки на керівних посадах відіграють виняткову роль у процесі трансформацій та будівництва міцної, стійкої та довірчої країни та бізнес-спільноти."
+        ]
+      },
+
+      {
+        "name": "Лана Сінічкіна",
+        "title": "Партнерка, Адвокатка | Аrzinger",
+        "quote": [
+          "У багатьох сферах світу бракує жіночого лідерства. Я щаслива приєднатися до ініціативи WoB ua, щоб зробити цей світ кращим місцем для проживання."
+        ]
+      },
+
+      {
+        "name": "Надія Казначеєва",
+        "title": "Директор, Управління Активами. Член Правління | DIF CAPITAL PARTNERS, Лондон, Велика Британія",
+        "quote": [
+          "Мені дуже приємно приєднатися до Women on Boards Ukraine - спільноти визнаних, талановитих і відданих лідерів, які спільно працюють над наданням сили та підтримки жінкам, готовим приймати участь в роботі наглядових рад. Я впевнена, що це великий крок вперед для жінок, бізнесу та нашої економіки."
+        ]
       },
       {
-        "name": "Oksana Strashna",
-        "title": "Board Member Corporate Governance Professional Association, former Partner Horizon Capital",
-        "quote": "WoB Ukraine mission to uplift women, promote diversity in corporate boardrooms and let exceptional talents of Ukrainian professional women shine resonates deeply with me. Let’s make a meaningful impact together."
+        "name": "Ольга Томаш",
+        "title": "Членкиня Наглядової Ради | CREDO Bank Georgia, Ipak Yuli Bank Uzbekistan; Independent Consultant.",
+        "quote": [
+          "Мені справді велика честь бути частиною Women on Boards Ukraine. У мене глибока віра у цінність її місії та цілей, які спрямовані на формування підтримуючої мережі професійних жінок-лідерів. На мою думку, важливість цієї організації виходить далеко за межі звичайного обміну контактами; це створення єдиної спільноти, присвяченої створенню можливостей, обміну знаннями та досвідом і наданню свіжих поглядів на рішення і виклики, з якими ми зіткнулися.",
+          "З роками досвіду в радницьких органах у кількох країнах, включаючи Україну, я щаслива внести свій внесок у наш колективний шлях до відновлення міцнішої України завдяки спільній силі зміцнених жінок на лідерських посадах."
+        ]
       },
       {
-        "name": "Lisa Kaestner",
-        "title": "Regional Manager, Ukraine and Moldova, International Finance Corporation, World Bank Group",
-        "quote": "Joining WoB Ukraine underscores my recognition of women business leaders' important role in building resilience and growth of Ukraine’s businesses."
+        "name": "Марина Квашніна",
+        "title": "Керуючий партнер | Edenlab",
+        "quote": [
+          "Більша гендерна різноманітність правління, швидше за все, принесе кращі результати його бізнесу, оскільки це дає більше можливостей."
+        ]
       }
     ]
   }

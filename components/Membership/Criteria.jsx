@@ -52,7 +52,7 @@ const Criteria = () => {
             >
               <Image src={icons[index]} alt="icon" />
 
-              <h4 className="text-bold blue my-3">{`${item.start} `}</h4>
+              <h4 className="text-bold text-center blue my-3">{`${item.start} `}</h4>
               <p className="text blue">{item.text}</p>
             </Col>
           ))}

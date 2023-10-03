@@ -40,7 +40,7 @@ const Hero = () => {
         <Row className="d-flex  justify-around my-3">
           <Col
             xs="12"
-            lg="6"
+            lg="12"
             xl="6"
             className="d-flex flex-column justify-center"
           >
@@ -57,7 +57,12 @@ const Hero = () => {
               />
             </div>
           </Col>
-          <Col xs="12" lg="6" className="d-flex flex-column justify-end">
+          <Col
+            xs="12"
+            lg="12"
+            xl="6"
+            className="d-flex flex-column justify-end"
+          >
             <CarouselComponent imgArr={shuffledImgs} />
           </Col>
         </Row>
