@@ -1,15 +1,12 @@
 import { Container, Row, Col } from "react-bootstrap";
 import Image from "next/image";
 
-import { RichTextRenderer } from "@/services/richTextReducer";
+import { RichTextRenderer } from "../../services/richTextReducer";
 
-import PhotoSlider from "@/components/TechComponents/Carousel";
+// import PhotoSlider from "@/components/TechComponents/Carousel";
 
 function NewsPageComponent({ article }) {
-  const mainImg =
-    process.env.NEXT_PUBLIC_STRAPI_URL2 +
-    article.attributes.mainImg.data.attributes.url;
-  const galeryArr = [];
+  // const galeryArr = [];
 
   // function galeryArrFetch(arr) {
   //   const uri = article.attributes.galery.data;
@@ -31,7 +28,7 @@ function NewsPageComponent({ article }) {
         <Row>
           <Col md="4" className="mb-3">
             <Image
-              src={mainImg}
+              src={article.attributes.mainImg.data.attributes.url}
               alt=""
               // alt={tiding.attributes.mainImgAlt}
               loading="lazy"
@@ -41,19 +38,16 @@ function NewsPageComponent({ article }) {
             />
           </Col>
           <Col md="8" className="mb-3">
-            <h3 className="Sub-Title-bold DarkBlue mb-3">
-              {" "}
-              {article.attributes.title}
+            <h3 className="h1-title lipstick mb-3">
+              {article.attributes.titleArticle}
             </h3>
-            <h3 className="Text-bold DarkBlue mb-3">
+            <h3 className="text-bold lipstick mb-3">
               {article.attributes.date}
             </h3>
-            <p className="Text DarkBlue mb-5">
-              {article.attributes.description}
-            </p>
+            <p className="text blue mb-5">{article.attributes.spoiler}</p>
             <hr className="mb-5" />
 
-            {RichTextRenderer(article.attributes.newsText)}
+            {RichTextRenderer(article.attributes.articleText)}
             <hr className="mb-5" />
             {/* {galeryArr ? <PhotoSlider imgArr={galeryArr} /> : ""} */}
           </Col>

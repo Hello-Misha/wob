@@ -78,5 +78,9 @@
   "joinUs": {
     "title": "Join us",
     "btn": "JOIN US"
+  },
+  "news": {
+    "title": "Latest News",
+    "btn": "Explore more"
   }
 }

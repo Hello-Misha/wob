@@ -3,42 +3,34 @@ import { useTranslation } from "next-i18next";
 import { fetcher } from "../../services/fetcher";
 import Head from "next/head";
 
-import NewsPageComponent from "../../components/News/NewsPageComponent";
+import NewsOverview from "../../components/News/NewsOverviewComponent";
 
-function NewsPage({ article }) {
-  const { t } = useTranslation("news");
-
+function NewsOverviewPage({ articles }) {
+  const { t } = useTranslation("meta");
   return (
     <>
       <Head>
         <title>{t("news.title")}</title>
         <meta property="og:description" content={t("news.description")} />
       </Head>
-      <NewsPageComponent article={article} />
+      <NewsOverview articles={articles} />
     </>
   );
 }
 
-export async function getServerSideProps({ params, locale }) {
-  const { slug } = params;
+export default NewsOverviewPage;
+
+export async function getStaticProps({ locale }) {
   const articlesResponse = await fetcher(
     `${process.env.NEXT_PUBLIC_STRAPI_URL}/api/articles?populate=*&locale=${locale}`
   );
   console.log(
-    articlesResponse.data.find((obj) => obj.attributes.slug === slug)
+    articlesResponse.data.find((obj) => obj.attributes.slug === "test")
   );
-
-  const articlesResponseSlug = articlesResponse.data.find(
-    (obj) => obj.attributes.slug === slug
-  );
-
   return {
     props: {
-      article: articlesResponseSlug,
-
+      articles: articlesResponse,
       ...(await serverSideTranslations(locale, ["news", "common", "meta"])),
     },
   };
 }
-
-export default NewsPage;
