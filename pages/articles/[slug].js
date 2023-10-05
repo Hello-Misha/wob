@@ -24,10 +24,6 @@ export async function getServerSideProps({ params, locale }) {
   const articlesResponse = await fetcher(
     `${process.env.NEXT_PUBLIC_STRAPI_URL}/api/articles?populate=*&locale=${locale}`
   );
-  console.log(
-    articlesResponse.data.find((obj) => obj.attributes.slug === slug)
-  );
-
   const articlesResponseSlug = articlesResponse.data.find(
     (obj) => obj.attributes.slug === slug
   );

@@ -24,13 +24,11 @@ export async function getStaticProps({ locale }) {
   const articlesResponse = await fetcher(
     `${process.env.NEXT_PUBLIC_STRAPI_URL}/api/articles?populate=*&locale=${locale}`
   );
-  console.log(
-    articlesResponse.data.find((obj) => obj.attributes.slug === "test")
-  );
+
   return {
     props: {
       articles: articlesResponse,
-      ...(await serverSideTranslations(locale, ["news", "common", "meta"])),
+      ...(await serverSideTranslations(locale, ["home", "common", "meta"])),
     },
   };
 }

@@ -213,3 +213,45 @@ $Charcoal: #222528;
   top: 100px;
   background-color: white;
 }
+
+.ol {
+  list-style: decimal !important;
+  margin-left: clamp(1rem, 1vw, 1.5rem) !important;
+}
+
+.ul {
+  list-style: inside !important;
+  // margin-left: clamp(1rem, 1vw, 1.5rem) !important;
+}
+
+.quote {
+  font-family: $Montserrat;
+  font-size: clamp(1.5rem, 1vw, 2rem) !important;
+  font-style: italic !important;
+  font-weight: 400 !important;
+  line-height: normal;
+  position: relative;
+  padding: 2rem 0;
+}
+
+.quote::before {
+  font-size: 2rem !important;
+  font-weight: 700 !important;
+  color: $Lipstick !important;
+  content: "“" !important;
+  margin-bottom: -1rem !important;
+  padding-bottom: -1rem !important;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.quote::after {
+  font-size: 2rem !important;
+  font-weight: 700 !important;
+  color: $Lipstick !important;
+  content: "”" !important;
+  text-align: right !important;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}

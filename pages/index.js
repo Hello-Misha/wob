@@ -24,7 +24,7 @@ export async function getStaticProps({ locale }) {
   const articlesResponse = await fetcher(
     `${process.env.NEXT_PUBLIC_STRAPI_URL}/api/articles?populate=*&locale=${locale}`
   );
-  console.log(articlesResponse);
+
   return {
     props: {
       articles: articlesResponse,
