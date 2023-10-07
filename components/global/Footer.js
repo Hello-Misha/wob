@@ -66,11 +66,11 @@ const Footer = () => {
             /> */}
           </Col>
           <Col xs="6" md="3">
-            {navLinks.map((link, index) => (
+            {/* {navLinks.map((link, index) => (
               <Link key={index} href={link.href}>
                 <p className={`text white my-3`}>{t(item)}</p>
               </Link>
-            ))}
+            ))} */}
           </Col>
           <Col xs="12" md="5">
             {/* EMAIL */}
