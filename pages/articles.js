@@ -1,9 +1,9 @@
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
-import { fetcher } from "../../services/fetcher";
+import { fetcher } from "../services/fetcher";
 import Head from "next/head";
 
-import NewsOverview from "../../components/News/NewsOverviewComponent";
+import NewsOverview from "../components/News/NewsOverviewComponent";
 
 function NewsOverviewPage({ articles }) {
   const { t } = useTranslation("meta");
