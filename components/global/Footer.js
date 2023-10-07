@@ -15,7 +15,24 @@ import BtnComponent from "../ui/BtnComponent";
 import logo from "../../public/img/Logo-WoB.png";
 
 const Footer = () => {
-  const navLinks = ["/mission", "/membership", "/honor_circle", "/contacts"];
+  const navLinks = [
+    {
+      href: "/mission",
+      text: "header.links.about",
+    },
+    {
+      href: "/membership",
+      text: "header.links.membership",
+    },
+    {
+      href: "/honor_circle",
+      text: "header.links.hc",
+    },
+    {
+      href: "/contacts",
+      text: "header.links.contacts",
+    },
+  ];
   const { t } = useTranslation("common");
   return (
     <footer className="bg-lipstick mt-5">
@@ -49,8 +66,8 @@ const Footer = () => {
             /> */}
           </Col>
           <Col xs="6" md="3">
-            {t("footer", { returnObjects: true }).map((item, index) => (
-              <Link key={index} href={navLinks[index]}>
+            {navLinks.map((link, index) => (
+              <Link key={index} href={link.href}>
                 <p className={`text white my-3`}>{t(item)}</p>
               </Link>
             ))}
