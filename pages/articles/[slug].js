@@ -1,5 +1,4 @@
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-// import { useTranslation } from "next-i18next";
 import { fetcher } from "../../services/fetcher";
 import Head from "next/head";
 
@@ -33,7 +32,7 @@ export async function getServerSideProps({ params, locale }) {
     props: {
       article: articlesResponseSlug,
 
-      ...(await serverSideTranslations(locale, ["common", "meta"])),
+      ...(await serverSideTranslations(locale, ["common"])),
     },
   };
 }
