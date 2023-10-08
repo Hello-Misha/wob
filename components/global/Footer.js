@@ -18,19 +18,19 @@ const Footer = () => {
   const navLinks = [
     {
       href: "/mission",
-      text: "header.links.about",
+      text: "links.about",
     },
     {
       href: "/membership",
-      text: "header.links.membership",
+      text: "links.membership",
     },
     {
       href: "/honor_circle",
-      text: "header.links.hc",
+      text: "links.hc",
     },
     {
       href: "/contacts",
-      text: "header.links.contacts",
+      text: "links.contacts",
     },
   ];
   const { t } = useTranslation("common");
@@ -51,7 +51,7 @@ const Footer = () => {
             <BtnComponent
               locale={"common"}
               link={"/membership"}
-              btnText="header.btn.joinUs"
+              btnText="btn.joinUs"
               bg="bg-blue"
               classes={"mb-5"}
               color="white"
@@ -59,18 +59,18 @@ const Footer = () => {
             {/* <BtnComponent
               locale="common"
               link={"#"}
-              btnText="header.btn.login"
+              btnText="btn.login"
               bg="bg-white"
               classes={"mb-5"}
               color="lipstick"
             /> */}
           </Col>
           <Col xs="6" md="3">
-            {/* {navLinks.map((link, index) => (
-              <Link key={index} href={link.href}>
-                <p className={`text white my-3`}>{t(item)}</p>
+            {navLinks.map((item, index) => (
+              <Link key={index} href={item.href}>
+                <p className={`text white my-3`}>{t(item.text)}</p>
               </Link>
-            ))} */}
+            ))}
           </Col>
           <Col xs="12" md="5">
             {/* EMAIL */}

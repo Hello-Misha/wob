@@ -1,10 +1,30 @@
 {
   "home": {
     "title": "Women on Boards - Ukraine",
-    "description": "A leading not-for-profit organization dedicated to empowering women"
+    "description": "Провідна громадська організація, присвячена збільшення можливостей жінок у керівництві та розширення присутності жінок в корпоративних радах"
   },
   "about": {
-    "title": "Women on Boards - Ukraine",
-    "description": "A leading not-for-profit organization dedicated to empowering women"
+    "title": "Міссія WoB - Ukraine",
+    "description": "Розширення прав і можливостей жінок, сприяння інклюзивному прийняттю рішень, адвокації законодавчих змін, представництво українських жінок-професіоналок"
+  },
+  "membership": {
+    "title": "Запрошуємо долучитися до WoB - Ukraine",
+    "description": "Приєднатись до оргацізації"
+  },
+  "hc": {
+    "title": "Коло Пошани WoB - Ukraine",
+    "description": "Наші Партнери, Почесні Члени та Почесні Сапортери"
+  },
+  "contacts": {
+    "title": "Контакти WoB - Ukraine",
+    "description": "Телефон і пошта  WoB - Ukraine"
+  },
+  "news": {
+    "title": "Останні новини WoB - Ukraine",
+    "description": "Останні новини  WoB - Ukraine"
+  },
+  "err": {
+    "title": "Помилка",
+    "description": "Щось пішло не так, або немає такої сторінки"
   }
 }

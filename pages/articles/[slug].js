@@ -1,18 +1,19 @@
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import { useTranslation } from "next-i18next";
+// import { useTranslation } from "next-i18next";
 import { fetcher } from "../../services/fetcher";
 import Head from "next/head";
 
 import NewsPageComponent from "../../components/News/NewsPageComponent";
 
 function NewsPage({ article }) {
-  const { t } = useTranslation("news");
-
   return (
     <>
       <Head>
-        <title>{t("news.title")}</title>
-        <meta property="og:description" content={t("news.description")} />
+        <title>{article.attributes.metaTitle}</title>
+        <meta
+          property="og:description"
+          content={article.attributes.metaDescription}
+        />
       </Head>
       <NewsPageComponent article={article} />
     </>
@@ -32,7 +33,7 @@ export async function getServerSideProps({ params, locale }) {
     props: {
       article: articlesResponseSlug,
 
-      ...(await serverSideTranslations(locale, ["news", "common", "meta"])),
+      ...(await serverSideTranslations(locale, ["common", "meta"])),
     },
   };
 }

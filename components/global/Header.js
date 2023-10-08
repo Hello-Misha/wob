@@ -68,19 +68,19 @@ const Header = () => {
   const navLinks = [
     {
       href: "/mission",
-      text: "header.links.about",
+      text: "links.about",
     },
     {
       href: "/membership",
-      text: "header.links.membership",
+      text: "links.membership",
     },
     {
       href: "/honor_circle",
-      text: "header.links.hc",
+      text: "links.hc",
     },
     {
       href: "/contacts",
-      text: "header.links.contacts",
+      text: "links.contacts",
     },
   ];
 
@@ -133,7 +133,7 @@ const Header = () => {
             <BtnComponent
               locale={"common"}
               link={"/membership"}
-              btnText="header.btn.joinUs"
+              btnText="btn.joinUs"
               bg="bg-blue"
               classes={classes.navbar__container__elements__btn}
               color="white"
@@ -142,7 +142,7 @@ const Header = () => {
             {/* <BtnComponent
               locale="common"
               link={"#"}
-              btnText="header.btn.login"
+              btnText="btn.login"
               classes=""
               bg="bg-white"
               color="lipstick"

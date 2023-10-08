@@ -10,8 +10,8 @@ function MissionPage() {
   return (
     <>
       <Head>
-        <title>{t("home.title")}</title>
-        <meta property="og:description" content={t(`home.description`)} />
+        <title>{t("mission.title")}</title>
+        <meta property="og:description" content={t(`mission.description`)} />
       </Head>
       <Mission />
     </>
