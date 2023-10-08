@@ -6,6 +6,11 @@ import Head from "next/head";
 import NewsPageComponent from "../../components/News/NewsPageComponent";
 
 function NewsPage({ article }) {
+  if (!article) {
+    // Handle the case when article is undefined
+    // For example, you can return a loading state or an error message.
+    return <div>Loading...</div>;
+  }
   return (
     <>
       <Head>
@@ -16,11 +21,8 @@ function NewsPage({ article }) {
         />
       </Head>
       {console.log(article)}
-      Hello World Hello World Hello World Hello World Hello World Hello World
-      Hello World Hello World Hello World Hello World Hello World Hello World
-      Hello World Hello World Hello World Hello World Hello World Hello World
-      Hello World Hello World
-      {/* <NewsPageComponent article={article} /> */}
+      HELLO WORLD
+      <NewsPageComponent article={article} />
     </>
   );
 }
@@ -34,7 +36,7 @@ export async function getStaticProps({ params, locale }) {
   const articlesResponseSlug = articlesResponse.data.find(
     (obj) => obj.attributes.slug === slug
   );
-  console.log(articlesResponseSlug);
+  // console.log(articlesResponseSlug.attributes);
 
   return {
     props: {
