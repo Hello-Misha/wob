@@ -19,31 +19,51 @@ function NewsPage({ article }) {
   );
 }
 
-export async function getServerSideProps({ params, locale }) {
-  const { slug } = params;
+// export async function getServerSideProps({ params, locale }) {
+//   const { slug } = params;
 
-  // Fetch articles with the given slug and locale
+//   // Fetch articles with the given slug and locale
+//   const articlesResponse = await fetcher(
+//     `${process.env.NEXT_PUBLIC_STRAPI_URL}/api/articles?populate=*&locale=${locale}`
+//   );
+
+//   // Find the article with the matching slug
+//   const article = articlesResponse.data.find(
+//     (obj) => obj.attributes.slug === slug
+//   );
+
+//   if (!article) {
+//     return {
+//       notFound: true, // Return a 404 error if the article is not found
+//     };
+//   }
+
+//   return {
+//     props: {
+//       article,
+//       ...(await serverSideTranslations(locale, ["common"])),
+//     },
+//   };
+// }
+
+export const getStaticPaths = async () => {
+  // Fetch all articles in all locales
   const articlesResponse = await fetcher(
-    `${process.env.NEXT_PUBLIC_STRAPI_URL}/api/articles?populate=*&locale=${locale}`
+    `${process.env.NEXT_PUBLIC_STRAPI_URL}/api/articles?populate=*`
   );
 
-  // Find the article with the matching slug
-  const article = articlesResponse.data.find(
-    (obj) => obj.attributes.slug === slug
+  // Generate dynamic paths for each article in each locale
+  const paths = articlesResponse.data.flatMap((article) =>
+    article.locales.map((locale) => ({
+      params: { slug: article.attributes.slug },
+      locale, // Specify the locale for each path
+    }))
   );
-
-  if (!article) {
-    return {
-      notFound: true, // Return a 404 error if the article is not found
-    };
-  }
 
   return {
-    props: {
-      article,
-      ...(await serverSideTranslations(locale, ["common"])),
-    },
+    paths,
+    fallback: true,
   };
-}
+};
 
 export default NewsPage;
