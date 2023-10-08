@@ -16,8 +16,11 @@ function NewsPage({ article }) {
         />
       </Head>
       {console.log(article)}
-
-      <NewsPageComponent article={article} />
+      Hello World Hello World Hello World Hello World Hello World Hello World
+      Hello World Hello World Hello World Hello World Hello World Hello World
+      Hello World Hello World Hello World Hello World Hello World Hello World
+      Hello World Hello World
+      {/* <NewsPageComponent article={article} /> */}
     </>
   );
 }
