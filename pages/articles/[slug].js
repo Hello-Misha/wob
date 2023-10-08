@@ -1,4 +1,5 @@
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+// import { useTranslation } from "next-i18next";
 import { fetcher } from "../../services/fetcher";
 import Head from "next/head";
 
@@ -14,51 +15,43 @@ function NewsPage({ article }) {
           content={article.attributes.metaDescription}
         />
       </Head>
+      {console.log(article)}
+
       <NewsPageComponent article={article} />
     </>
   );
 }
+// getServerSideProps
+// getStaticProps
+export async function getStaticProps({ params, locale }) {
+  const { slug } = params;
+  const articlesResponse = await fetcher(
+    `${process.env.NEXT_PUBLIC_STRAPI_URL}/api/articles?populate=*&locale=${locale}`
+  );
+  const articlesResponseSlug = articlesResponse.data.find(
+    (obj) => obj.attributes.slug === slug
+  );
+  console.log(articlesResponseSlug);
 
-// export async function getServerSideProps({ params, locale }) {
-//   const { slug } = params;
+  return {
+    props: {
+      article: articlesResponseSlug,
 
-//   // Fetch articles with the given slug and locale
-//   const articlesResponse = await fetcher(
-//     `${process.env.NEXT_PUBLIC_STRAPI_URL}/api/articles?populate=*&locale=${locale}`
-//   );
-
-//   // Find the article with the matching slug
-//   const article = articlesResponse.data.find(
-//     (obj) => obj.attributes.slug === slug
-//   );
-
-//   if (!article) {
-//     return {
-//       notFound: true, // Return a 404 error if the article is not found
-//     };
-//   }
-
-//   return {
-//     props: {
-//       article,
-//       ...(await serverSideTranslations(locale, ["common"])),
-//     },
-//   };
-// }
-
+      ...(await serverSideTranslations(locale, ["news", "common", "meta"])),
+    },
+  };
+}
 export const getStaticPaths = async () => {
   // Fetch all articles in all locales
   const articlesResponse = await fetcher(
     `${process.env.NEXT_PUBLIC_STRAPI_URL}/api/articles?populate=*`
   );
 
-  // Generate dynamic paths for each article in each locale
-  const paths = articlesResponse.data.flatMap((article) =>
-    article.locales.map((locale) => ({
-      params: { slug: article.attributes.slug },
-      locale, // Specify the locale for each path
-    }))
-  );
+  // Generate dynamic paths for each article
+  const paths = articlesResponse.data.map((article) => ({
+    params: { slug: article.attributes.slug },
+    locale: article.locales, // Use the string locale directly
+  }));
 
   return {
     paths,

@@ -46,7 +46,7 @@ function NewsPageComponent({ article }) {
             </h3>
             <p className="text blue mb-5">{article.attributes.spoiler}</p>
             <hr className="mb-5" />
-            {console.log(article.attributes.articleText)}
+
             {RichTextRenderer(article.attributes.articleText)}
             <hr className="mb-5" />
             {/* {galeryArr ? <PhotoSlider imgArr={galeryArr} /> : ""} */}
