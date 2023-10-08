@@ -21,17 +21,26 @@ function NewsPage({ article }) {
 
 export async function getServerSideProps({ params, locale }) {
   const { slug } = params;
+
+  // Fetch articles with the given slug and locale
   const articlesResponse = await fetcher(
     `${process.env.NEXT_PUBLIC_STRAPI_URL}/api/articles?populate=*&locale=${locale}`
   );
-  const articlesResponseSlug = articlesResponse.data.find(
+
+  // Find the article with the matching slug
+  const article = articlesResponse.data.find(
     (obj) => obj.attributes.slug === slug
   );
 
+  if (!article) {
+    return {
+      notFound: true, // Return a 404 error if the article is not found
+    };
+  }
+
   return {
     props: {
-      article: articlesResponseSlug,
-
+      article,
       ...(await serverSideTranslations(locale, ["common"])),
     },
   };
