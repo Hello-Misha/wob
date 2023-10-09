@@ -29,6 +29,7 @@ const Members = ({ classes }) => {
     "",
     "https://www.linkedin.com/in/anna-derevyanko-b5307a1/",
     "https://www.linkedin.com/in/lisa-kaestner-1952341/",
+    "https://www.linkedin.com/in/olgabelkova/",
     "https://www.linkedin.com/in/iryna-rubis/",
     "https://www.linkedin.com/in/ostrashna/",
   ];
@@ -37,7 +38,7 @@ const Members = ({ classes }) => {
     Voloshina,
     Derevyanko,
     Kaestner,
-    // Bielkova,
+    Bielkova,
     Rubis,
     // Chopivsky,
     Strashna,

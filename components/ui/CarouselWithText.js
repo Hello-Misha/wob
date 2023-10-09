@@ -6,10 +6,9 @@ import { Container, Row, Col } from "react-bootstrap";
 const CarouselComponent = ({ locale, imgArr, textContent }) => {
   const { t } = useTranslation(locale);
 
-  const carousel = t("members.carousel", { returnObjects: true });
   return (
     <Carousel className="my-5">
-      {t(textContent, { returnObjects: true }).map((item, index) => (
+      {textContent.map((item, index) => (
         <Carousel.Item key={index}>
           <Container>
             <Row className="d-flex align-items-start">
@@ -35,7 +34,7 @@ const CarouselComponent = ({ locale, imgArr, textContent }) => {
                   <h2 className="super-title text-left lipstick -mb-10">“</h2>
 
                   <div className="-my-5 -py-5">
-                    {carousel[index].quote.map((item, index) => (
+                    {item.quote.map((item, index) => (
                       <p key={index} className="text-i-l blue mb-3">
                         {item}
                       </p>

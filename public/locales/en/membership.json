@@ -71,6 +71,17 @@
     "title": "What our members say",
     "carousel": [
       {
+        "name": "Olga Ustynova",
+        "title": " CEO | Vodaphone Ukraine",
+        "quote": [
+          "One of the fundamental values of the global Vodafone is equal opportunities for personal development and professional self-realization. Otherwise, working in a multinational, multicultural and diverse team, which unites more than 100 thousand people from different countries of the world, is not possible. In my opinion, the principle of equal opportunities should be implemented in all spheres - state, corporate, social.",
+
+          "In addition, a company that implements the latest digital technologies and is involved in changing the structure of the modern world should prioritize the humanization of technological progress.",
+          
+          "Therefore, I personally and my Ukrainian team support the idea of equal opportunities and implement it in our company, including at the level of corporate management."""
+        ]
+      },
+      {
         "name": "Oksana Volchko",
         "title": "Member of the Supervisory Board | Chapter Zero Ukraine and Caucasus (Georgia and Armenia)",
         "quote": [
