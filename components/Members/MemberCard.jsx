@@ -16,7 +16,7 @@ const MemberCard = ({ member }) => {
         <section>
           <Container>
             <Row>
-              <Col md="4">
+              <Col md="3">
                 <Image
                   src={member.attributes.photo.data.attributes.url}
                   className={`img-fluid mb-3`}
