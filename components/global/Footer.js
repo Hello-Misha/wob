@@ -57,14 +57,14 @@ const Footer = () => {
               classes={"mb-5"}
               color="white"
             />
-            {/* <BtnComponent
+            <BtnComponent
               locale="common"
-              link={"#"}
+              link={"/login"}
               btnText="btn.login"
               bg="bg-white"
               classes={"mb-5"}
               color="lipstick"
-            /> */}
+            />
           </Col>
           <Col xs="6" md="3">
             {navLinks.map((item, index) => (
