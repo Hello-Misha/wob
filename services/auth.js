@@ -2,12 +2,12 @@ import Router from "next/router";
 import Cookies from "js-cookie";
 import { fetcher } from "./fetcher";
 
-export const setToken = (data) => {
+export const setToken = (user) => {
   if (typeof window === "undefined") {
     return;
   }
-  Cookies.set("id", data.user.id);
-  Cookies.set("username", data.user.username);
+  Cookies.set("id", user.id);
+  Cookies.set("username", user.username);
   Cookies.set("jwt", data.jwt);
 
   if (Cookies.get("username")) {
