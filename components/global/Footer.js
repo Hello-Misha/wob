@@ -59,7 +59,7 @@ const Footer = () => {
             />
             <BtnComponent
               locale="common"
-              link={"/login"}
+              link={"/auth"}
               btnText="btn.login"
               bg="bg-white"
               classes={"mb-5"}

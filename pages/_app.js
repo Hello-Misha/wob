@@ -5,9 +5,13 @@ import { appWithTranslation } from "next-i18next";
 
 import "../styles/index.scss";
 
+import { useFetchUser } from "../services/authContext";
+
 const App = ({ Component, pageProps }) => {
+  const { user } = useFetchUser();
   return (
-    <Layout>
+    <Layout user={user}>
+      {console.log(user)}
       <Component {...pageProps} />
     </Layout>
   );

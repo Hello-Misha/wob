@@ -2,12 +2,12 @@ import Router from "next/router";
 import Cookies from "js-cookie";
 import { fetcher } from "./fetcher";
 
-export const setToken = (user) => {
+export const setToken = (data) => {
   if (typeof window === "undefined") {
     return;
   }
-  Cookies.set("id", user.id);
-  Cookies.set("username", user.username);
+  Cookies.set("id", data.user.id);
+  Cookies.set("username", data.user.username);
   Cookies.set("jwt", data.jwt);
 
   if (Cookies.get("username")) {
@@ -27,37 +27,39 @@ export const unsetToken = () => {
 };
 
 export const getUserFromLocalCookie = () => {
-  const jwt = getTokenFromLocalCookie();
-  if (jwt) {
-    return fetcher(`${process.env.NEXT_PUBLIC_STRAPI_URL}/users/me`, {
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${jwt}`,
-      },
-    })
-      .then((data) => {
-        return data.username;
-      })
-      .catch((error) => console.error(error));
-  } else {
-    return;
-  }
+  return Cookies.get("username");
+  // const jwt = getTokenFromLocalCookie();
+  // if (jwt) {
+  //   return fetcher(`${process.env.NEXT_PUBLIC_STRAPI_URL}/users/me`, {
+  //     headers: {
+  //       "Content-Type": "application/json",
+  //       Authorization: `Bearer ${jwt}`,
+  //     },
+  //   })
+  //     .then((data) => {
+  //       return data.username;
+  //     })
+  //     .catch((error) => console.error(error));
+  // } else {
+  //   return;
+  // }
 };
 
 export const getIdFromLocalCookie = () => {
-  const jwt = getTokenFromLocalCookie();
-  if (jwt) {
-    return fetcher(`${process.env.NEXT_PUBLIC_STRAPI_URL}/users/me`, {
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${jwt}`,
-      },
-    }).then((data) => {
-      return data.id;
-    });
-  } else {
-    return;
-  }
+  return Cookies.get("id");
+  // const jwt = getTokenFromLocalCookie();
+  // if (jwt) {
+  //   return fetcher(`${process.env.NEXT_PUBLIC_STRAPI_URL}/users/me`, {
+  //     headers: {
+  //       "Content-Type": "application/json",
+  //       Authorization: `Bearer ${jwt}`,
+  //     },
+  //   }).then((data) => {
+  //     return data.id;
+  //   });
+  // } else {
+  //   return;
+  // }
 };
 
 export const getTokenFromLocalCookie = () => {
