@@ -10,24 +10,10 @@ import {
   AiOutlineLinkedin,
 } from "react-icons/ai";
 
-// import PhotoSlider from "@/components/TechComponents/Carousel";
-
 function Member({ member }) {
-  // const galeryArr = [];
-
-  // function galeryArrFetch(arr) {
-  //   const uri = article.attributes.galery.data;
-
-  //   if (Array.isArray(uri)) {
-  //     uri.forEach((img) => {
-  //       if (img.attributes && img.attributes.url) {
-  //         arr.push(process.env.NEXT_PUBLIC_STRAPI_URL2 + img.attributes.url);
-  //       }
-  //     });
-  //   }
-  // }
-
-  // galeryArrFetch(galeryArr);
+  const competenciesStr = member.attributes.competencies;
+  const arrayOfStrings = competenciesStr.split(",");
+  const competenciesArr = arrayOfStrings.map((str) => str.trim());
 
   return (
     <main>
@@ -53,16 +39,39 @@ function Member({ member }) {
             </Row>
             <Row>
               <Col md="12">
-                <h3 className="h1-title lipstick mb-3">
+                <h3 className="h1-title text-center lipstick mb-5">
                   {member.attributes.name}
                 </h3>
               </Col>
             </Row>
             <Row>
-              <Col md="6">
-                <p className="text blue mb-5">{member.attributes.spoiler}</p>
+              <Col md="8">
+                <Row>
+                  <Col md="12">
+                    <p className="text blue mb-5">
+                      {member.attributes.spoiler}
+                    </p>
+                  </Col>
+                </Row>
+                <Row className="my-3">
+                  {competenciesArr.map((item, index) => (
+                    <Col md="4" key={index}>
+                      <div
+                        style={{
+                          border: "4px solid #981b46", // Add a border with the desired color
+                          color: "#981b46", // Set the text color to match the border color
+                        }}
+                        className="lipstick text rounded "
+                      >
+                        <p className="text text-center blue my-3 mx-auto ">
+                          {item}
+                        </p>
+                      </div>
+                    </Col>
+                  ))}
+                </Row>
               </Col>
-              <Col md="6">
+              <Col md="4">
                 <div className="d-flex mb-4 align-items-center">
                   <IconContext.Provider
                     value={{
