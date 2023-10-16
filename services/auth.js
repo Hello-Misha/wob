@@ -1,6 +1,6 @@
 import Router from "next/router";
 import Cookies from "js-cookie";
-import { fetcher } from "./fetcher";
+// import { fetcher } from "./fetcher";
 
 export const setToken = (data) => {
   if (typeof window === "undefined") {

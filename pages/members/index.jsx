@@ -22,8 +22,6 @@ function NewsOverviewPage({ members }) {
         <meta property="og:description" content={t("news.description")} />
       </Head>
       {user && <MembersOverview members={members} />}
-      {console.log(user)}
-      {console.log(members)}
     </>
   );
 }

@@ -2,10 +2,11 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 // import { useTranslation } from "next-i18next";
 import { fetcher } from "../../services/fetcher";
 import Head from "next/head";
-
+import { useFetchUser } from "../../services/authContext";
 import Member from "../../components/Members/MemberPage";
 
 function NewsPage({ member }) {
+  const { user, loading } = useFetchUser();
   if (!member) {
     return <div>Loading...</div>;
   }
@@ -19,7 +20,7 @@ function NewsPage({ member }) {
         />
       </Head>
 
-      <Member member={member} />
+      {user && <Member member={member} />}
     </>
   );
 }

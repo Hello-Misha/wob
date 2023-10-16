@@ -10,8 +10,8 @@ function AuthPage() {
   return (
     <>
       <Head>
-        <title>{t("contacts.title")}</title>
-        <meta property="og:description" content={t(`contacts.description`)} />
+        <title>{t("auth.title")}</title>
+        <meta property="og:description" content={t(`auth.description`)} />
       </Head>
       <Auth />
     </>
@@ -23,7 +23,7 @@ export default AuthPage;
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ["contacts", "common", "meta"])),
+      ...(await serverSideTranslations(locale, ["auth", "common", "meta"])),
     },
   };
 }

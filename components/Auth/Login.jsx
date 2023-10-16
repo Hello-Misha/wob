@@ -1,12 +1,13 @@
 "use client";
 import { useTranslation } from "next-i18next";
+import { Container, Row, Col } from "react-bootstrap";
 
 import { useState } from "react";
 import { fetcher } from "../../services/fetcher";
 import { setToken } from "../../services/auth";
 import { useUser } from "../../services/authContext";
 const Login = () => {
-  const { t } = useTranslation("mission");
+  const { t } = useTranslation("auth");
 
   const [data, setData] = useState({
     identifier: "",
@@ -37,37 +38,55 @@ const Login = () => {
     setData({ ...data, [e.target.name]: e.target.value });
   };
   return (
-    <section>
-      <h1 className="h1-title lipstick">Login</h1>
-      {!loading && !user ? (
-        <form onSubmit={handleSubmit} className="form-inline">
-          <input
-            type="text"
-            name="identifier"
-            onChange={handleChange}
-            placeholder="email"
-            className="md:p-2 form-input py-2 rounded mx-2"
-            required
-          />
-          <input
-            type="password"
-            name="password"
-            onChange={handleChange}
-            placeholder="Password"
-            className="md:p-2 form-input py-2 rounded mx-2"
-            required
-          />
-
-          <button
-            className="md:p-2 rounded py-2 text-black bg-purple-200 p-2"
-            type="submit"
-          >
-            Login
-          </button>
-        </form>
-      ) : (
-        ""
-      )}
+    <section className="my-5">
+      <Container className="my-5">
+        <Row>
+          <Col md="8" className="mx-auto d-flex flex-col">
+            <h1 className="h1-title lipstick my-5 text-center">
+              {t("login.title")}
+            </h1>
+            {!loading && !user ? (
+              <form onSubmit={handleSubmit} className="">
+                <div className="mb-4">
+                  <label htmlFor="identifier" className="block text blue mb-2">
+                    {t("login.form.labelEmail")}
+                  </label>
+                  <input
+                    type="text"
+                    name="identifier"
+                    placeholder={t("login.form.placeholderEmail")}
+                    onChange={handleChange}
+                    className="text px-3 py-2 border rounded w-full"
+                    required
+                  />
+                </div>
+                <div className="mb-4">
+                  <label htmlFor="password" className="block text blue mb-2">
+                    {t("login.form.labelPassword")}
+                  </label>
+                  <input
+                    type="password"
+                    name="password"
+                    placeholder={t("login.form.placeholderPassword")}
+                    onChange={handleChange}
+                    className="text px-3 py-2 border rounded w-full"
+                    required
+                  />
+                </div>
+                <button
+                  style={{ backgroundColor: "#981b46" }}
+                  className="text-white text py-3 px-5 rounded mx-auto"
+                  type="submit"
+                >
+                  {t("login.form.submit")}
+                </button>
+              </form>
+            ) : (
+              ""
+            )}
+          </Col>
+        </Row>
+      </Container>
     </section>
   );
 };

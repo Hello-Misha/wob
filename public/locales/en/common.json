@@ -8,6 +8,7 @@
   "linksArr": ["About", "Membership", "Honor Circle", "Contacts"],
   "btn": {
     "joinUs": "Join Us",
-    "login": "Membership Login"
+    "login": "Login",
+    "logout": "Logout"
   }
 }

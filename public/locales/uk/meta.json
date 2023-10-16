@@ -23,6 +23,10 @@
     "title": "Останні новини WoB - Ukraine",
     "description": "Останні новини  WoB - Ukraine"
   },
+  "auth": {
+    "title": "Авторизація в системі WoB - Ukraine",
+    "description": "Авторизація в системі  WoB - Ukraine"
+  },
   "err": {
     "title": "Помилка",
     "description": "Щось пішло не так, або немає такої сторінки"
