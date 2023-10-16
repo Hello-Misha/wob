@@ -41,13 +41,13 @@ function Member({ member }) {
             >
               <Col md="12">
                 <Image
-                  src={member.attributes.photo.data.attributes.url}
+                  src={member.attributes.honoraryImg.data.attributes.url}
                   alt=""
                   // alt={tiding.attributes.mainImgAlt}
                   loading="lazy"
                   width={600}
                   height={600}
-                  className="img-fluid mx-auto my-5 py-5"
+                  className="img-fluid mx-auto my-5"
                 />
               </Col>
             </Row>

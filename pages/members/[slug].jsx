@@ -4,6 +4,7 @@ import { fetcher } from "../../services/fetcher";
 import Head from "next/head";
 import { useFetchUser } from "../../services/authContext";
 import Member from "../../components/Members/MemberPage";
+import Unauthorized from "../../components/Auth/Unauthorized";
 
 function NewsPage({ member }) {
   const { user, loading } = useFetchUser();
@@ -20,7 +21,7 @@ function NewsPage({ member }) {
         />
       </Head>
 
-      {user && <Member member={member} />}
+      {user ? <Member member={member} /> : <Unauthorized />}
     </>
   );
 }

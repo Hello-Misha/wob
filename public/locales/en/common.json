@@ -10,5 +10,10 @@
     "joinUs": "Join Us",
     "login": "Login",
     "logout": "Logout"
+  },
+  "unauthorized": {
+    "title": "Sorry, this page is private",
+    "text": "To access the content you must be authorized",
+    "btn": "Login"
   }
 }

@@ -5,6 +5,7 @@ import Head from "next/head";
 import { useFetchUser } from "../../services/authContext";
 
 import MembersOverview from "../../components/Members/MembersOverview";
+import Unauthorized from "../../components/Auth/Unauthorized";
 
 import {
   getTokenFromLocalCookie,
@@ -21,7 +22,8 @@ function NewsOverviewPage({ members }) {
         <title>{t("news.title")}</title>
         <meta property="og:description" content={t("news.description")} />
       </Head>
-      {user && <MembersOverview members={members} />}
+      {console.log(members)}
+      {user ? <MembersOverview members={members} /> : <Unauthorized />}
     </>
   );
 }
