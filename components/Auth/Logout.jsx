@@ -13,9 +13,16 @@ const Logout = () => {
             <h1 className="h1-title lipstick my-5 text-center">
               {t("logout.title")}
             </h1>
-            <div className={`btnSolid  bg-lipstick`} onClick={unsetToken}>
-              <h4 className={`btn-text white`}>{t("logout.btn")}</h4>
-            </div>
+            <Col md="3" className="mx-auto">
+              <div
+                className={`rounded bg-lipstick mx-auto`}
+                onClick={unsetToken}
+              >
+                <h4 className={`text text-center py-3 cursor-pointer white`}>
+                  {t("logout.btn")}
+                </h4>
+              </div>
+            </Col>
           </Col>
         </Row>
       </Container>
