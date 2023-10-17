@@ -3,15 +3,14 @@ import "bootstrap/dist/css/bootstrap.css";
 
 import { appWithTranslation } from "next-i18next";
 
-import "../styles/index.scss";
+import "styles/index.scss";
 
-import { useFetchUser } from "../services/authContext";
+import { useFetchUser } from "services/authContext";
 
 const App = ({ Component, pageProps }) => {
   const { user } = useFetchUser();
   return (
     <Layout user={user}>
-      {console.log(user)}
       <Component {...pageProps} />
     </Layout>
   );

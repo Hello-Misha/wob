@@ -9,7 +9,7 @@
   "btn": {
     "joinUs": "Join Us",
     "login": "Login",
-    "logout": "Logout"
+    "office": "Members Space"
   },
   "unauthorized": {
     "title": "Sorry, this page is private",

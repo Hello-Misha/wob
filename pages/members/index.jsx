@@ -19,10 +19,10 @@ function NewsOverviewPage({ members }) {
   return (
     <>
       <Head>
-        <title>{t("news.title")}</title>
-        <meta property="og:description" content={t("news.description")} />
+        <title>{t("members.title")}</title>
+        <meta property="og:description" content={t("members.description")} />
       </Head>
-      {console.log(members)}
+
       {user ? <MembersOverview members={members} /> : <Unauthorized />}
     </>
   );

@@ -20,8 +20,6 @@ function NewsPage({ article }) {
           content={article.attributes.metaDescription}
         />
       </Head>
-      {console.log(article)}
-      HELLO WORLD
       <NewsPageComponent article={article} />
     </>
   );
@@ -36,7 +34,6 @@ export async function getStaticProps({ params, locale }) {
   const articlesResponseSlug = articlesResponse.data.find(
     (obj) => obj.attributes.slug === slug
   );
-  // console.log(articlesResponseSlug.attributes);
 
   return {
     props: {

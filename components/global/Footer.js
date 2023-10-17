@@ -61,8 +61,8 @@ const Footer = () => {
             {user ? (
               <BtnComponent
                 locale="common"
-                link={"/auth"}
-                btnText="btn.logout"
+                link={"/members_space"}
+                btnText="btn.office"
                 bg="bg-white"
                 classes={"mb-5"}
                 color="lipstick"

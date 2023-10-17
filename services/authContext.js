@@ -34,7 +34,6 @@ export const useFetchUser = () => {
     const resolveUser = async () => {
       const user = await getUserFromLocalCookie();
       if (isMounted) {
-        console.log("User Retrieved:", user);
         setUser({ user, loading: false });
       }
     };

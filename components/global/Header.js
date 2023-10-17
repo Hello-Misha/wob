@@ -144,8 +144,8 @@ const Header = () => {
             {user ? (
               <BtnComponent
                 locale="common"
-                link={"/auth"}
-                btnText="btn.logout"
+                link={"/members_space"}
+                btnText="btn.office"
                 classes=""
                 bg="bg-white"
                 color="lipstick"
