@@ -6,6 +6,10 @@ import NewsCard from "./NewsCard";
 function TeamPage({ articles }) {
   const { t } = useTranslation("home");
 
+  const filteredArr = articles.data.sort(
+    (a, b) => new Date(b.attributes.date) - new Date(a.attributes.date)
+  );
+
   return (
     <main>
       <Container className="mb-5 mt-5">
@@ -14,7 +18,7 @@ function TeamPage({ articles }) {
         </h2>
         <Row className="mb-3 d-flex justify-content-center">
           {articles &&
-            articles.data.map((article) => (
+            filteredArr.map((article) => (
               <Col lg="12" md="12" key={article.id}>
                 <NewsCard article={article} playback="big" />
               </Col>

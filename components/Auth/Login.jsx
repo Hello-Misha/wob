@@ -121,7 +121,8 @@ const Login = () => {
           <Modal.Title>Reset Password</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          To reset the password, please contact the administrator.
+          To reset the password, please contact the administrator{" "}
+          <b>office@wob.com.ua</b>.
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClosePopup}>

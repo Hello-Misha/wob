@@ -11,8 +11,9 @@ export const setToken = (data) => {
   Cookies.set("jwt", data.jwt);
 
   if (Cookies.get("username")) {
-    Router.reload("/");
-    Router.push("/contacts");
+    Router.push("/members_space").then(() => {
+      window.location.reload();
+    });
   }
 };
 
@@ -25,6 +26,9 @@ export const unsetToken = () => {
   Cookies.remove("username");
 
   Router.reload("/");
+  Router.push("/").then(() => {
+    window.location.reload();
+  });
 };
 
 export const getUserFromLocalCookie = () => {
