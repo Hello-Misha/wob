@@ -104,9 +104,13 @@ const Members = ({ classes }) => {
                         <h2 className="super-title text-left lipstick -mb-5 -mt-5">
                           “
                         </h2>
-                        <p className="text-i-l blue -mt-5 -pt-5">
-                          {card.quote}
-                        </p>
+                        <div className="text-i-l blue -mt-5 -pt-5">
+                          {card.quote.map((item, index) => (
+                            <p key={index} className="mb-3">
+                              {item}
+                            </p>
+                          ))}
+                        </div>
                         <h2 className="super-title text-right lipstick -my-5 ">
                           ”
                         </h2>
