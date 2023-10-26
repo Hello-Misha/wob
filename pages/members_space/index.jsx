@@ -36,7 +36,7 @@ export async function getStaticProps({ locale }) {
   return {
     props: {
       ...(await serverSideTranslations(locale, [
-        "honorCircle",
+        "members_space",
         "common",
         "meta",
       ])),

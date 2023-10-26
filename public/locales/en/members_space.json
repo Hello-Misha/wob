@@ -1,0 +1,16 @@
+{
+  "members_space": {
+    "title": "Members Space",
+    "text": "Enjoy all benefits from exclusive WoB membership",
+    "members": "Members List",
+    "jobs": "Jobs Board",
+    "events": "Exclusive events",
+    "logout": "Logout from system"
+  },
+  "members": {
+    "title": "Members List"
+  },
+  "events": {
+    "title": "Exclusive events"
+  }
+}

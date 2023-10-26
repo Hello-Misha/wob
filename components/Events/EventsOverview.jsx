@@ -1,22 +1,26 @@
 import { useTranslation } from "next-i18next";
 import { Container, Row, Col } from "react-bootstrap";
 
-import MemberCard from "./MemberCard";
+import EventCard from "./EventCard";
 
-function MembersOverview({ members }) {
+function EventsOverview({ events }) {
   const { t } = useTranslation("members_space");
+
+  const filteredArr = events.data.sort(
+    (a, b) => new Date(b.attributes.date) - new Date(a.attributes.date)
+  );
 
   return (
     <main>
       <Container className="mb-5 mt-5">
         <h2 className={`h1-title lipstick mb-5 text-center`}>
-          {t("members.title")}
+          {t("events.title")}
         </h2>
         <Row className="mb-3 d-flex justify-content-center">
-          {members &&
-            members.data.map((member) => (
-              <Col lg="12" md="12" key={member.id}>
-                <MemberCard member={member} />
+          {events &&
+            events.data.map((event) => (
+              <Col lg="12" md="12" key={event.id}>
+                <EventCard event={event} />
               </Col>
             ))}
         </Row>
@@ -25,4 +29,4 @@ function MembersOverview({ members }) {
   );
 }
 
-export default MembersOverview;
+export default EventsOverview;

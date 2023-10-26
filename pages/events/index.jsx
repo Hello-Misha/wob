@@ -1,18 +1,18 @@
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
-import { fetcher } from "../../services/fetcher";
+import { fetcher } from "services/fetcher";
 import Head from "next/head";
-import { useFetchUser } from "../../services/authContext";
+import { useFetchUser } from "services/authContext";
 
-import MembersOverview from "../../components/Members/MembersOverview";
-import Unauthorized from "../../components/Auth/Unauthorized";
+import EventsOverview from "components/Events/EventsOverview";
+import Unauthorized from "components/Auth/Unauthorized";
 
 import {
   getTokenFromLocalCookie,
   getTokenFromServerCookie,
-} from "../../services/auth";
+} from "services/auth";
 
-function MembersPage({ members }) {
+function EventsPage({ events }) {
   const { t } = useTranslation("meta");
 
   const { user, loading } = useFetchUser();
@@ -23,12 +23,12 @@ function MembersPage({ members }) {
         <meta property="og:description" content={t("members.description")} />
       </Head>
 
-      {user ? <MembersOverview members={members} /> : <Unauthorized />}
+      {user ? <EventsOverview events={events} /> : <Unauthorized />}
     </>
   );
 }
 
-export default MembersPage;
+export default EventsPage;
 
 export async function getServerSideProps({ req, locale }) {
   const jwt =
@@ -36,8 +36,8 @@ export async function getServerSideProps({ req, locale }) {
       ? getTokenFromLocalCookie()
       : getTokenFromServerCookie(req);
 
-  const membersResponse = await fetcher(
-    `${process.env.NEXT_PUBLIC_STRAPI_URL}/api/members?populate=*&locale=${locale}`,
+  const eventsResponse = await fetcher(
+    `${process.env.NEXT_PUBLIC_STRAPI_URL}/api/events?populate=*&locale=${locale}`,
     jwt
       ? {
           headers: {
@@ -49,7 +49,7 @@ export async function getServerSideProps({ req, locale }) {
 
   return {
     props: {
-      members: membersResponse,
+      events: eventsResponse,
       ...(await serverSideTranslations(locale, [
         "members_space",
         "common",
