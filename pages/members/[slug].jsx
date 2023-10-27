@@ -6,7 +6,7 @@ import { useFetchUser } from "../../services/authContext";
 import Member from "../../components/Members/MemberPage";
 import Unauthorized from "../../components/Auth/Unauthorized";
 
-function NewsPage({ member }) {
+function MemberPage({ member }) {
   const { user, loading } = useFetchUser();
   if (!member) {
     return <div>Loading...</div>;
@@ -58,4 +58,4 @@ export const getStaticPaths = async () => {
   };
 };
 
-export default NewsPage;
+export default MemberPage;

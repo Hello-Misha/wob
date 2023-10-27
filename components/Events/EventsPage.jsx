@@ -1,134 +1,82 @@
 import { Container, Row, Col } from "react-bootstrap";
+import { useTranslation } from "next-i18next";
 import Image from "next/image";
 import Link from "next/link";
-import { RichTextRenderer } from "../../services/richTextReducer";
-import { motion } from "framer-motion";
-import { IconContext } from "react-icons";
-import {
-  AiOutlineMail,
-  AiOutlinePhone,
-  AiOutlineLinkedin,
-} from "react-icons/ai";
+import { RichTextRenderer } from "services/richTextReducer";
 
-function Event({ event }) {
-  const competenciesStr = member.attributes.competencies;
-  const arrayOfStrings = competenciesStr.split(",");
-  const competenciesArr = arrayOfStrings.map((str) => str.trim());
-
+function EventP({ event }) {
+  const { t } = useTranslation("members_space");
   return (
     <main>
-      <Container className="mb-5 mt-5">
+      <Container>
         <Row>
-          <Col md="12" className="mb-3">
-            <Row
-              className={`${
-                member.attributes.honorary ? "bg-lipstick" : ""
-              } mb-5`}
-            >
-              <Col md="12">
-                <Image
-                  src={member.attributes.honoraryImg.data.attributes.url}
-                  alt=""
-                  // alt={tiding.attributes.mainImgAlt}
-                  loading="lazy"
-                  width={600}
-                  height={600}
-                  className="img-fluid mx-auto my-5"
-                />
-              </Col>
-            </Row>
+          <Col xs="12" md="8" className="mx-auto">
+            <h1 className="h1-title lipstick">
+              {event.attributes.displayTitle}
+            </h1>
+            <p className="text blue ">{event.attributes.spoiler}</p>
+            <hr className="my-4" />
+          </Col>
+        </Row>
+        <Row>
+          <Col xs="12" md="8" className="mx-auto ">
             <Row>
-              <Col md="12">
-                <h3 className="h1-title text-center lipstick mb-5">
-                  {member.attributes.name}
-                </h3>
+              <Col xs="6" md="3">
+                <h4 className="text-bold">{t("events.page.dateNtime")}</h4>
+                <p className="text blue my-3">{event.attributes.date}</p>
+                <p className="text blue my-3">
+                  {event.attributes.time.slice(0, -3)} -{" "}
+                  {event.attributes.endingTime.slice(0, -3)}
+                </p>
+              </Col>
+              <Col xs="6" md="3">
+                <h4 className="text-bold">{t("events.page.location")}</h4>
+                <p className="text blue my-3">{event.attributes.location}</p>
+              </Col>
+              <Col xs="6" md="3">
+                <h4 className="text-bold">{t("events.page.address")}</h4>
+                <p className="text blue my-3">{event.attributes.address}</p>
+              </Col>
+              <Col xs="6" md="3">
+                <h4 className="text-bold">{t("events.page.price")}</h4>
+                <p className="text blue my-3">{event.attributes.price}</p>
               </Col>
             </Row>
+            {/* <hr className="my-4" /> */}
             <Row>
-              <Col md="8">
-                <Row>
-                  <Col md="12">
-                    <p className="text blue mb-5">
-                      {member.attributes.spoiler}
-                    </p>
-                  </Col>
-                </Row>
-                <Row className="my-3">
-                  {competenciesArr.map((item, index) => (
-                    <Col md="4" key={index}>
-                      <div
-                        style={{
-                          border: "4px solid #981b46", // Add a border with the desired color
-                          color: "#981b46", // Set the text color to match the border color
-                        }}
-                        className="lipstick text rounded "
-                      >
-                        <p className="text text-center blue my-3 mx-auto ">
-                          {item}
-                        </p>
-                      </div>
-                    </Col>
-                  ))}
-                </Row>
+              <Col xs="8" md="3" className="mx-auto">
+                <Link href={event.attributes.registrationLink}>
+                  <div className="btnSolid bg-lipstick hover:shadow-lg">
+                    <span className="text white">{t("events.page.btn")}</span>
+                  </div>
+                </Link>
               </Col>
-              <Col md="4">
-                <div className="d-flex mb-4 align-items-center">
-                  <IconContext.Provider
-                    value={{
-                      color: "981b46",
-                      size: "3rem",
-                    }}
-                  >
-                    <AiOutlineMail className="ml-5" />
-                  </IconContext.Provider>
-                  <p className="text blue ml-5">{member.attributes.email}</p>
-                </div>
-                {/* PHONE */}
-                <div className="d-flex mb-4 align-items-center">
-                  <IconContext.Provider
-                    value={{
-                      color: "981b46",
-                      size: "3rem",
-                    }}
-                  >
-                    <AiOutlinePhone className="ml-5" />
-                  </IconContext.Provider>
-
-                  <p className="text blue ml-5">{member.attributes.phone}</p>
-                </div>
-                {/* SOCIALS */}
-                <div className="d-flex mb-4 align-items-center">
-                  <motion.div
-                    whileHover={{
-                      scale: 1.01,
-                      transition: { duration: 1 },
-                    }}
-                    whileTap={{ scale: 1 }}
-                  >
-                    <Link
-                      href={member.attributes.linkedin}
-                      target="_blank"
-                      className="d-flex align-items-center"
-                    >
-                      <IconContext.Provider
-                        value={{
-                          color: "981b46",
-                          size: "3rem",
-                        }}
-                      >
-                        <AiOutlineLinkedin className="ml-5" />
-                      </IconContext.Provider>
-                      <span className="text blue ml-5">Linkedin</span>
-                    </Link>
-                  </motion.div>
-                </div>
-              </Col>
+              <hr className="my-4" />
             </Row>
-            <hr className="mb-5" />
-
-            {RichTextRenderer(member.attributes.bio)}
-            <hr className="mb-5" />
-            {/* {galeryArr ? <PhotoSlider imgArr={galeryArr} /> : ""} */}
+          </Col>
+        </Row>
+        <Row>
+          <Col xs="12" md="8" className="mx-auto mt-3">
+            {RichTextRenderer(event.attributes.text)}
+            {/* <Link href={event.attributes.registrationLink}>
+              <div className="btnSolid bg-lipstick hover:shadow-lg">
+                <span className="text white">{t("events.page.btn")}</span>
+              </div>
+            </Link> */}
+            <hr className="my-4" />
+          </Col>
+        </Row>
+        <Row>
+          <Col xs="12" md="8" className="mx-auto">
+            <h2 className="h2-title lipstick">{t("events.page.speakers")}</h2>
+            {event.attributes.speaker.map((item, index) => (
+              <Row key={index} className="mb-3">
+                <Col xs="12" md="8">
+                  <h3 className="h3-title blue">{item.speakerName}</h3>
+                  <p className="text blue">{item.speakerBio}</p>
+                </Col>
+              </Row>
+            ))}
           </Col>
         </Row>
       </Container>
@@ -136,12 +84,12 @@ function Event({ event }) {
   );
 }
 
-export default Event;
+export default EventP;
 
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ["common"])),
+      ...(await serverSideTranslations(locale, ["members_space, common"])),
     },
   };
 }

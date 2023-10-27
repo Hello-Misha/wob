@@ -1,12 +1,11 @@
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-// import { useTranslation } from "next-i18next";
 import { fetcher } from "../../services/fetcher";
 import Head from "next/head";
-import { useFetchUser } from "services/authContext";
-import Event from "components/Events/EventPage";
+import { useFetchUser } from "../../services/authContext";
+import EventP from "components/Events/EventsPage";
 import Unauthorized from "components/Auth/Unauthorized";
 
-function NewsPage({ event }) {
+function EventPage({ event }) {
   const { user, loading } = useFetchUser();
   if (!event) {
     return <div>Loading...</div>;
@@ -21,7 +20,7 @@ function NewsPage({ event }) {
         />
       </Head>
 
-      {user ? <Event event={event} /> : <Unauthorized />}
+      {user ? <EventP event={event} /> : <Unauthorized />}
     </>
   );
 }
@@ -38,7 +37,11 @@ export async function getStaticProps({ params, locale }) {
     props: {
       event: eventsResponseSlug,
 
-      ...(await serverSideTranslations(locale, ["common"])),
+      ...(await serverSideTranslations(locale, [
+        "members_space",
+        "common",
+        "meta",
+      ])),
     },
   };
 }
@@ -48,7 +51,7 @@ export const getStaticPaths = async () => {
   );
 
   const paths = eventsResponse.data.map((event) => ({
-    params: { slug: events.attributes.slug },
+    params: { slug: event.attributes.slug },
     locale: event.locales, // Use the string locale directly
   }));
 
@@ -58,4 +61,4 @@ export const getStaticPaths = async () => {
   };
 };
 
-export default NewsPage;
+export default EventPage;

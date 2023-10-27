@@ -18,7 +18,7 @@ function EventsOverview({ events }) {
         </h2>
         <Row className="mb-3 d-flex justify-content-center">
           {events &&
-            events.data.map((event) => (
+            filteredArr.map((event) => (
               <Col lg="12" md="12" key={event.id}>
                 <EventCard event={event} />
               </Col>
