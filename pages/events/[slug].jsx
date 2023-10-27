@@ -24,10 +24,11 @@ function EventPage({ event }) {
     </>
   );
 }
+
 export async function getStaticProps({ params, locale }) {
   const { slug } = params;
   const eventsResponse = await fetcher(
-    `${process.env.NEXT_PUBLIC_STRAPI_URL}/api/events?populate=*&locale=${locale}`
+    `${process.env.NEXT_PUBLIC_STRAPI_URL}/api/events?populate=*,speaker.speakerPhoto&locale=${locale}`
   );
   const eventsResponseSlug = eventsResponse.data.find(
     (obj) => obj.attributes.slug === slug
@@ -36,7 +37,6 @@ export async function getStaticProps({ params, locale }) {
   return {
     props: {
       event: eventsResponseSlug,
-
       ...(await serverSideTranslations(locale, [
         "members_space",
         "common",
@@ -45,6 +45,7 @@ export async function getStaticProps({ params, locale }) {
     },
   };
 }
+
 export const getStaticPaths = async () => {
   const eventsResponse = await fetcher(
     `${process.env.NEXT_PUBLIC_STRAPI_URL}/api/events?populate=*`
@@ -52,7 +53,7 @@ export const getStaticPaths = async () => {
 
   const paths = eventsResponse.data.map((event) => ({
     params: { slug: event.attributes.slug },
-    locale: event.locales, // Use the string locale directly
+    locale: event.attributes.locale, // Use the string locale directly
   }));
 
   return {

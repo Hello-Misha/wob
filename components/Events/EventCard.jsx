@@ -35,6 +35,7 @@ const EventsOverview = ({ event }) => {
                 <p className="text blue my-3">
                   <span className="text-bold">{t("events.card.date")}</span>
                   {event.attributes.date}
+                  {/* {console.log(event.attributes.time.slice(0, -3))} */}
                 </p>
                 <p className="text blue my-3">
                   <span className="text-bold">{t("events.card.time")}</span>
@@ -42,8 +43,8 @@ const EventsOverview = ({ event }) => {
                 </p>
               </div>
             </Col>
-            <Col md="3">
-              <Link href={event.attributes.slug}>
+            <Col md="3" className="d-flex flex-col justify-center">
+              <Link href={`events/${event.attributes.slug}`}>
                 <div className="btnSolid bg-lipstick hover:shadow-lg">
                   <span className="text white">{t("events.card.btn")}</span>
                 </div>

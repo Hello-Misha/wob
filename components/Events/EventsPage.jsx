@@ -70,7 +70,16 @@ function EventP({ event }) {
           <Col xs="12" md="8" className="mx-auto">
             <h2 className="h2-title lipstick">{t("events.page.speakers")}</h2>
             {event.attributes.speaker.map((item, index) => (
-              <Row key={index} className="mb-3">
+              <Row key={index} className="mb-5">
+                {console.log(item)}
+                <Col xs="12" md="4">
+                  <Image
+                    src={item.speakerPhoto.data.attributes.url}
+                    alt=""
+                    width={item.speakerPhoto.data.attributes.width}
+                    height={item.speakerPhoto.data.attributes.height}
+                  />
+                </Col>
                 <Col xs="12" md="8">
                   <h3 className="h3-title blue">{item.speakerName}</h3>
                   <p className="text blue">{item.speakerBio}</p>
