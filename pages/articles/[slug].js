@@ -22,7 +22,7 @@ function NewsPage({ article }) {
 export async function getServerSideProps({ params, locale }) {
   const { slug } = params;
   const articlesResponse = await fetcher(
-    `${process.env.NEXT_PUBLIC_STRAPI_URL}/articles?populate=*&locale=${locale}`
+    `${process.env.NEXT_PUBLIC_STRAPI_URL}/api/articles?populate=*&locale=${locale}`
   );
   const articlesResponseSlug = articlesResponse.data.find(
     (obj) => obj.attributes.slug === slug
@@ -31,9 +31,26 @@ export async function getServerSideProps({ params, locale }) {
   return {
     props: {
       article: articlesResponseSlug,
-
       ...(await serverSideTranslations(locale, ["news", "common", "meta"])),
     },
+  };
+}
+
+export const getStaticPaths = async () => {
+  // Fetch all articles in all locales
+  const articlesResponse = await fetcher(
+    `${process.env.NEXT_PUBLIC_STRAPI_URL}/api/articles?populate=*`
+  );
+
+  // Generate dynamic paths for each article
+  const paths = articlesResponse.data.map((article) => ({
+    params: { slug: article.attributes.slug },
+    locale: article.locales, // Use the string locale directly
+  }));
+
+  return {
+    paths,
+    fallback: true,
   };
 }
 

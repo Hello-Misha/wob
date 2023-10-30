@@ -1,9 +1,6 @@
 import { Container, Row, Col } from "react-bootstrap";
 import Image from "next/image";
-
-// import { RichTextRenderer } from "@/services/richTextReducer";
-
-// import PhotoSlider from "@/components/TechComponents/Carousel";
+import { RichTextRenderer } from "../../services/richTextReducer";
 
 function NewsPageComponent({ article }) {
   const mainImg =
@@ -33,7 +30,6 @@ function NewsPageComponent({ article }) {
             <Image
               src={mainImg}
               alt=""
-              // alt={tiding.attributes.mainImgAlt}
               loading="lazy"
               width={600}
               height={600}
@@ -53,7 +49,8 @@ function NewsPageComponent({ article }) {
             </p>
             <hr className="mb-5" />
 
-            {/* {RichTextRenderer(article.attributes.newsText)} */}
+            {RichTextRenderer(article.attributes.articleText)}
+
             <hr className="mb-5" />
             {/* {galeryArr ? <PhotoSlider imgArr={galeryArr} /> : ""} */}
           </Col>
@@ -61,6 +58,14 @@ function NewsPageComponent({ article }) {
       </Container>
     </main>
   );
+}
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["common"])),
+    },
+  };
 }
 
 export default NewsPageComponent;

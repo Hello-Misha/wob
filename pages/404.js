@@ -1,6 +1,6 @@
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
-// import Head from "next/head";
+import Head from "next/head";
 
 import { useEffect } from "react";
 import { useRouter } from "next/router";
@@ -17,10 +17,10 @@ function Error() {
   }, [router]);
   return (
     <>
-      {/* <Head>
-        <title>{t("error.title")}</title>
-        <meta property="og:description" content={t("error.description")} />
-      </Head> */}
+      <Head>
+        <title>{t("err.title")}</title>
+        <meta property="og:description" content={t("err.description")} />
+      </Head>
       <main>
         <div className="h-screen my-5">
           <h1 className="h1-title lipstick my-5">404</h1>

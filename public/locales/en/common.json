@@ -1,15 +1,19 @@
 {
-  "header": {
-    "links": {
-      "about": "About",
-      "membership": "Membership",
-      "hc": "Honor Circle",
-      "contacts": "Contacts"
-    },
-    "btn": {
-      "joinUs": "Join Us",
-      "login": "Membership Login"
-    }
+  "links": {
+    "about": "About",
+    "membership": "Membership",
+    "hc": "Honor Circle",
+    "contacts": "Contacts"
   },
-  "footer": ["About", "Membership", "Honor Circle", "Contacts"]
+  "linksArr": ["About", "Membership", "Honor Circle", "Contacts"],
+  "btn": {
+    "joinUs": "Join Us",
+    "login": "Login",
+    "office": "Members Space"
+  },
+  "unauthorized": {
+    "title": "Sorry, this page is private",
+    "text": "To access the content you must be authorized",
+    "btn": "Login"
+  }
 }

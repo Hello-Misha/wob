@@ -1,0 +1,13 @@
+{
+  "links": {
+    "about": "About",
+    "membership": "Membership",
+    "hc": "Honor Circle",
+    "contacts": "Contacts"
+  },
+  "linksArr": ["About", "Membership", "Honor Circle", "Contacts"],
+  "btn": {
+    "joinUs": "Join Us",
+    "login": "Membership Login"
+  }
+}

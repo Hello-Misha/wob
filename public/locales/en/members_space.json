@@ -1,0 +1,30 @@
+{
+  "members_space": {
+    "title": "Members Space",
+    "text": "Enjoy all benefits from exclusive WoB membership",
+    "members": "Members List",
+    "jobs": "Jobs Board",
+    "events": "Exclusive events",
+    "logout": "Logout from system"
+  },
+  "members": {
+    "title": "Members List"
+  },
+  "events": {
+    "title": "Exclusive events",
+    "card": {
+      "location": "Location: ",
+      "date": "Date: ",
+      "time": "Time: ",
+      "btn": "View event details"
+    },
+    "page": {
+      "dateNtime": "Date and Time",
+      "location": "Location",
+      "address": "Adresse",
+      "price": "Price",
+      "btn": "Sign Up",
+      "speakers": "Speakers"
+    }
+  }
+}
