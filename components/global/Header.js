@@ -17,8 +17,9 @@ import { Container } from "react-bootstrap";
 import BtnComponent from "../ui/BtnComponent";
 
 import logo from "../../public/img/Logo-WoB.png";
-
+import { useFetchUser } from "../../services/authContext";
 const Header = () => {
+  const { user, loading } = useFetchUser();
   const { t } = useTranslation("common");
   const [menuOpen, setMenuOpen] = useState(false);
   const [size, setSize] = useState({
@@ -68,19 +69,19 @@ const Header = () => {
   const navLinks = [
     {
       href: "/mission",
-      text: "header.links.about",
+      text: "links.about",
     },
     {
       href: "/membership",
-      text: "header.links.membership",
+      text: "links.membership",
     },
     {
       href: "/honor_circle",
-      text: "header.links.hc",
+      text: "links.hc",
     },
     {
       href: "/contacts",
-      text: "header.links.contacts",
+      text: "links.contacts",
     },
   ];
 
@@ -133,21 +134,34 @@ const Header = () => {
             <BtnComponent
               locale={"common"}
               link={"/membership"}
-              btnText="header.btn.joinUs"
+              btnText="btn.joinUs"
               bg="bg-blue"
               classes={classes.navbar__container__elements__btn}
               color="white"
               onClick={menuToggleHandler}
             />
-            {/* <BtnComponent
-              locale="common"
-              link={"#"}
-              btnText="header.btn.login"
-              classes=""
-              bg="bg-white"
-              color="lipstick"
-              onClick={menuToggleHandler}
-            /> */}
+
+            {user ? (
+              <BtnComponent
+                locale="common"
+                link={"/members_space"}
+                btnText="btn.office"
+                classes=""
+                bg="bg-white"
+                color="lipstick"
+                onClick={menuToggleHandler}
+              />
+            ) : (
+              <BtnComponent
+                locale="common"
+                link={"/auth"}
+                btnText="btn.login"
+                classes=""
+                bg="bg-white"
+                color="lipstick"
+                onClick={menuToggleHandler}
+              />
+            )}
           </div>
         </div>
         <div className={`${classes.menuControls}`}>

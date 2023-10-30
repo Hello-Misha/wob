@@ -1,7 +1,7 @@
 import { useTranslation } from "next-i18next";
 import Image from "next/image";
 import Link from "next/link";
-
+import { useFetchUser } from "../../services/authContext";
 import { motion } from "framer-motion";
 import { IconContext } from "react-icons";
 import {
@@ -15,7 +15,26 @@ import BtnComponent from "../ui/BtnComponent";
 import logo from "../../public/img/Logo-WoB.png";
 
 const Footer = () => {
-  const navLinks = ["/mission", "/membership", "/honor_circle", "/contacts"];
+  const { user, loading } = useFetchUser();
+  const navLinks = [
+    {
+      href: "/mission",
+      text: "links.about",
+    },
+    {
+      href: "/membership",
+      text: "links.membership",
+    },
+    {
+      href: "/honor_circle",
+      text: "links.hc",
+    },
+    {
+      href: "/contacts",
+      text: "links.contacts",
+    },
+  ];
+  // const navLinks = ["/mission", "/membership", "/honor_circle", "/contacts"];
   const { t } = useTranslation("common");
   return (
     <footer className="bg-lipstick mt-5">
@@ -34,24 +53,35 @@ const Footer = () => {
             <BtnComponent
               locale={"common"}
               link={"/membership"}
-              btnText="header.btn.joinUs"
+              btnText="btn.joinUs"
               bg="bg-blue"
               classes={"mb-5"}
               color="white"
             />
-            {/* <BtnComponent
-              locale="common"
-              link={"#"}
-              btnText="header.btn.login"
-              bg="bg-white"
-              classes={"mb-5"}
-              color="lipstick"
-            /> */}
+            {user ? (
+              <BtnComponent
+                locale="common"
+                link={"/members_space"}
+                btnText="btn.office"
+                bg="bg-white"
+                classes={"mb-5"}
+                color="lipstick"
+              />
+            ) : (
+              <BtnComponent
+                locale="common"
+                link={"/auth"}
+                btnText="btn.login"
+                bg="bg-white"
+                classes={"mb-5"}
+                color="lipstick"
+              />
+            )}
           </Col>
           <Col xs="6" md="3">
-            {t("footer", { returnObjects: true }).map((item, index) => (
-              <Link key={index} href={navLinks[index]}>
-                <p className={`text white my-3`}>{t(item)}</p>
+            {navLinks.map((item, index) => (
+              <Link key={index} href={item.href}>
+                <p className={`text white my-3`}>{t(item.text)}</p>
               </Link>
             ))}
           </Col>

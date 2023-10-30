@@ -4,7 +4,43 @@
     "description": "A leading not-for-profit organization dedicated to empowering women"
   },
   "about": {
-    "title": "Women on Boards - Ukraine",
-    "description": "A leading not-for-profit organization dedicated to empowering women"
+    "title": "Mission WoB - Ukraine",
+    "description": "Empowering women, fostering inclusive decision-making, advocating for legislative changes, representing Ukrainian professional women"
+  },
+  "membership": {
+    "title": "We Invite you to join до WoB - Ukraine",
+    "description": "Join our network today"
+  },
+  "hc": {
+    "title": "Honor Circle WoB - Ukraine",
+    "description": "Partners, Honorary Members and Honorary Supporters"
+  },
+  "contacts": {
+    "title": "Contacts WoB - Ukraine",
+    "description": "Phone and mail  WoB - Ukraine"
+  },
+  "news": {
+    "title": "Latest News WoB - Ukraine",
+    "description": "Latest News WoB - Ukraine"
+  },
+  "members": {
+    "title": "Members list WoB - Ukraine",
+    "description": "Members list WoB - Ukraine"
+  },
+  "members_space": {
+    "title": "Members Space WoB - Ukraine",
+    "description": "Members Space WoB - Ukraine"
+  },
+  "jobs": {
+    "title": "Jobs for WoB - Ukraine members",
+    "description": "Jobs for WoB - Ukraine members"
+  },
+  "events": {
+    "title": "Exclusive events for WoB - Ukraine members",
+    "description": "Exclusive events for WoB - Ukraine members"
+  },
+  "err": {
+    "title": "Page not found",
+    "description": "Ops... Someting is going wrong"
   }
 }

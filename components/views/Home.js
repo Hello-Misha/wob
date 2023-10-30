@@ -4,8 +4,9 @@ import Partner from "../Home/Partner";
 import Mission from "../Home/Mission";
 // import Founders from "../Home/Founders";
 import JoinUs from "../Home/JoinUs";
+import News from "../Home/News";
 
-const Home = () => {
+const Home = ({ articles }) => {
   return (
     <main>
       <Hero />
@@ -14,6 +15,7 @@ const Home = () => {
       <Mission />
       {/* <Founders /> */}
       <JoinUs />
+      <News articles={articles} />
     </main>
   );
 };

@@ -4,5 +4,5 @@ module.exports = {
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  plugins: [],
+  plugins: [require("@tailwindcss/forms")({ strategy: "class" })],
 };
