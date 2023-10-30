@@ -3,13 +3,12 @@ import Image from "next/image";
 import Carousel from "react-bootstrap/Carousel";
 import { Container, Row, Col } from "react-bootstrap";
 
-import classes from "./#UI.module.scss";
-
 const CarouselComponent = ({ locale, imgArr, textContent }) => {
   const { t } = useTranslation(locale);
+
   return (
     <Carousel className="my-5">
-      {t(textContent, { returnObjects: true }).map((item, index) => (
+      {textContent.map((item, index) => (
         <Carousel.Item key={index}>
           <Container>
             <Row className="d-flex align-items-center">
@@ -33,7 +32,15 @@ const CarouselComponent = ({ locale, imgArr, textContent }) => {
                 </div>
                 <div>
                   <h2 className="super-title text-left lipstick -mb-10">“</h2>
-                  <p className="text-i-l blue -mt-5 -pt-5">{t(item.quote)}</p>
+
+                  <div className="-my-5 -py-5">
+                    {item.quote.map((item, index) => (
+                      <p key={index} className="text-italic blue mb-3">
+                        {item}
+                      </p>
+                    ))}
+                  </div>
+
                   <h2 className="super-title text-right lipstick -mt-5">”</h2>
                 </div>
               </Col>

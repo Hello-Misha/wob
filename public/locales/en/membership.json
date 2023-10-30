@@ -71,24 +71,60 @@
     "title": "What our members say",
     "carousel": [
       {
-        "name": "Iryna Rubis",
-        "title": "CEO of Biasless, DEI strategist and trainer",
-        "quote": "Fair representation of women on boards is about freedom, dignity and values. The time has come to magnify this."
+        "name": "Olga Ustynova",
+        "title": " CEO | Vodaphone Ukraine",
+        "quote": [
+          "One of the fundamental values of the global Vodafone is equal opportunities for personal development and professional self-realization. Otherwise, working in a multinational, multicultural and diverse team, which unites more than 100 thousand people from different countries of the world, is not possible. In my opinion, the principle of equal opportunities should be implemented in all spheres - state, corporate, social.",
+
+          "In addition, a company that implements the latest digital technologies and is involved in changing the structure of the modern world should prioritize the humanization of technological progress.",
+
+          "Therefore, I personally and my Ukrainian team support the idea of equal opportunities and implement it in our company, including at the level of corporate management."
+        ]
       },
       {
-        "name": "Anna Derevyanko",
-        "title": "Executive Director, European Business Association Co-founder, Global Business for Ukraine",
-        "quote": "This is an important moment to elevate women in boardrooms. Women on Boards Ukraine is a great initiative that I am proud to join."
+        "name": "Oksana Volchko",
+        "title": "Member of the Supervisory Board | Chapter Zero Ukraine and Caucasus (Georgia and Armenia)",
+        "quote": [
+          "Being a woman director is not just to be in the room. It is to successfully advise top management teams on key decisions, support strategic change, while ensuring broad institutional oversight, demonstrate deep understanding of the topic and influence during board discussions, given that gender-based barriers still persist."
+        ]
       },
       {
-        "name": "Oksana Strashna",
-        "title": "Board Member Corporate Governance Professional Association, former Partner Horizon Capital",
-        "quote": "WoB Ukraine mission to uplift women, promote diversity in corporate boardrooms and let exceptional talents of Ukrainian professional women shine resonates deeply with me. Let’s make a meaningful impact together."
+        "name": "Olena Makarenko",
+        "title": "Partner, Risk Consulting Head of Forensic, Sustainability and ESG Leader of KPMG Insight Academy | KPMG Ukraine",
+        "quote": [
+          "I am proud to be part of Women on Boards Ukraine community and pleased to support its mission – to uplift and support women and foster inclusive decision-making.",
+
+          "I am a big believer that inclusivity and diversity principles should be among the key business goals. And I also strongly convinced that women in management play an outstanding role in the process of transformations and building strong, resilient and trustworthy country and business community"
+        ]
       },
       {
-        "name": "Lisa Kaestner",
-        "title": "Regional Manager, Ukraine and Moldova, International Finance Corporation, World Bank Group",
-        "quote": "Joining WoB Ukraine underscores my recognition of women business leaders' important role in building resilience and growth of Ukraine’s businesses."
+        "name": "Lana Sinichkina",
+        "title": "Partner, Attorney-at-law | Аrzinger",
+        "quote": [
+          "This world lacks women leadership in many areas. I am happy to join the WoB ua initiative to make this world a better place to live in."
+        ]
+      },
+
+      {
+        "name": "Nadiia Kaznacheieva",
+        "title": "Chief Investment Officer | UMGI, London, UK",
+        "quote": [
+          "I am very pleased to join Women on Boards Ukraine - community of proven, talented and committed leaders with a shared focus on empowering and building the pipeline of board-ready women. I am sure it is a giant step forward for women, businesses and our economy."
+        ]
+      },
+      {
+        "name": "Olga Tomash",
+        "title": "Supervisory Board Member, Independent Consultant | Credo Bank Georgia, Ipak Yuli Bank Uzbekistan; Independent Consultant.",
+        "quote": [
+          "I am truly honored to be part of the Women on Boards Ukraine. I hold a deep belief in the value of its mission and purpose, which centers around cultivating a supportive network of professional women leaders. In my view, this organization's significance extends well beyond mere networking; it's about fostering a tight-knit community dedicated to creating opportunities, sharing knowledge and experiences, and offering fresh perspectives on the decisions and challenges we face. With years of experience in the boardroom across several countries, including Ukraine, I am thrilled to contribute to our collective journey towards rebuilding a stronger Ukraine through the collective strength of empowered women in leadership roles."
+        ]
+      },
+      {
+        "name": "Maryna Kvashnina",
+        "title": "Managing partner | Edenlab, Supervisory Board Member Bank Lviv & MAIB (Moldova's largest commecial bank)",
+        "quote": [
+          "The greater board gender diversity more likely will bring the greater results to its businesses as that gives wider options."
+        ]
       }
     ]
   }

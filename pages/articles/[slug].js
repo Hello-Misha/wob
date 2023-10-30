@@ -1,32 +1,25 @@
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-// import { useTranslation } from "next-i18next";
+import { useTranslation } from "next-i18next";
 import { fetcher } from "../../services/fetcher";
 import Head from "next/head";
 
 import NewsPageComponent from "../../components/News/NewsPageComponent";
 
 function NewsPage({ article }) {
-  if (!article) {
-    // Handle the case when article is undefined
-    // For example, you can return a loading state or an error message.
-    return <div>Loading...</div>;
-  }
+  const { t } = useTranslation("news");
+
   return (
     <>
       <Head>
-        <title>{article.attributes.metaTitle}</title>
-        <meta
-          property="og:description"
-          content={article.attributes.metaDescription}
-        />
+        <title>{t("news.title")}</title>
+        <meta property="og:description" content={t("news.description")} />
       </Head>
       <NewsPageComponent article={article} />
     </>
   );
 }
-// getServerSideProps
-// getStaticProps
-export async function getStaticProps({ params, locale }) {
+
+export async function getServerSideProps({ params, locale }) {
   const { slug } = params;
   const articlesResponse = await fetcher(
     `${process.env.NEXT_PUBLIC_STRAPI_URL}/api/articles?populate=*&locale=${locale}`
@@ -38,11 +31,11 @@ export async function getStaticProps({ params, locale }) {
   return {
     props: {
       article: articlesResponseSlug,
-
       ...(await serverSideTranslations(locale, ["news", "common", "meta"])),
     },
   };
 }
+
 export const getStaticPaths = async () => {
   // Fetch all articles in all locales
   const articlesResponse = await fetcher(
@@ -59,6 +52,6 @@ export const getStaticPaths = async () => {
     paths,
     fallback: true,
   };
-};
+}
 
 export default NewsPage;
