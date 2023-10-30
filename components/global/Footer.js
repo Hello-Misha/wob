@@ -1,7 +1,7 @@
 import { useTranslation } from "next-i18next";
 import Image from "next/image";
 import Link from "next/link";
-
+import { useFetchUser } from "../../services/authContext";
 import { motion } from "framer-motion";
 import { IconContext } from "react-icons";
 import {
@@ -15,6 +15,7 @@ import BtnComponent from "../ui/BtnComponent";
 import logo from "../../public/img/Logo-WoB.png";
 
 const Footer = () => {
+  const { user, loading } = useFetchUser();
   const navLinks = [
     {
       href: "/mission",
@@ -57,14 +58,25 @@ const Footer = () => {
               classes={"mb-5"}
               color="white"
             />
-            {/* <BtnComponent
-              locale="common"
-              link={"#"}
-              btnText="btn.login"
-              bg="bg-white"
-              classes={"mb-5"}
-              color="lipstick"
-            /> */}
+            {user ? (
+              <BtnComponent
+                locale="common"
+                link={"/members_space"}
+                btnText="btn.office"
+                bg="bg-white"
+                classes={"mb-5"}
+                color="lipstick"
+              />
+            ) : (
+              <BtnComponent
+                locale="common"
+                link={"/auth"}
+                btnText="btn.login"
+                bg="bg-white"
+                classes={"mb-5"}
+                color="lipstick"
+              />
+            )}
           </Col>
           <Col xs="6" md="3">
             {navLinks.map((item, index) => (

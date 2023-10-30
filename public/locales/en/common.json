@@ -8,6 +8,12 @@
   "linksArr": ["About", "Membership", "Honor Circle", "Contacts"],
   "btn": {
     "joinUs": "Join Us",
-    "login": "Membership Login"
+    "login": "Login",
+    "office": "Members Space"
+  },
+  "unauthorized": {
+    "title": "Sorry, this page is private",
+    "text": "To access the content you must be authorized",
+    "btn": "Login"
   }
 }

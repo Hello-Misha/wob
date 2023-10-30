@@ -1,9 +1,9 @@
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
-import { fetcher } from "../services/fetcher";
+import { fetcher } from "services/fetcher";
 import Head from "next/head";
 
-import Home from "../components/views/Home";
+import Home from "components/views/Home";
 
 function HomePage({ articles }) {
   const { t } = useTranslation("meta");

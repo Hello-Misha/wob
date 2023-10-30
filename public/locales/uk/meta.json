@@ -17,11 +17,31 @@
   },
   "contacts": {
     "title": "Контакти WoB - Ukraine",
-    "description": "Телефон і пошта  WoB - Ukraine"
+    "description": "Телефон і пошта WoB - Ukraine"
   },
   "news": {
     "title": "Останні новини WoB - Ukraine",
-    "description": "Останні новини  WoB - Ukraine"
+    "description": "Останні новини WoB - Ukraine"
+  },
+  "auth": {
+    "title": "Авторизація в системі WoB - Ukraine",
+    "description": "Авторизація в системі WoB - Ukraine"
+  },
+  "members": {
+    "title": "Список членкинь WoB - Ukraine",
+    "description": "Список членкинь WoB - Ukraine"
+  },
+  "members_space": {
+    "title": "Особистий кабінет членкині WoB - Ukraine",
+    "description": "Особистий кабінет членкині WoB - Ukraine"
+  },
+  "jobs": {
+    "title": "Вакансії для членкинь WoB - Ukraine",
+    "description": "Вакансії для членкинь WoB - Ukraine"
+  },
+  "events": {
+    "title": "Ексклюзивні івенти для учасниць WoB - Ukraine",
+    "description": "Ексклюзивні івенти для учасниць WoB - Ukraine"
   },
   "err": {
     "title": "Помилка",
