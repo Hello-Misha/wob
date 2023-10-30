@@ -23,7 +23,7 @@ function NewsPage({ article }) {
   );
 }
 
-export async function getServerSideProps({ params, locale }) {
+export async function getStaticProps({ params, locale }) {
   const { slug } = params;
   const articlesResponse = await fetcher(
     `${process.env.NEXT_PUBLIC_STRAPI_URL}/api/articles?populate=*&locale=${locale}`
